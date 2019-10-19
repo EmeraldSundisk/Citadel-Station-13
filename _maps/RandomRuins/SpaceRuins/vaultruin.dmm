@@ -1,0 +1,77 @@
+"aa" = (/turf/template_noop,/area/template_noop)
+"ab" = (/turf/closed/wall/r_wall,/area/ruin/space/has_grav)
+"ac" = (/obj/structure/table/wood,/obj/item/lighter,/obj/item/lighter,/obj/item/storage/fancy/rollingpapers,/obj/item/storage/fancy/rollingpapers,/obj/item/storage/fancy/rollingpapers,/obj/item/storage/fancy/rollingpapers,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"ad" = (/obj/structure/table/wood,/obj/item/storage/box/disks_plantgene,/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"ae" = (/obj/structure/table/wood,/obj/item/storage/box/disks_plantgene,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"af" = (/obj/machinery/plantgenes/seedvault{pixel_y = 6},/obj/structure/table/wood,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"ag" = (/obj/structure/table/wood,/obj/machinery/smartfridge/disks{pixel_y = 2},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"ah" = (/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"ai" = (/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aj" = (/obj/structure/closet/crate/hydroponics,/obj/structure/beebox,/obj/item/melee/flyswatter,/obj/item/honey_frame,/obj/item/honey_frame,/obj/item/honey_frame,/obj/item/queen_bee/bought,/obj/item/clothing/head/beekeeper_head,/obj/item/clothing/suit/beekeeper_suit,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"ak" = (/obj/structure/shuttle/engine/propulsion{dir = 8},/turf/template_noop,/area/template_noop)
+"al" = (/obj/structure/closet/crate,/obj/item/seeds/gatfruit,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"am" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"an" = (/obj/machinery/smartfridge,/turf/open/floor/plasteel/freezer,/area/ruin/powered/seedvault)
+"ao" = (/obj/structure/closet/crate/hydroponics,/obj/item/cultivator,/obj/item/cultivator,/obj/item/cultivator,/obj/item/cultivator,/obj/item/shovel/spade,/obj/item/shovel/spade,/obj/item/shovel/spade,/obj/item/shovel/spade,/obj/item/hatchet,/obj/item/hatchet,/obj/item/hatchet,/obj/item/hatchet,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"ap" = (/obj/machinery/hydroponics/constructable,/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aq" = (/obj/machinery/hydroponics/constructable,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"ar" = (/obj/item/hatchet,/obj/item/storage/bag/plants,/obj/item/reagent_containers/glass/bucket,/obj/structure/table/wood,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"as" = (/obj/structure/table/wood,/obj/item/storage/bag/plants,/obj/item/storage/bag/plants,/obj/item/storage/bag/plants,/obj/item/storage/bag/plants,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"at" = (/obj/structure/table/wood,/obj/item/gun/energy/floragun,/obj/item/gun/energy/floragun,/obj/item/gun/energy/floragun,/obj/item/gun/energy/floragun,/obj/item/storage/box/disks_plantgene,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"au" = (/obj/machinery/light/broken{icon_state = "tube-broken"; dir = 8},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"av" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aw" = (/turf/open/floor/plating/asteroid/airless,/area/asteroid/nearstation)
+"ax" = (/turf/closed/mineral,/area/asteroid/nearstation)
+"ay" = (/obj/structure/fluff/empty_terrarium,/obj/effect/decal/cleanable/blood/old,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"az" = (/obj/machinery/light/broken{icon_state = "tube-broken"; dir = 1},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aA" = (/obj/structure/sink{dir = 8; pixel_x = -12; pixel_y = 2},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aB" = (/obj/machinery/vending/hydronutrients,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aC" = (/obj/machinery/smartfridge,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aD" = (/obj/machinery/vending/hydroseeds,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aE" = (/obj/machinery/reagentgrinder{pixel_y = 5},/obj/structure/table/glass,/obj/item/reagent_containers/glass/beaker/bluespace,/obj/item/reagent_containers/glass/beaker/bluespace,/obj/item/reagent_containers/glass/beaker/bluespace,/obj/item/reagent_containers/glass/beaker/bluespace,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aF" = (/obj/structure/sink{dir = 4; pixel_x = 11},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aG" = (/turf/open/floor/plating/asteroid/airless,/area/ruin/space/has_grav)
+"aH" = (/obj/effect/turf_decal/sand,/turf/open/floor/plating{icon_state = "platingdmg3"},/area/ruin/space/has_grav)
+"aI" = (/obj/item/clothing/under/rank/hydroponics,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aJ" = (/obj/machinery/door/airlock/external,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aK" = (/obj/machinery/door/airlock/external,/obj/structure/fans/tiny,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aL" = (/turf/open/floor/plating{icon_state = "platingdmg1"},/area/ruin/space/has_grav)
+"aM" = (/obj/effect/turf_decal/sand,/turf/open/floor/plating{icon_state = "platingdmg2"},/area/ruin/space/has_grav)
+"aN" = (/turf/open/floor/plating,/area/ruin/space/has_grav)
+"aO" = (/obj/machinery/seed_extractor,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aP" = (/obj/machinery/biogenerator,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aQ" = (/obj/machinery/chem_dispenser/mutagensaltpeter,/turf/open/floor/plasteel/freezer,/area/ruin/powered/seedvault)
+"aR" = (/obj/effect/decal/cleanable/glass,/obj/effect/turf_decal/sand,/turf/open/floor/plating{icon_state = "platingdmg2"},/area/ruin/space/has_grav)
+"aS" = (/turf/open/floor/plating{icon_state = "panelscorched"},/area/ruin/space/has_grav)
+"aT" = (/turf/closed/mineral/volcanic/lava_land_surface,/area/asteroid/nearstation)
+"aU" = (/obj/effect/turf_decal/sand,/turf/open/floor/plating{icon_state = "platingdmg1"},/area/ruin/space/has_grav)
+"aV" = (/obj/effect/turf_decal/sand,/turf/open/floor/plating,/area/ruin/space/has_grav)
+"aW" = (/obj/structure/closet/crate,/obj/item/seeds/kudzu,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aX" = (/obj/machinery/chem_master/condimaster,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aY" = (/obj/machinery/hydroponics/constructable,/obj/machinery/light,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+"aZ" = (/obj/structure/table/wood,/obj/item/reagent_containers/glass/bucket,/obj/item/reagent_containers/glass/bucket,/obj/item/reagent_containers/glass/bucket,/obj/item/reagent_containers/glass/bucket,/turf/open/floor/plasteel/freezer,/area/ruin/powered/seedvault)
+"ba" = (/obj/item/storage/toolbox/syndicate,/obj/structure/table/wood,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaababababababababababaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaababacadaeafagahaiajababakaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaabalahahahahahahahahajababaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaababababamabababababababakaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaababanaoapahaqaqarapasatababaaaaaaaa
+aaaaaaaaaaaaaaaaababababauahahahahahahahahavabakaaaaaaaa
+aaaaaaaaawaxaxaxabayazabaAahaqaBaCaDaEahahaFabababaaaaaa
+aaaaaaaaaxaxaxaxaxaGaHamahahahahaIahahahaqahaJahaKaaaaaa
+aaaaaaaaaxaxaxaxaxaxaGaGaHaLaLahahahahahaqahaJahaKaaaaaa
+aaaaaaaxaxaxaxaxaxaxaxabaMaGaLaNaOaPaQahahaFabababaaaaaa
+aaaaaaaxaxaxaxaxaxaxaxaxaGaRaSahahahahahahavabakaaaaaaaa
+aaaaaaawaxaxaxaxaTaTaxaxaxaUaVahaWaqaXaYaZbaababaaaaaaaa
+aaaaaaaaaxaxaxaxaTaTaTaxaxababababababababababakaaaaaaaa
+aaaaaaaaawaxaxaxaTaTaxaxawawawaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaawaxaxaxaxaxaxaTawaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaawaxaxaTaTaxawaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaawawaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
