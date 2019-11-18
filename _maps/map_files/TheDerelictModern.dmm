@@ -22,7 +22,7 @@
 "av" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/ruin/space/derelict/solar_control)
 "aw" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plating,/area/ruin/space/derelict/solar_control)
 "ax" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/bridge/ai_upload)
-"ay" = (/turf/open/floor/plating/airless,/area/ruin/unpowered/no_grav)
+"ay" = (/obj/structure/girder,/turf/open/floor/plating/airless,/area/storage/primary)
 "az" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
 "aA" = (/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
 "aB" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
@@ -309,7 +309,7 @@
 "fW" = (/obj/item/stack/rods,/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/singularity_engine)
 "fX" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
 "fY" = (/obj/structure/table,/obj/machinery/light/small{dir = 4},/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/singularity_engine)
-"fZ" = (/turf/closed/wall,/area/ruin/space/derelict/hallway/primary)
+"fZ" = (/turf/open/floor/plating/airless,/area/storage/primary)
 "ga" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "gb" = (/obj/effect/turf_decal/tile/yellow,/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "gc" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/effect/turf_decal/caution/stand_clear{dir = 1; icon_state = "stand_clear"; pixel_y = 0},/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 1},/obj/effect/turf_decal/stripes,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel/dark,/area/hallway/primary/central)
@@ -327,7 +327,7 @@
 "go" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 1},/obj/structure/closet/secure_closet/personal,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "gp" = (/turf/open/floor/plasteel,/area/hallway/primary/central)
 "gq" = (/obj/structure/cable,/obj/machinery/power/apc{name = "Worn-out APC"; pixel_y = -24},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
-"gr" = (/turf/open/floor/plasteel/airless,/area/ruin/unpowered/no_grav)
+"gr" = (/turf/open/floor/plasteel/airless{icon_state = "floorscorched2"},/area/storage/primary)
 "gs" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/singularity_engine)
 "gt" = (/obj/item/stack/ore/slag,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "gu" = (/obj/effect/spawner/structure/window/hollow/reinforced/directional{dir = 9},/obj/item/shard{icon_state = "medium"},/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
@@ -338,7 +338,7 @@
 "gz" = (/obj/machinery/light/small,/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/yellow,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "gA" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating,/area/maintenance/department/medical)
 "gB" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/hallway/secondary/command)
-"gC" = (/turf/open/floor/plasteel/airless{icon_state = "floorscorched2"},/area/ruin/unpowered/no_grav)
+"gC" = (/turf/open/floor/plasteel/airless,/area/storage/primary)
 "gD" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/hallway/secondary/command)
 "gE" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 1},/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "gF" = (/obj/machinery/door/firedoor,/obj/effect/turf_decal/caution/stand_clear,/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 1},/obj/effect/turf_decal/stripes,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel/dark,/area/hallway/primary/central)
@@ -347,10 +347,10 @@
 "gI" = (/obj/item/shard{icon_state = "medium"},/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/singularity_engine)
 "gJ" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "gK" = (/obj/structure/grille/broken,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
-"gL" = (/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/primary)
+"gL" = (/obj/structure/sign/directions/command{icon_state = "direction_bridge"; dir = 1},/obj/structure/sign/directions/engineering{dir = 1; pixel_x = 0; pixel_y = 8},/turf/closed/wall,/area/hallway/secondary/entry)
 "gM" = (/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "gN" = (/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
-"gO" = (/obj/structure/girder,/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/primary)
+"gO" = (/obj/structure/sign/directions/medical{dir = 8; icon_state = "direction_med"; pixel_x = -32; pixel_y = -8},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
 "gP" = (/obj/structure/table,/obj/machinery/power/apc{name = "Worn-out APC"; pixel_y = -24},/obj/effect/spawner/lootdrop/maintenance,/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "gQ" = (/obj/machinery/door/window{dir = 2; name = "Captain's Quarters"; req_access_txt = "20"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "gR" = (/turf/closed/wall/r_wall,/area/crew_quarters/heads/captain)
@@ -390,7 +390,7 @@
 "hz" = (/turf/closed/wall,/area/space)
 "hA" = (/turf/open/floor/plating,/area/maintenance/department/engine)
 "hB" = (/obj/item/shard,/turf/open/floor/plating,/area/maintenance/department/engine)
-"hC" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"hC" = (/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
 "hD" = (/obj/machinery/vending/sovietsoda,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "hE" = (/turf/open/floor/plasteel,/area/crew_quarters/heads/captain)
 "hF" = (/obj/structure/table,/obj/machinery/computer/pod/old{name = "ProComp IIe"; pixel_y = 7; id = "derelict_gun"},/turf/open/floor/plasteel/chapel,/area/ruin/space/derelict/medical/chapel)
@@ -431,8 +431,8 @@
 "io" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plating/airless,/area/ruin/space/derelict/singularity_engine)
 "ip" = (/obj/machinery/chem_master,/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 9},/turf/open/floor/plasteel,/area/medical/chemistry)
 "iq" = (/turf/open/floor/plasteel/airless{icon_state = "damaged4"},/area/science)
-"ir" = (/obj/structure/sign/directions/medical{dir = 8; icon_state = "direction_med"; pixel_x = -32; pixel_y = -8},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"is" = (/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"ir" = (/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
+"is" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
 "it" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/maintenance{name = "Medbay Maintenance"; req_access_txt = "5"},/turf/open/floor/plating,/area/medical/medbay/lobby)
 "iu" = (/obj/machinery/chem_dispenser,/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 5},/turf/open/floor/plasteel,/area/medical/chemistry)
 "iv" = (/obj/structure/table,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/chapel{dir = 1},/area/ruin/space/derelict/medical/chapel)
@@ -443,7 +443,7 @@
 "iA" = (/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "iB" = (/obj/item/bot_assembly/medbot,/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "iC" = (/obj/structure/window/reinforced,/turf/open/floor/plasteel/airless/white,/area/ruin/space/derelict/medical)
-"iD" = (/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"iD" = (/obj/effect/turf_decal/loading_area{dir = 8},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
 "iE" = (/obj/structure/sign/directions/medical{pixel_x = 32; pixel_y = -8},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "iF" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "iG" = (/turf/open/floor/plasteel,/area/hallway/secondary/entry)
@@ -481,7 +481,7 @@
 "jm" = (/obj/machinery/door/airlock/external{name = "External Engineering"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
 "jn" = (/obj/structure/window/reinforced{dir = 1},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "jo" = (/obj/item/shard{icon_state = "medium"},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
-"jp" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"jp" = (/obj/structure/sign/directions/science{pixel_y = 8},/turf/closed/wall,/area/hallway/secondary/entry)
 "jq" = (/obj/machinery/door/window{dir = 8},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
 "jr" = (/obj/machinery/light{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "js" = (/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/effect/turf_decal/tile/yellow,/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/closed/wall,/area/medical/chemistry)
@@ -491,7 +491,7 @@
 "jw" = (/obj/machinery/light/small,/turf/open/floor/plasteel/dark,/area/medical/morgue)
 "jx" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "jy" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/turf/open/floor/plasteel/dark,/area/medical/morgue)
-"jz" = (/obj/structure/sign/directions/security{dir = 8; icon_state = "direction_sec"; pixel_x = -32},/obj/effect/turf_decal/tile/purple{dir = 8},/obj/effect/turf_decal/tile/purple,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"jz" = (/obj/structure/sign/directions/security{dir = 8; icon_state = "direction_sec"; pixel_x = -32},/obj/effect/turf_decal/tile/purple{dir = 8},/obj/effect/turf_decal/tile/purple,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
 "jA" = (/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/effect/turf_decal/tile/yellow,/turf/open/floor/plasteel/white,/area/medical/chemistry)
 "jB" = (/obj/structure/window/reinforced/spawner/east,/obj/structure/table,/obj/effect/turf_decal/stripes/white/line{icon_state = "warningline_white"; dir = 4},/turf/open/floor/plasteel,/area/medical/chemistry)
 "jC" = (/obj/item/stack/medical/ointment,/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
@@ -503,7 +503,7 @@
 "jI" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "jJ" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
 "jK" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
-"jL" = (/obj/machinery/door/airlock/maintenance{name = "Chapel Maintenance"; req_access_txt = "12"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/medical/chapel)
+"jL" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/medical/chapel)
 "jM" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "jN" = (/obj/item/cigbutt,/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
 "jO" = (/obj/effect/turf_decal/tile/purple{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/obj/structure/table,/turf/open/floor/plasteel/white,/area/medical/genetics/cloning)
@@ -513,7 +513,7 @@
 "jS" = (/obj/item/stack/cable_coil/cut/red,/turf/open/floor/plating/airless,/area/science)
 "jT" = (/obj/structure/sign/directions/security{pixel_x = 32},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "jU" = (/obj/machinery/door/airlock/external{name = "Arrivals Docking Bay 1"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
-"jV" = (/obj/effect/turf_decal/tile/purple{dir = 8},/obj/effect/turf_decal/tile/purple,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"jV" = (/obj/effect/turf_decal/tile/purple{dir = 8},/obj/effect/turf_decal/tile/purple,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
 "jW" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "jX" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "jY" = (/turf/closed/wall,/area/crew_quarters/dorms)
@@ -529,7 +529,7 @@
 "ki" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced/spawner/east,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "kj" = (/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/science)
 "kk" = (/turf/open/floor/plasteel/airless,/area/crew_quarters/heads/captain)
-"kl" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/maintenance/department/chapel)
+"kl" = (/turf/open/floor/plasteel,/area/hallway/primary/port)
 "km" = (/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
 "kn" = (/obj/effect/spawner/structure/window/hollow/reinforced/directional{dir = 6},/obj/structure/grille,/turf/open/floor/plating,/area/space/nearstation)
 "ko" = (/obj/structure/table,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
@@ -538,10 +538,10 @@
 "kr" = (/obj/structure/cable,/obj/machinery/power/apc{name = "Worn-out APC"; pixel_y = -24},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "ks" = (/obj/machinery/portable_atmospherics/scrubber,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "kt" = (/obj/machinery/door/airlock/public/glass{name = "Med-Sci"; req_access_txt = "9"},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel/white,/area/medical/genetics)
-"ku" = (/obj/structure/cable{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,/turf/open/floor/plasteel,/area/maintenance/department/chapel)
+"ku" = (/obj/machinery/door/airlock/maintenance{name = "Chapel Maintenance"; req_access_txt = "12"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 8},/turf/open/floor/plating,/area/ruin/space/derelict/medical/chapel)
 "kv" = (/obj/item/shard{icon_state = "small"},/obj/structure/sign/departments/examroom{pixel_x = -32; pixel_y = 32},/obj/effect/turf_decal/caution/stand_clear/white{icon_state = "stand_clear_white"; dir = 4},/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
 "kw" = (/obj/effect/turf_decal/delivery/white,/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
-"kx" = (/obj/machinery/light/small{dir = 1},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/maintenance/department/chapel)
+"kx" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 8},/turf/open/floor/plating,/area/maintenance/department/chapel)
 "ky" = (/obj/structure/rack,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/turf/open/floor/plating,/area/storage/secure)
 "kz" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "kA" = (/obj/machinery/light/small{dir = 4},/obj/structure/rack,/obj/item/stack/cable_coil/cut/red,/obj/item/stack/cable_coil/cut/red,/turf/open/floor/plasteel,/area/storage/secure)
@@ -551,25 +551,25 @@
 "kE" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/ai_monitored/storage/eva)
 "kF" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "kG" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on,/turf/open/floor/plasteel,/area/hallway/primary/central)
-"kH" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/layer_manifold{icon_state = "manifoldlayer"; dir = 8},/turf/open/floor/plasteel,/area/maintenance/department/chapel)
+"kH" = (/obj/structure/cable{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,/turf/open/floor/plating,/area/maintenance/department/chapel)
 "kI" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/science/research/lobby)
 "kJ" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 4},/turf/open/floor/plating,/area/ai_monitored/storage/eva)
 "kK" = (/obj/machinery/door/airlock/command{name = "E.V.A."; req_access_txt = "18"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ai_monitored/storage/eva)
 "kL" = (/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/science)
 "kM" = (/obj/effect/decal/cleanable/dirt,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/science)
 "kN" = (/turf/open/floor/plasteel/airless,/area/crew_quarters/dorms)
-"kO" = (/obj/machinery/power/apc{dir = 4; name = "Worn-out APC"; pixel_x = 24},/obj/structure/cable{icon_state = "0-2"},/obj/structure/cable{icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/open/floor/plasteel,/area/maintenance/department/chapel)
+"kO" = (/obj/machinery/light/small{dir = 1},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 8},/turf/open/floor/plating,/area/maintenance/department/chapel)
 "kP" = (/turf/open/floor/plating/airless,/area/crew_quarters/dorms)
-"kQ" = (/turf/closed/wall/r_wall,/area/teleporter)
+"kQ" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/layer_manifold{icon_state = "manifoldlayer"; dir = 8},/turf/open/floor/plating,/area/maintenance/department/chapel)
 "kR" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "kS" = (/obj/structure/table,/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
 "kT" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
-"kU" = (/turf/closed/wall,/area/crew_quarters/locker)
+"kU" = (/obj/machinery/power/apc{dir = 4; name = "Worn-out APC"; pixel_x = 24},/obj/structure/cable{icon_state = "0-2"},/obj/structure/cable{icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/open/floor/plating,/area/maintenance/department/chapel)
 "kV" = (/obj/machinery/light{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
-"kW" = (/turf/open/floor/plasteel,/area/teleporter)
-"kX" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/maintenance,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"kW" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/maintenance,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plating,/area/crew_quarters/dorms)
+"kX" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "kY" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
-"kZ" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"kZ" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "la" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/storage/secure)
 "lb" = (/obj/machinery/sleeper{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "lc" = (/obj/structure/table,/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/purple{dir = 4},/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
@@ -581,13 +581,13 @@
 "li" = (/obj/effect/turf_decal/tile/yellow,/obj/effect/turf_decal/tile/yellow{dir = 8},/turf/open/floor/plasteel/white,/area/medical/chemistry)
 "lj" = (/obj/effect/turf_decal/tile/purple{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/structure/table,/turf/open/floor/plasteel/white,/area/medical/genetics/cloning)
 "lk" = (/obj/item/stack/medical/bruise_pack,/turf/open/floor/plasteel/white,/area/medical/sleeper)
-"ll" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"ll" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "lm" = (/obj/structure/closet/wardrobe,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "ln" = (/obj/structure/window/reinforced{dir = 1},/turf/open/space/basic,/area/space)
 "lo" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
-"lp" = (/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"lq" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"lr" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"lp" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
+"lq" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
+"lr" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "ls" = (/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
 "lt" = (/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "lu" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
@@ -614,7 +614,7 @@
 "lP" = (/obj/machinery/door/airlock/maintenance{name = "Atmospherics Access"; req_access_txt = "24"},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "lQ" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/turf/open/floor/plasteel,/area/science/research/lobby)
 "lR" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"lS" = (/obj/effect/turf_decal/loading_area{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"lS" = (/obj/structure/sign/departments/holy{pixel_x = -32; pixel_y = 32},/turf/open/floor/plasteel,/area/hallway/primary/port)
 "lT" = (/obj/machinery/atmospherics/components/unary/portables_connector/visible{dir = 4},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
 "lU" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "lV" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 5},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
@@ -629,8 +629,8 @@
 "me" = (/obj/machinery/light/small{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "mf" = (/obj/structure/window/reinforced/spawner/north,/obj/effect/turf_decal/stripes/white/line{icon_state = "warningline_white"; dir = 1},/turf/open/floor/plasteel/white,/area/medical/genetics)
 "mg" = (/obj/machinery/door/airlock/public/glass{name = "Med-Sci"; req_access_txt = "9"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel/white,/area/medical/genetics)
-"mh" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"mi" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"mh" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
+"mi" = (/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "mj" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "mk" = (/turf/open/floor/plasteel/airless{icon_state = "floorscorched1"},/area/ruin/space/derelict/atmospherics)
 "ml" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/hallway/primary/central)
@@ -642,13 +642,13 @@
 "mr" = (/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/atmospherics)
 "ms" = (/turf/open/floor/plasteel/airless{icon_state = "damaged4"},/area/ruin/space/derelict/atmospherics)
 "mt" = (/obj/structure/window/reinforced/spawner/north,/obj/structure/window/reinforced/spawner/east,/obj/effect/turf_decal/stripes/white/line{icon_state = "warningline_white"; dir = 10},/turf/open/floor/plasteel/white,/area/medical/genetics)
-"mu" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"mu" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "mv" = (/obj/item/stack/rods,/turf/open/space/basic,/area/space)
 "mw" = (/obj/structure/frame/computer,/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
 "mx" = (/obj/machinery/portable_atmospherics/canister,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
 "my" = (/obj/machinery/light/small,/turf/open/floor/plasteel/airless{icon_state = "damaged5"},/area/ruin/space/derelict/atmospherics)
 "mz" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/open/floor/plating,/area/space/nearstation)
-"mA" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/atmospherics)
+"mA" = (/turf/open/floor/plating/airless,/area/security/brig)
 "mB" = (/obj/machinery/power/apc{name = "Worn-out APC"; pixel_y = -24},/obj/structure/cable,/obj/effect/turf_decal/tile/blue{dir = 8},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "mC" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "mD" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/effect/turf_decal/caution/stand_clear{icon_state = "stand_clear"; dir = 8},/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 4},/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel/dark,/area/science)
@@ -662,37 +662,37 @@
 "mL" = (/obj/structure/window/reinforced,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "mM" = (/obj/item/shard{icon_state = "medium"},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
 "mN" = (/turf/open/floor/plasteel/airless{icon_state = "damaged1"},/area/ruin/space/derelict/atmospherics)
-"mO" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"mO" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plating/airless,/area/security/brig)
 "mP" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "mQ" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance{lootcount = 8; name = "8maintenance loot spawner"},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "mR" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/effect/turf_decal/caution/stand_clear{icon_state = "stand_clear"; dir = 4},/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 4},/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/derelict/arrival)
-"mS" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on,/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"mS" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "mT" = (/obj/machinery/light/small,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
 "mU" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "mV" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "mW" = (/turf/closed/wall/r_wall,/area/maintenance/central)
 "mX" = (/turf/closed/wall/r_wall,/area/security)
-"mY" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"mZ" = (/obj/item/stack/cable_coil/cut/red,/turf/open/space/basic,/area/ruin/space/derelict/atmospherics)
+"mY" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
+"mZ" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel/airless,/area/security/brig)
 "na" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/medical{name = "Medical"},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/effect/turf_decal/delivery/white,/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
 "nb" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating/airless,/area/maintenance/central)
 "nc" = (/obj/machinery/power/apc{areastring = "/area/ruin/space/derelict/atmospherics"; dir = 1; name = "Worn-out APC"; pixel_y = 24},/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
 "nd" = (/turf/closed/wall,/area/storage/auxiliary)
-"ne" = (/turf/open/floor/plating/airless,/area/storage/auxiliary)
-"nf" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/teleporter)
+"ne" = (/turf/open/floor/plasteel/dark,/area/crew_quarters/dorms)
+"nf" = (/turf/closed/wall/r_wall,/area/crew_quarters/dorms)
 "ng" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 4},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 1},/turf/open/floor/plating/airless,/area/crew_quarters/dorms)
-"nh" = (/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/storage/auxiliary)
+"nh" = (/turf/closed/wall,/area/crew_quarters/toilet)
 "ni" = (/obj/effect/decal/cleanable/blood/splatter,/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
-"nj" = (/turf/closed/wall,/area/crew_quarters/cryopod)
+"nj" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/hallway/primary/port)
 "nk" = (/obj/structure/chair/stool,/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
-"nl" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plating/airless,/area/storage/auxiliary)
+"nl" = (/turf/open/floor/plasteel,/area/crew_quarters/toilet)
 "nm" = (/turf/closed/wall,/area/hallway/primary/aft)
 "nn" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "no" = (/turf/closed/wall/r_wall,/area/hallway/primary/aft)
 "np" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "nq" = (/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
-"nr" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
-"ns" = (/obj/structure/girder,/turf/open/floor/plating/airless,/area/storage/auxiliary)
+"nr" = (/obj/structure/door_assembly/door_assembly_mai{name = "airlock assembly"},/turf/open/floor/plating,/area/security/brig)
+"ns" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/door/airlock/maintenance{name = "Aux Storage"; req_access_txt = "23"},/turf/open/floor/plasteel,/area/storage/auxiliary)
 "nt" = (/obj/machinery/vending/clothing,/turf/open/floor/plating/airless,/area/crew_quarters/dorms)
 "nu" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/effect/turf_decal/tile/purple,/obj/effect/turf_decal/tile/purple{dir = 8},/obj/effect/turf_decal/tile/purple{dir = 4},/turf/open/floor/plasteel/airless,/area/science/research/lobby)
 "nv" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 1},/turf/open/floor/plating,/area/hallway/primary/aft)
@@ -711,7 +711,7 @@
 "nI" = (/obj/structure/girder/reinforced,/turf/open/floor/plating/airless,/area/ruin/space/derelict/se_solar)
 "nJ" = (/obj/structure/cable{icon_state = "2-4"},/turf/closed/wall/r_wall,/area/ruin/space/derelict/se_solar)
 "nK" = (/obj/structure/cable{icon_state = "4-8"},/turf/closed/wall/r_wall,/area/ruin/space/derelict/se_solar)
-"nL" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"nL" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "nM" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating/airless,/area/ruin/space/derelict/se_solar)
 "nN" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/plaque{icon_state = "derelict12"},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
 "nO" = (/obj/machinery/power/smes,/obj/structure/cable,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
@@ -719,7 +719,7 @@
 "nQ" = (/turf/open/floor/plasteel/airless{icon_state = "damaged4"},/area/ruin/space/derelict/se_solar)
 "nR" = (/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "nS" = (/obj/structure/reagent_dispensers/fueltank,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
-"nT" = (/turf/open/space/basic,/area/storage/auxiliary)
+"nT" = (/turf/open/floor/plasteel,/area/storage/auxiliary)
 "nU" = (/obj/machinery/power/terminal{dir = 1},/obj/structure/cable{icon_state = "0-2"},/obj/item/drone_shell/dusty,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "nV" = (/turf/open/floor/plating/airless,/area/ruin/space/derelict/se_solar)
 "nW" = (/obj/machinery/vending/hydronutrients,/turf/open/floor/plasteel/airless,/area/security)
@@ -758,10 +758,10 @@
 "oD" = (/obj/machinery/power/tracker,/obj/structure/cable,/turf/open/floor/plasteel/airless,/area/solar/derelict_aft)
 "oE" = (/obj/structure/frame/computer{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "oF" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/machinery/door/airlock/maintenance,/turf/open/floor/plating,/area/science/research/lobby)
-"oG" = (/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"oG" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "oH" = (/obj/item/ammo_casing/a357{pixel_x = -5},/obj/item/ammo_casing/a357{pixel_x = 5; pixel_y = 6},/obj/item/ammo_casing/a357,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "oI" = (/obj/machinery/light{dir = 1},/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/obj/structure/closet/wardrobe/mixed,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
-"oJ" = (/obj/structure/lattice,/turf/open/space/basic,/area/storage/auxiliary)
+"oJ" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/turf/open/floor/plasteel,/area/storage/auxiliary)
 "oK" = (/obj/structure/lattice,/turf/open/space/basic,/area/ruin/space/derelict/se_solar)
 "oL" = (/obj/structure/cable,/obj/structure/lattice/catwalk,/turf/open/space/basic,/area/solar/derelict_aft)
 "oM" = (/obj/structure/cable{icon_state = "0-2"},/obj/structure/lattice/catwalk,/turf/open/space/basic,/area/solar/derelict_aft)
@@ -777,15 +777,15 @@
 "oW" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/plaque{icon_state = "derelict13"},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
 "oX" = (/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "oY" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,/turf/open/floor/plasteel,/area/science)
-"oZ" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"pa" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"oZ" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
+"pa" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "pb" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/plaque{icon_state = "derelict14"},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
 "pc" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/plaque{icon_state = "derelict15"},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
 "pd" = (/obj/machinery/light/small{dir = 1},/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/plaque{icon_state = "derelict16"},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
 "pe" = (/obj/item/storage/toolbox/electrical{pixel_x = 1; pixel_y = -1},/turf/open/floor/plasteel/airless,/area/storage/tech)
 "pf" = (/obj/structure/cable{icon_state = "2-8"},/obj/structure/sign/departments/security{pixel_x = 32},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "pg" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating/airless,/area/storage/tech)
-"ph" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/crew_quarters/locker)
+"ph" = (/obj/machinery/door/window{base_state = "right"; dir = 4; icon_state = "right"},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "pi" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "pj" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "pk" = (/obj/structure/table,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
@@ -799,7 +799,7 @@
 "ps" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "2-8"},/turf/open/space/basic,/area/solar/derelict_starboard)
 "pt" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "0-2"},/turf/open/space/basic,/area/solar/derelict_starboard)
 "pu" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-2"},/turf/open/space/basic,/area/solar/derelict_starboard)
-"pv" = (/turf/closed/wall,/area/storage/tools)
+"pv" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "pw" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/door/firedoor,/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 4},/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 8},/turf/open/floor/plasteel/dark,/area/hallway/primary/central)
 "px" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating,/area/hallway/primary/aft)
 "py" = (/obj/effect/turf_decal/plaque{icon_state = "derelict1"},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
@@ -811,28 +811,28 @@
 "pE" = (/obj/effect/turf_decal/plaque{icon_state = "derelict7"},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
 "pF" = (/obj/effect/turf_decal/plaque{icon_state = "derelict8"},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
 "pG" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/door/firedoor,/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 8},/obj/effect/turf_decal/stripes{icon_state = "warningline"; dir = 4},/turf/open/floor/plasteel/dark,/area/hallway/primary/central)
-"pH" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/crew_quarters/cryopod)
+"pH" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/port)
 "pI" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating/airless,/area/hallway/primary/aft)
 "pJ" = (/obj/effect/spawner/structure/window/hollow/reinforced/end,/turf/open/floor/plating,/area/hallway/primary/aft)
-"pK" = (/obj/structure/door_assembly/door_assembly_mai{name = "airlock assembly"},/turf/open/floor/plating,/area/ruin/space/derelict/atmospherics)
-"pL" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/closed/wall,/area/storage/tools)
+"pK" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/security/brig)
+"pL" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "pM" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/window/reinforced{dir = 8},/obj/effect/turf_decal/stripes/white/line{icon_state = "warningline_white"; dir = 8},/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
 "pN" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,/turf/open/floor/plasteel,/area/hallway/primary/aft)
 "pO" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plating/airless,/area/space/nearstation)
 "pP" = (/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating/airless,/area/space/nearstation)
 "pQ" = (/obj/machinery/door/window,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
-"pR" = (/obj/machinery/door/window,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/storage/tools)
+"pR" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 1},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "pS" = (/obj/machinery/door/airlock/security{name = "Security"; req_access_txt = "1"},/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/machinery/door/firedoor,/turf/open/floor/plasteel/airless,/area/security)
 "pT" = (/obj/structure/window/fulltile,/turf/open/floor/plating,/area/science)
 "pU" = (/turf/open/floor/plasteel,/area/science)
 "pV" = (/obj/machinery/door/window,/turf/open/floor/plasteel/airless,/area/security)
 "pW" = (/obj/machinery/door/window{dir = 4; req_access_txt = "25"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/central)
-"pX" = (/turf/open/floor/plasteel,/area/storage/tools)
+"pX" = (/obj/item/stack/cable_coil/cut/red,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "pY" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "pZ" = (/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/hallway/primary/central)
-"qa" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/teleporter)
-"qb" = (/obj/machinery/door/airlock/command{name = "Teleporter Room"},/turf/open/floor/plasteel/airless,/area/teleporter)
-"qc" = (/turf/open/floor/plasteel,/area/crew_quarters/cryopod)
+"qa" = (/turf/closed/wall/r_wall,/area/hallway/primary/port)
+"qb" = (/obj/machinery/door/airlock/command{name = "Teleporter Room"},/turf/open/floor/plasteel/airless,/area/hallway/primary/port)
+"qc" = (/turf/open/space/basic,/area/crew_quarters/dorms)
 "qd" = (/obj/structure/lattice,/obj/item/stack/cable_coil/cut/red,/turf/open/space/basic,/area/ruin/space/derelict/se_solar)
 "qe" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/central)
 "qf" = (/obj/machinery/light/small{dir = 1},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/central)
@@ -852,14 +852,14 @@
 "qt" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "qu" = (/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "qv" = (/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/hallway/primary/central)
-"qw" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/storage/tools)
+"qw" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "qx" = (/obj/docking_port/stationary{dheight = 0; dir = 2; dwidth = 11; height = 22; id = "whiteship_z4"; name = "KSS13: Derelict"; width = 35},/turf/open/space/basic,/area/space)
-"qy" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/storage/tools)
-"qz" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/storage/tools)
-"qA" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 1},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/storage/tools)
-"qB" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/storage/tools)
-"qC" = (/obj/structure/table,/turf/open/floor/plasteel,/area/storage/tools)
-"qD" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/atmospherics)
+"qy" = (/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
+"qz" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/storage/auxiliary)
+"qA" = (/turf/open/space/basic,/area/hallway/primary/aft)
+"qB" = (/turf/open/floor/plasteel/dark,/area/hallway/primary/aft)
+"qC" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/storage/auxiliary)
+"qD" = (/obj/structure/window/reinforced/spawner/east,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "qE" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "qF" = (/obj/structure/cable,/obj/machinery/power/apc{name = "Worn-out APC"; pixel_y = -24},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/hallway/primary/central)
 "qG" = (/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/hallway/primary/central)
@@ -882,7 +882,7 @@
 "qX" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,/turf/open/floor/plating,/area/maintenance/central)
 "qY" = (/obj/item/stack/rods,/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,/turf/open/floor/plating,/area/maintenance/central)
 "qZ" = (/obj/item/wirecutters,/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,/turf/open/floor/plating,/area/maintenance/central)
-"ra" = (/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"ra" = (/turf/open/floor/plating,/area/hallway/primary/aft)
 "rb" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,/obj/machinery/door/airlock/maintenance,/turf/open/floor/plating,/area/hallway/primary/aft)
 "rc" = (/turf/open/floor/plasteel,/area/hallway/primary/aft)
 "rd" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/aft)
@@ -921,13 +921,12 @@
 "rK" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{icon_state = "intact"; dir = 5},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "rL" = (/obj/machinery/door/airlock/medical{name = "Medical"},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/effect/turf_decal/delivery/white,/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
 "rM" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/primary/central)
-"rN" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating,/area/crew_quarters/cryopod)
+"rN" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/hallway/primary/aft)
 "rO" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/science/research/lobby)
 "rP" = (/obj/structure/window/reinforced/spawner/north,/obj/structure/window/reinforced/spawner/east,/obj/effect/turf_decal/stripes/white/line{icon_state = "warningline_white"; dir = 10},/turf/open/floor/plasteel,/area/medical/genetics)
 "rQ" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/crew_quarters/dorms)
-"rR" = (/turf/open/floor/plasteel/airless,/area/space)
-"rS" = (/turf/open/floor/plating,/area/space)
-"rT" = (/turf/closed/wall,/area/maintenance/solars/port/aft)
+"rS" = (/obj/machinery/door/airlock/public/glass{name = "Chapel"},/turf/open/floor/plasteel/chapel,/area/ruin/space/derelict/medical/chapel)
+"rT" = (/obj/machinery/door/airlock/public/glass{name = "Chapel"},/turf/open/floor/plasteel/chapel{dir = 8},/area/ruin/space/derelict/medical/chapel)
 "rU" = (/obj/structure/table,/obj/item/stock_parts/cell,/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "rV" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance,/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/turf/open/floor/plasteel,/area/crew_quarters/dorms)
 "rW" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/bed/roller,/obj/effect/turf_decal/stripes/white/line{icon_state = "warningline_white"; dir = 8},/turf/open/floor/plasteel/white,/area/medical/medbay/lobby)
@@ -955,19 +954,12 @@
 "ss" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel/airless,/area/security/brig)
 "st" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden,/turf/open/floor/plasteel/airless,/area/security/brig)
 "su" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/closed/wall,/area/security/brig)
-"sv" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/maintenance/solars/port/aft)
-"sw" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating,/area/maintenance/solars/port/aft)
+"sv" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plating/airless,/area/security)
+"sw" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 10},/turf/open/floor/plasteel,/area/storage/auxiliary)
 "sx" = (/obj/structure/cable{icon_state = "1-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{icon_state = "manifold"; dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/plasteel,/area/hallway/primary/aft)
 "sy" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/hallway/primary/aft)
-"sz" = (/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
-"sA" = (/turf/open/floor/plating,/area/maintenance/solars/port/aft)
-"sB" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/turf/open/floor/plating/airless,/area/storage/auxiliary)
-"sC" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/storage/auxiliary)
-"sD" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/storage/auxiliary)
-"sE" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 10},/turf/open/floor/plasteel/airless,/area/storage/auxiliary)
-"sF" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 1},/turf/open/floor/plating/airless,/area/storage/auxiliary)
-"sG" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/storage/auxiliary)
-"sH" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel/airless,/area/storage/auxiliary)
+"sz" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 1},/turf/open/floor/plasteel,/area/storage/auxiliary)
+"sA" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/storage/auxiliary)
 "sI" = (/obj/machinery/door/airlock/maintenance{name = "Aux Storage"; req_access_txt = "23"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plating/airless,/area/storage/auxiliary)
 "sJ" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 4},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
 "sK" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/plasteel/airless,/area/hallway/primary/aft)
@@ -986,9 +978,7 @@
 "sX" = (/obj/structure/window/fulltile,/turf/open/space/basic,/area/ruin/space/derelict/atmospherics)
 "sY" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 1},/turf/open/floor/plasteel,/area/science/research/lobby)
 "sZ" = (/turf/open/space/basic,/area/ruin/space/derelict/atmospherics)
-"ta" = (/obj/structure/sign/directions/science{pixel_y = 8},/turf/closed/wall,/area/ruin/space/derelict/hallway/primary)
 "tb" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/science/research/lobby)
-"tc" = (/obj/structure/sign/directions/command{icon_state = "direction_bridge"; dir = 1},/obj/structure/sign/directions/engineering{dir = 1; pixel_x = 0; pixel_y = 8},/turf/closed/wall,/area/ruin/space/derelict/hallway/primary)
 "td" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/science/research/lobby)
 "te" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/science/research/lobby)
 "tf" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/science/research/lobby)
@@ -1018,8 +1008,8 @@
 "tD" = (/obj/structure/closet/wardrobe/genetics_white,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/turf/open/floor/plasteel/white,/area/medical/genetics)
 "tE" = (/obj/structure/lattice,/turf/open/space/basic,/area/ruin/space/derelict/atmospherics)
 "tF" = (/turf/open/floor/plasteel,/area/medical/genetics)
-"tG" = (/obj/item/stack/cable_coil/cut/red,/turf/open/floor/plasteel,/area/storage/tools)
-"tH" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/storage/tools)
+"tG" = (/turf/open/space/basic,/area/security/brig)
+"tH" = (/obj/structure/lattice,/turf/open/space/basic,/area/security/brig)
 "tI" = (/turf/open/floor/plasteel,/area/security)
 "tJ" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/security)
 "tK" = (/obj/item/stack/rods,/turf/open/floor/plasteel,/area/security)
@@ -1028,7 +1018,7 @@
 "tN" = (/obj/effect/turf_decal/tile/purple,/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/plasteel/white,/area/medical/genetics/cloning)
 "tO" = (/obj/effect/turf_decal/tile/purple{dir = 1},/obj/effect/turf_decal/tile/purple,/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/white,/area/medical/genetics/cloning)
 "tP" = (/obj/effect/turf_decal/tile/purple,/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/white,/area/medical/genetics/cloning)
-"tQ" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/turf/open/floor/plasteel,/area/storage/tools)
+"tQ" = (/obj/item/stack/cable_coil/cut/red,/turf/open/space/basic,/area/security/brig)
 "tR" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/turf/open/floor/plasteel,/area/hallway/primary/aft)
 "tS" = (/obj/effect/turf_decal/caution/stand_clear{dir = 1; icon_state = "stand_clear"; pixel_y = 0},/turf/open/floor/plasteel,/area/hallway/primary/aft)
 "tT" = (/obj/structure/transit_tube{dir = 4},/turf/open/floor/plating/airless,/area/space/nearstation)
@@ -1073,17 +1063,6 @@
 "uG" = (/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 6},/turf/open/floor/plasteel,/area/hallway/primary/aft)
 "uH" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "uI" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 5},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
-"uJ" = (/turf/closed/wall,/area/storage/emergency/port)
-"uK" = (/turf/open/floor/plasteel,/area/storage/emergency/port)
-"uL" = (/obj/structure/table,/turf/open/floor/plasteel,/area/storage/emergency/port)
-"uM" = (/turf/closed/wall,/area/security/checkpoint/auxiliary)
-"uN" = (/turf/open/floor/plating,/area/security/checkpoint/auxiliary)
-"uO" = (/turf/open/floor/plasteel,/area/security/checkpoint/auxiliary)
-"uP" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"uQ" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"uR" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"uS" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/crew_quarters/locker)
-"uT" = (/obj/machinery/door/window{base_state = "right"; dir = 4; icon_state = "right"},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/crew_quarters/locker)
 "vf" = (/obj/structure/grille,/turf/open/floor/plating/airless,/area/space/nearstation)
 "wK" = (/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/se_solar)
 "DE" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 1},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
@@ -1293,49 +1272,49 @@ aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfHdrdrdrdrdrezezfsfafafafafafafafafafa
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEeLeLdrdrdrhngIgKfafafafafafafafafafafPgJdXezdrdrdrbNbNbNbNbNeVglfCfCfCfCiFcKcKcKgacxgdcsgRhEhEhEhEgRjEhEjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEeLeLhxhnjmhnhngSfafafagTfafafagTgTgTkigZdPdPdrdrhybNgpgpgpgefTgpgpgpgpgpgbgfcxcxcFcxcxcsgRhEhEhEhEgRjEhEjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEeLeLdrdrgYhnhnhnhwgKfdfIezezezfNevevewdOdOezdrdrbRgxgyiFiFiFmCgggpgkgzgkhacscxcxgqcxcxcsgRhEhEhEkkgRjEhEjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEhzhzhAhBdrdrhnhnhnhnhnhoezdOdOfWezezdOdPdXezezdrdrgAbNgUgpgpnCnCnCnZnCnCnCnCcscscscscscscsgRhEhEhErfgRjErkjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEhzhOhQdrdrdrdrhnhnezezdOdPdPdPdOezezdOdPdrdrdrdrgAbNgUgpgpnCulululnCunurusfZgOgLcscschaygRrkutuukkgRjEkkjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEhzidhJhJhKdrdrdrdrdrdrezhNdXdOezdrdrdrdrdrdrhyhyhybNgUgpgpnCulululululululfZfZayaygCchaygRkkrfrkuvgRjEuwjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEgXgXgXgXgXgXgXgXgXgXgXgXgXaEaEaEaEaEaEaEhLhLhLhLidhJhKdrdrdrdrdrdrdWdrdrdrdrdrdrhyhyhyhyhybNgUgpgpnCululululuxulnCfZfZaygrgrchayhdhdhdhdhdhdhehehevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEgXhjhjhjhjhkhkhkhkhkhlhjgXaEaEaEaEaEaEaEhLipiuhLhLhAhOhVaEaEdrdriminiodrdraEaEaghyhyhyhyhybNgUgpgpnCnCnCnZnCnCnCnChghghghghghghghehhhihphqhphrhshevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEgXgXgXhjhthkhkhkgXgXhugXgXhmhmhWhWikikikhLiNicjgjsizitizizizizdrdrdrdrdrtCtCtChvhvhvhvhvhvbNgUgpiEtcirishCiDhgiGiGiGiGiGiGiGiGiGheiPhhiPhphphshphevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEiLgXhFgXgXgXgXgXhGgXhHhMhZhMhMhMhWiQiAiAiBhLiRiljAfbkfiMkokolciOiOiOiOiOiOtCsNsNiyiyiyiyiyhvgpgUgpiTjphChChClSiGiGiGiGiGiGiGiGiGiGjqhphphphphphphphevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEjhhRhShThShUhShThSgXhHhMhHhMhHhMhWjriAiAjxhLlhliuejBuhiYiZiZuijbjOljaktLtMtCsNsNiyiyiyiyiyhvgpgUgpjTtajzjVjVhChchchchchchchchchchchchphpuyhphphphphevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEhzhzhzhzhzhzhzhzhzhAhBdrdrhnhnhnhnhnhoezdOdOfWezezdOdPdXezezdrdrgAbNgUgpgpnCnCnCnZnCnCnCnCcscscscscscscsgRhEhEhErfgRjErkjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEhzaEaEaEaEaEaEaEhzhOhQdrdrdrdrhnhnezezdOdPdPdPdOezezdOdPdrdrdrdrgAbNgUgpgpnCulululnCunurusnCayfZcscsnCfZgRrkutuukkgRjEkkjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEhzaEaEaEaEaEaEaEhzidhJhJhKdrdrdrdrdrdrezhNdXdOezdrdrdrdrdrdrhyhyhybNgUgpgpnCulululululululnCnCfZfZgrnCfZgRkkrfrkuvgRjEuwjEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEgXgXgXgXgXgXgXgXgXgXgXgXgXaEaEaEaEaEaEaEhLhLhLhLidhJhKdrdrdrdrdrdrdWdrdrdrdrdrdrhyhyhyhyhybNgUgpgpnCululululuxulnCnCnCfZgCgCnCfZhdhdhdhdhdhdhehehevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEgXhjhjhjhjhkhkhkhkhkhlhjgXaEaEaEaEaEaEaEhLipiuhLhLhAhOhVaEaEdrdriminiodrdraEaEaghyhyhyhyhybNgUgpgpnCnCnCnZnCnCnCnCnCnCnCnCnCnCnChehhhihphqhphrhshevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEgXgXgXhjhthkhkhkgXgXhugXgXhmhmhWhWikikikhLiNicjgjsizitizizizizdrdrdrdrdrtCtCtChvhvhvhvhvhvbNgUgpiEgLgOhCiGirhgiGiGiGiGiGiGiGiGiGheiPhhiPhphphshphevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEiLgXhFgXgXgXgXgXhGgXhHhMhZhMhMhMhWiQiAiAiBhLiRiljAfbkfiMkokolciOiOiOiOiOiOtCsNsNiyiyiyiyiyhvgpgUgpiTisiGiGiGiDiGiGiGiGiGiGiGiGiGiGjqhphphphphphphphevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEjhhRhShThShUhShThSgXhHhMhHhMhHhMhWjriAiAjxhLlhliuejBuhiYiZiZuijbjOljaktLtMtCsNsNiyiyiyiyiyhvgpgUgpjTjpjzjVjViGhchchchchchchchchchchchphpuyhphphphphevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEjhieifigihiiijiiijgXhHhMhHhMhHhMjfiAiAiAiAkbujujukkcuhjjjkjkbidvjljljljltNtCsNsNiyiyiyiyiyhvgpgUgpgpababababkIhciaibiaiqjGjQjGjRjShchhhhuzhhkShpkThevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 pqkniviwixiwhThShThSgXhHjyhHjDhHhMhWlbiAlkiAhLtYudumufuhiYiZiZuijbtOtPtPtPjlsNsNsNiyiyjajaiChvgpnFgpgpablBlBlBkIhcibiqibibkpkpjGkqiqhclClCuzlClDhphphevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 iHiIiJiJiJiKiiijiiijgXhHhMhHhMhHhMjfiAiAiAiAiAkvkwlAuoupiYiZiZuqiOiOiOiOmdmfmtsNsNiyjoiyiyiyhvbNgcgFbNablBlBlBkIhcibjGkpkpkpkpkpiqkqhchphpuzhplEhhiPhevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 lnmziUiViWiVhTiXhUhSgXhHhMdjjvjwhMhWlbiAiAiAiAmKiZjNiZiZiYiZjFjFktlzmgsNsNsNsNsNsNiyiyiyiypkhvgpnFnpgpablBlBlBkIhciqibkpkpkpkpkpkpiahchehpuzhehehehehevfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEjhieijiijeiiijiiijgXhmhmjchmhmhmhWjriAiAiAjWpMjkjkjkjkpmiZsLsMtCtDtCqMqMtFrPjnpoiyiyiyjohIhvgpnFnpgpablBlQlBlXhchchchchckphchchchchchciSuAgWjdjdjdgWvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEjhhRhShTjujPkgjPkgjLklklkukxkHkOhWmbmcmcmcmBrWjCsQiZiznarLiziztCtCtCtFtFtFrXiyiyhXiyiyhYhIhvgpnFnpjMablBrOlBkIshsOhckeoCpUpUgmgmgmpUhchfuBhfhfhfjtgWaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEiLkQkQkQkQkQkQkQkQkQkQkQkQkUkUkXhWhWhWhWhWhWizizizizizsRsSiziztCtCtCtCtCtCtChIhIhIhIhIhXpphvgpjXrMnnsTsTsUsYtbsTtdkanAkjpUpUpUpUpUpUhcjHuCsgtphfjIgWjJjKaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEkQkWkWkWkWkWkWkWkWnfqakQkUkZlllplplplqlpkZlplpkUlelfnFnplflgbNgpgpgpgpgphvhIhIhvhvhvhvhvhvgpnFkRqelylytetftglythhckekBpUpUpUpUpUkehcgWuDhfhfhfhfjUhPLeaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEkQkWnfkWkWkWkWkWkWkWkWqblplplrmhmimhmulplpmSmYkUlIgpnFnpgpmebNkzkFgpkGgphvhvhvhvgpgpgpojgptinFnpsVablBtjrOlBlBtkhckekLkMkhkhkhkhmDmImRuEuFtohfhftljJjKaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEkQkWkWkWkWkWkWkWkWkWkWkQkUnLoGoZpaphuPuQuQuRuSuTqhqhlFmVmUqepWqemlmUmVqepwqeqfqeqgqhqhpGqhqhpZpfmXmXmXlBrOlBtmnuhckepUpUpUpUpUpUkehcgWnxkrhfhfksgWaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEkQkQkQkQkQkQkQkQkQkQkQkQkUlplpjYqijYpjjYjYjYpQjYgpgplHiFpYiFmmiFrsrtnnnnrunnnnnnrvrwrxryrxrxrzqtmXnWmXmXrOlBaboFhckeoYkepUpUpUpUtnhcgWplgWhfhfkCgWvfvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEfHaEaEaEaEaEaEaEaEaEkUlplpjYqjqlqmqnqoqlqmqnqpqpmEngqqqrqnqsrBqtgpgprCgpgpgpqumXmXmXmXmXmXpSmXpVqkmXqIababqLhcpUoYkepUpUpUpUhchcgWqJgWgWgWgWgWgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEfHaEaEaEaEaEaEaEaEaEkUlplpjYrQgorUjYrQgorVjYhDlGlGmHkYoXjYqvqEqFqGqGrDqGqGqNqHmXtItItJtItIqOqKqKqRqRqSqTqTqPhcpUqUkepTpTpTpThchfkVqVlmjtoIprgVgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEfHaEaEaEaEaEnjpHpHpHnjlplpjYjYjYjYjYjYjYjYjYoXmJninkkYoXlxlxrrrAlxlxlxlxlxlPlxmXtItItItItIrFrGqKqRrHrIrJqTqQhcpUoYkerYrYrYrYhchfhfrKtohfhftqtrgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEfHaEaEaEaEaEnjqcqcqcnjoXoXntkPkPopoqkDorkDjYoXnzocodoloXlxlslRlultlvlwlwlxltlxmXtItItItKtIqKrZsasbrIscsdqTqQhcsepUrYrYrYrYrYhchfhfsfsgsgtphftsgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEfHaEaEaEaEaErNqcqcqcnjoXoXoXoXkPkPkDovkNomjYooosotodkYgnlxlJlKmnlLlMlNlOlxlPlxmXtIsqsqsqsqrEsiqKsbrIsjsdqTqQhcskkekerYrYrYrYhchfhfhfhfhfhfhftsgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfvfvfvfvfvfnjqcqcqcqcoXoXoXoXoXkPkPkPkDkNjYoXoXouowoyoXlxlTlUlVlLlWltlslxlslxmXtIsqsPsPsPrErGqKslrIsjsdqTsmsnsospkerYrYrYrYhchfhfhfhfhfhfhftsgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEaEfHaEaErNqcqcqcqcoXoXoXoXoXoXoXkPkPkPjYoXoXozoAkYoXlxltlsltmamalslslxlPlxmXtIsqsqsqsWrErEqKsrssstsssuqWmWmWmWhcrYrYrYrYhclYlZlYjJjJjJjJttgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaEnjqcqcqcnjoXoXoXoXoXoXoXoXoXkPoBoHlolopipnoXlxmjltltltlsltmklxlPlxmAmAmAmAmAsZsZmOmAmAmAmAmAmAqXmWaEUzUzUzUzUzUzUzpOhPpPUzUzUzUztuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaEnjpHpHpHnjjYoXjYuMuMuMuMuMpvpvpvpvpvpvpLpRpvlxmoltltltltmpmqmrmrmssXsZtEsZmAsZsZsZtEltlslslsmAqYmWaELvaEaEmvaEaELvtvDEtvLvaEaELvtuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaEaEaEaEaEfZhChChCuNuOuOuOuMpXpXpXpXpXpXqwqypXlxmwmxltltltlsmyltltsXtEtEtEmrmAmZsZsZtEltmOltnrpKqZnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftASvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEaErSaEaErTsvsvsvfZhChChCuNuOuOuOuMpXpXpXpXpXqzqAqBqClxmFlsltltltlsltltmrmGsXtEtEtEqDtEtEtEtEsZltltlsmAqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRfHswszszszfZhChChCuOuOuOuOuMpXpXpXpXtGtHpXtQqClxmLmMlsltlsltltltmrmGlxsZsZtEmAsZsZsZtEsZsZltlsmAqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftASvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaEswszszszrahChChCuNuOuOuOuMpXpXpXpXpXtHpXpXqClxltlsltltmNlsltltmGmplxmrsZtEmAmAsZsZtEtEtEmAmAmAqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaEsAszszszfZfZfZhCuMuMuMuMuMpvpvpvpvpvtHpvpvpvlxlsltlsltmGmNltmsmNmpsXmrugtEltltsZsZtEsZsZsZltlxqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftASvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEaErSrSrSsAszszszrTuJuKuKuKuKuKuKuLuLuLndnenesBsCsDsElxltmPmaltltltmQltmpsXtEsZsZtElxsZsZsZtEsZsZltlslxqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvffHrRrSrRaEsAszszszrTuJuKuKuKuKuKuKuKuKuLndnToJsFnenlsGlxlxlxlxmGltlsltltlxlxtEtEtElxlxtEtEtEtEltltlslslxrbnonmnmaEaEaEaEaEaEaEaEaEaEaEUzvftASvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaEsAszszszrTuJuKuKuKuKuKuKuLuLuLndnTnenenenhsHndaEaElxmTmGmGltltlxaEaEaEaEaElxsZsZsZltlslslslslxpNrcrdnmnmaEaEaEaEaEaEaEaEaEaEvfvftuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRfHswszszszrTuJuJuJuJuJuJuJuJuJuJndnsndndndndsIndnmnmnmnmnmnmnmnmnmnmnmnmnmnmlxlxlxlxlxlxlxlxlxlxrercrcrcnvaEaEaEaEaEaEaEaEaEaEvfaEtwaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEaErSaEaEswszszszszrcrcrcrcrcrcrcrcrcrcnwnqnqnqnysJsKnqnqncnDnEnGnHnNoWpbpcpdnDnDnDnDnDnDnDnDnDnDnDuGrgsxsyrcrcpxaEaEaEaEaEaEaEaEaEaEaEtxaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaEswszszszszrcrcrcrcrcrcrcrcrcrcnwnwnwnqnqnqnqnqnqnqnqpypzpApBpCpDpEpFnqnqnqnqnqnqnqnqnqnqnqpNrctRrcrcrcpxaEaEaEaEaEaEaEaEaEaEtyaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaErTsvsvsvrTpIpIpIpInmpIpIpIpIpInmpIpIpIpIpInmpIpIpIpIpInmpIpIpIpIpInmpIpIpIpIpInmpIpIpIpInmpNrcrcrctSrcpJtBtBtBtBtBaEaEaEaEtxaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaErRrSrRaEacacacacacacacacacacacacacacacacacacacacacacacacacacacchacacacacacacacacacacacaYacacacacnBrhnBrcrctUtVtWtTtTtTtTtTtZuatZtzaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEaEfHaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEnBaEaEaEaEnBrinBububnotXSvtXSvucucucaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfvfvfvfvfvfvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEnInVnVnBnJnKrjnBnMnMnBvfSvvfSvaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEjhhRhShTjujPkgjPkgkukxkxkHkOkQkUhWmbmcmcmcmBrWjCsQiZiznarLiziztCtCtCtFtFtFrXiyiyhXiyiyhYhIhvgpnFnpjMablBrOlBkIshsOhckeoCpUpUgmgmgmpUhchfuBhfhfhfjtgWaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEiLjLrSrTjLjLjLjLjLjLjLjLjLjYjYkWhWhWhWhWhWhWizizizizizsRsSiziztCtCtCtCtCtCtChIhIhIhIhIhXpphvgpjXrMnnsTsTsUsYtbsTtdkanAkjpUpUpUpUpUpUhcjHuCsgtphfjIgWjJjKaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEqaklklkllSklklklklnjpHqajYkXkYoXoXoXkZoXkXoXoXjYlelfnFnplflgbNgpgpgpgpgphvhIhIhvhvhvhvhvhvgpnFkRqelylytetftglythhckekBpUpUpUpUpUkehcgWuDhfhfhfhfjUhPLeaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEqaklnjklklklklklklklklqboXoXlllolplolqoXoXlrgnjYlIgpnFnpgpmebNkzkFgpkGgphvhvhvhvgpgpgpojgptinFnpsVablBtjrOlBlBtkhckekLkMkhkhkhkhmDmImRuEuFtohfhftljJjKaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEqaklklklklklklklklklklqajYmhmimumSmYnLoGoGoZpaphqhqhlFmVmUqepWqemlmUmVqepwqeqfqeqgqhqhpGqhqhpZpfmXmXmXlBrOlBtmnuhckepUpUpUpUpUpUkehcgWnxkrhfhfksgWaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEnfnfnfnfnfnfnfnfnfnfnfnfjYoXoXjYqijYpjjYjYjYpQjYgpgplHiFpYiFmmiFrsrtnnnnrunnnnnnrvrwrxryrxrxrzqtmXnWmXmXrOlBaboFhckeoYkepUpUpUpUtnhcgWplgWhfhfkCgWvfvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEjYoXoXoXjYoXoXoXjYoXoXoXjYoXoXjYqjqlqmqnqoqlqmqnqpqpmEngqqqrqnqsrBqtgpgprCgpgpgpqumXmXmXmXmXmXpSmXpVqkmXqIababqLhcpUoYkepUpUpUpUhchcgWqJgWgWgWgWgWgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEjYoXoXoXjYoXoXoXjYoXoXoXjYoXoXjYrQgorUjYrQgorVjYhDlGlGmHkYoXjYqvqEqFqGqGrDqGqGqNqHmXtItItJtItIqOqKqKqRqRqSqTqTqPhcpUqUkepTpTpTpThchfkVqVlmjtoIprgVgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEjYoXjYjYjYoXjYjYjYoXjYjYjYoXoXjYjYjYjYjYjYjYjYjYoXmJninkkYoXlxlxrrrAlxlxlxlxlxlPlxmXtItItItItIrFrGqKqRrHrIrJqTqQhcpUoYkerYrYrYrYhchfhfrKtohfhftqtrgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEqcoXoXoXoXoXoXoXoXoXoXoXjYoXoXntkPkPopoqkDorkDjYoXnzocodoloXlxlslRlultlvlwlwlxltlxmXtItItItKtIqKrZsasbrIscsdqTqQhcsepUrYrYrYrYrYhchfhfsfsgsgtphftsgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEqcoXoXoXoXoXoXoXoXoXoXoXjYoXoXoXoXkPkPkDovkNomjYooosotodkYgnlxlJlKmnlLlMlNlOlxlPlxmXtIsqsqsqsqrEsiqKsbrIsjsdqTqQhcskkekerYrYrYrYhchfhfhfhfhfhfhftsgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEjYjYjYoXjYjYjYoXjYoXoXoXoXoXoXoXoXoXkPkPkPkDkNjYoXoXouowoyoXlxlTlUlVlLlWltlslxlslxmXtIsqsPsPsPrErGqKslrIsjsdqTsmsnsospkerYrYrYrYhchfhfhfhfhfhfhftsgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEjYoXoXoXjYoXoXoXjYoXoXoXoXoXoXoXoXoXoXoXkPkPkPjYoXoXozoAkYoXlxltlsltmamalslslxlPlxmXtIsqsqsqsWrErEqKsrssstsssuqWmWmWmWhcrYrYrYrYhclYlZlYjJjJjJjJttgVvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEjYoXoXoXjYoXoXoXjYoXoXoXjYoXoXoXoXoXoXoXoXoXkPoBoHlolopipnoXlxmjltltltlsltmklxlPlxmXmXmXmXmXsPsPsvmXqRqRqRqRqRqXmWaEUzUzUzUzUzUzUzpOhPpPUzUzUzUztuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEjYjYjYjYjYjYjYjYjYnenenejYjYoXoXjYjYjYjYjYjYjYjYjYjYjYqipQjYlxmoltltltltmpmqmrmrmssXsZtEsZqRtGtGtGtHmArIrIrIqRqYmWaELvaEaEmvaEaELvtvDEtvLvaEaELvtuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEqAqAqAqAjYoXoXoXqDnenenejYoXoXoXoXoXoXpvpjoXlxmwmxltltltlsmyltltsXtEtEtEmrqRtQtGtGtHmAmOmAmZnrqZnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftASvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEnmqBqBqBjYoXoXoXoXnenenejYoXoXoXoXoXpLpRpnoulxmFlsltltltlsltltmrmGsXtEtEtEpKtHtHtHtHtGmAmArIqRqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEpxrcrcrcjYoXoXoXoXnenenejYoXoXoXoXpXmHoXqwoulxmLmMlsltlsltltltmrmGlxsZsZtEqRtGtGtGtHtGtGmArIqRqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftASvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEpxrcrcrcqyoXoXoXqDnenenejYoXoXoXoXoXmHoXoXoulxltlsltltmNlsltltmGmplxmrsZtEqRqRtGtGtHtHtHqRqRqRqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaErarcrcklnhnhnhnlnhnhnhnhnhnhnhnhndndnsndndndlxlsltlsltmGmNltmsmNmpsXmrugtEmAmAtGtGtHtGtGtGmAqTqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftASvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaErarcrcrcnhnlnlnlnlnlnlnlnlnlnlnhnTnToJqzqzswlxltmPmaltltltmQltmpsXtEsZsZtEqTtGtGtGtHtGtGmArIqTqXnbaEaEaEaEaEaEaEaEaEaEaEaEaEaEvftuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaErarcrcrcnhnlnlnlnlnlnlnlnlnlnlnhnTnTsznTsAqClxlxlxlxmGltlsltltlxlxtEtEtElxqTtHtHtHtHmAmArIrIqTrbnonmnmaEaEaEaEaEaEaEaEaEaEaEUzvftASvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaErarcrcrcnhnlnlnlnlnlnlnlnlnlnlnhnTnTnTnTnTqCndaEaElxmTmGmGltltlxaEaEaEaEaEqTtGtGtGmArIrIrIrIqTpNrcrdnmnmaEaEaEaEaEaEaEaEaEaEvfvftuSvvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEpxrcrcrcnhnhnhnhnhnhnhnhnhnhnhnhndndndndndsIndnmnmnmnmnmnmnmnmnmnmnmnmnmnmqTqTqTqTqTqTqTqTqTqTrercrcrcnvaEaEaEaEaEaEaEaEaEaEvfaEtwaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEpxrcrcrcrcrcrcrcrcrcrcrcrcrcrcnwnqnqnqnysJsKnqnqncnDnEnGnHnNoWpbpcpdnDnDnDnDnDnDnDnDnDnDnDuGrgsxsyrcrcpxaEaEaEaEaEaEaEaEaEaEaEtxaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEpxrcrcrcrcrcrcrcrcrcrcrcrcrcrcnwnwnwnqnqnqnqnqnqnqnqpypzpApBpCpDpEpFnqnqnqnqnqnqnqnqnqnqnqpNrctRrcrcrcpxaEaEaEaEaEaEaEaEaEaEtyaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEnmrNrNrNnmpIpIpIpInmpIpIpIpIpInmpIpIpIpIpInmpIpIpIpIpInmpIpIpIpIpInmpIpIpIpIpInmpIpIpIpInmpNrcrcrctSrcpJtBtBtBtBtBaEaEaEaEtxaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEacacacacacacacacacacacacacacacacacacacacacacacacacacacchacacacacacacacacacacacaYacacacacnBrhnBrcrctUtVtWtTtTtTtTtTtZuatZtzaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEnBaEaEaEaEnBrinBububnotXSvtXSvucucucaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEnInVnVnBnJnKrjnBnMnMnBvfSvvfSvaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEoKoKnVnBnOnBuHnQnRnSnBvfSvvfSvaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEqxaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEoKnVnVnBnUnVuIrlnXnRnBvfSvvfSvaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfHqdnVwKnBnYnBrmnRoaobnBvfSvvfSvaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
@@ -1349,8 +1328,8 @@ aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEoxoxoxaEoNaEoxoxoxaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaEaEaEoUaEaEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEonononaEoNaEonononaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-cLcLcLcLcLcLcLcLcLcLaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvffHoOoPoPoVoRoVoSoSoTfHvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-cLcLcLcLcLcLcLcLcLcLaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEoxoxoxaEoNaEoxoxoxaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-cLcLcLcLcLcLcLcLcLcLaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaEaEaEoDaEaEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-cLcLcLcLcLcLcLcLcLcLaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfvfvfvfvfvfvfvfvfvfvfvfvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvffHoOoPoPoVoRoVoSoSoTfHvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEoxoxoxaEoNaEoxoxoxaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaEaEaEoDaEaEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfvfvfvfvfvfvfvfvfvfvfvfvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 "}
