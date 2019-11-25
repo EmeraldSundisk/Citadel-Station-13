@@ -14,6 +14,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
+#include "_maps\map_files\salvagestation.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\__513_compatibility.dm"
@@ -3133,12 +3134,9 @@
 #include "F:\Games\GITHUBHARD\UNGA\Blinstation.dmm"
 #include "F:\Games\GITHUBHARD\UNGA\BlinStation2.dmm"
 #include "F:\Games\GITHUBHARD\UNGA\chrimbus.dmm"
-<<<<<<< Updated upstream
-#include "F:\Games\GITHUBHARD\Firestorm.dmm"
-=======
 #include "F:\Games\GITHUBHARD\UNGA\chrimbus2.dmm"
 #include "F:\Games\GITHUBHARD\EchoStation.dmm"
->>>>>>> Stashed changes
+#include "F:\Games\GITHUBHARD\Firestorm.dmm"
 #include "F:\Games\GITHUBHARD\UNGA\Infernus.dmm"
 #include "F:\Games\GITHUBHARD\UNGA\InfernusStation.dmm"
 #include "F:\Games\GITHUBHARD\UNGA\OhmStation.dmm"
