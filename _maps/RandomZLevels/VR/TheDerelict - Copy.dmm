@@ -53,7 +53,7 @@
 "ba" = (/obj/machinery/power/apc/unlocked{dir = 8; environ = 0; equipment = 0; lighting = 0; name = "Starboard Solar APC"; pixel_x = -24},/obj/structure/cable,/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel,/area/maintenance/solars/starboard)
 "bb" = (/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/maintenance/solars/starboard)
 "bc" = (/obj/machinery/door/airlock/external{name = "External Engineering"},/turf/open/floor/plating,/area/maintenance/solars/starboard)
-"bd" = (/obj/structure/grille/broken,/turf/open/floor/plating/airless,/area/space/nearstation)
+"bd" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
 "be" = (/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
 "bf" = (/obj/structure/window/reinforced{dir = 4},/obj/machinery/porta_turret_cover,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
 "bg" = (/obj/machinery/porta_turret_cover,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
@@ -140,7 +140,7 @@
 "cJ" = (/obj/structure/rack,/obj/item/clothing/head/helmet/swat,/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "cK" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "cL" = (/turf/open/space/basic,/area/ruin/unpowered/no_grav)
-"cM" = (/obj/structure/rack,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
+"cM" = (/obj/machinery/camera{c_tag = "Brig Equipment Room"; dir = 4},/turf/open/floor/plasteel,/area/maintenance/solars/starboard)
 "cN" = (/obj/structure/rack,/obj/item/electronics/apc,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage/engine_storage)
 "cO" = (/turf/open/floor/plasteel,/area/engine/engineering)
 "cP" = (/turf/closed/wall,/area/engine/engineering)
@@ -166,10 +166,10 @@
 "dj" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "dk" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "dl" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
-"dm" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plating,/area/ruin/space/derelict/bridge/access)
+"dm" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance,/obj/machinery/camera{c_tag = "MiniSat Antechamber"; dir = 4; network = list("minisat"); start_active = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
 "dn" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
-"do" = (/obj/machinery/door/firedoor,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
-"dp" = (/obj/machinery/door/airlock/public/glass,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"do" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/obj/machinery/camera{c_tag = "MiniSat Antechamber"; dir = 4; network = list("minisat"); start_active = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
+"dp" = (/obj/structure/rack,/obj/effect/spawner/lootdrop/maintenance,/obj/machinery/camera{c_tag = "Primary Tool Storage"},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "dq" = (/obj/item/reagent_containers/food/drinks/beer,/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "dr" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/singularity_engine)
 "ds" = (/obj/structure/frame/machine,/obj/item/stack/sheet/glass,/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
@@ -178,13 +178,13 @@
 "dv" = (/obj/structure/cable,/obj/machinery/power/apc{name = "Worn-out APC"; pixel_y = -24},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "dw" = (/obj/structure/window/reinforced,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "dx" = (/obj/machinery/door/window,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
-"dy" = (/obj/structure/window/reinforced,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"dy" = (/obj/structure/rack,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage/engine_storage)
 "dz" = (/turf/closed/wall,/area/ruin/space/derelict/bridge)
 "dA" = (/obj/structure/sign/warning/electricshock,/turf/closed/wall/r_wall,/area/ruin/space/derelict/singularity_engine)
 "dB" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
 "dC" = (/obj/machinery/door/airlock/engineering{name = "Engineering Access"; req_access_txt = "10"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
 "dD" = (/obj/structure/sign/warning/securearea{name = "ENGINEERING ACCESS"},/turf/closed/wall/r_wall,/area/ruin/space/derelict/gravity_generator)
-"dE" = (/obj/structure/rack,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/obj/item/stock_parts/cell/high,/turf/open/floor/plating,/area/ruin/space/derelict/storage/engine_storage)
+"dE" = (/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "dF" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "dG" = (/obj/structure/frame/computer,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "dH" = (/obj/structure/frame/computer,/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
@@ -203,7 +203,7 @@
 "dU" = (/obj/item/wallframe/apc,/obj/structure/cable,/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
 "dV" = (/obj/structure/table,/obj/item/paper/fluff/ruins/thederelict/equipment,/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
 "dW" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
-"dX" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
+"dX" = (/obj/structure/cable{icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 6},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 6},/turf/open/floor/plating,/area/ruin/space/derelict/bridge/access)
 "dY" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating,/area/ruin/space/derelict/bridge/access)
 "dZ" = (/obj/item/reagent_containers/food/drinks/beer,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "ea" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
@@ -213,7 +213,7 @@
 "ee" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance,/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "ef" = (/obj/item/stack/medical/bruise_pack,/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "eg" = (/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
-"eh" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/hallway/primary)
+"eh" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "ei" = (/obj/structure/window/reinforced/spawner/north,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "ej" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
 "ek" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
@@ -221,19 +221,19 @@
 "em" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
 "en" = (/obj/machinery/power/emitter{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
 "eo" = (/obj/machinery/field/generator,/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
-"ep" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/window/reinforced,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"ep" = (/obj/machinery/door/firedoor,/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "eq" = (/obj/structure/window/reinforced/fulltile,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "er" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "es" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "et" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
-"eu" = (/obj/item/stack/rods,/turf/open/floor/plating/airless,/area/ruin/unpowered/no_grav)
+"eu" = (/obj/machinery/door/airlock/public/glass,/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "ev" = (/obj/machinery/portable_atmospherics/canister/toxins,/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
 "ew" = (/obj/machinery/airalarm{pixel_y = 22},/turf/open/floor/plasteel,/area/maintenance/solars/starboard)
 "ex" = (/obj/machinery/door/airlock/public/glass{name = "Primary Tool Storage"},/turf/open/floor/plasteel,/area/storage/primary)
 "ey" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "ez" = (/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/singularity_engine)
 "eA" = (/obj/machinery/light/small{dir = 4},/obj/structure/rack,/obj/item/stack/cable_coil/cut/red,/obj/item/stack/cable_coil/cut/red,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage/engine_storage)
-"eB" = (/obj/machinery/door/window/eastleft{name = "Heads of Staff"; req_access_txt = "19"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"eB" = (/obj/structure/window/reinforced,/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "eC" = (/obj/structure/table,/obj/item/paicard,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "eD" = (/obj/structure/chair/stool,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "eE" = (/obj/structure/table,/obj/item/stock_parts/cell,/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
@@ -352,15 +352,15 @@
 "gN" = (/obj/machinery/camera{c_tag = "Engineering East"; dir = 8},/turf/open/floor/plasteel/chapel{dir = 4},/area/ruin/space/derelict/medical/chapel)
 "gO" = (/obj/structure/girder,/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/primary)
 "gP" = (/obj/structure/table,/obj/item/stock_parts/cell{charge = 100; maxcharge = 15000},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/storage/equipment)
-"gQ" = (/obj/structure/lattice,/turf/template_noop,/area/crew_quarters/heads/captain/private)
+"gQ" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/window/reinforced,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "gR" = (/obj/machinery/camera{c_tag = "Engineering East"; dir = 8},/turf/open/floor/plasteel/dark,/area/ruin/space/derelict/medical/morgue)
 "gS" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
-"gT" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/primary)
-"gU" = (/obj/item/storage/toolbox/electrical{pixel_x = 1; pixel_y = -1},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/storage/equipment)
+"gT" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"gU" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "gV" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/arrival)
 "gW" = (/turf/closed/wall,/area/ruin/space/derelict/arrival)
 "gX" = (/turf/closed/wall,/area/ruin/space/derelict/medical/chapel)
-"gY" = (/obj/structure/window/reinforced/spawner/west,/obj/structure/window/reinforced/spawner/north,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
+"gY" = (/turf/open/space/basic,/area/template_noop)
 "gZ" = (/obj/item/stack/cable_coil/cut/red,/turf/closed/wall/r_wall,/area/crew_quarters/heads/captain/private)
 "ha" = (/obj/machinery/door/airlock/medical{name = "Morgue"; req_access_txt = "6"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/dark,/area/ruin/space/derelict/medical/morgue)
 "hb" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/hallway/primary)
@@ -376,10 +376,10 @@
 "hl" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/derelict/medical/chapel)
 "hm" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage/equipment)
 "hn" = (/obj/effect/spawner/structure/window/hollow/reinforced/end,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
-"ho" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/engine/engineering)
+"ho" = (/obj/machinery/door/window/eastleft{name = "Heads of Staff"; req_access_txt = "19"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "hp" = (/obj/machinery/camera{c_tag = "Brig Control Room"; dir = 4},/turf/open/space/basic,/area/crew_quarters/heads/captain/private)
 "hq" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"hr" = (/obj/machinery/camera{c_tag = "Central Hallway North-West"; dir = 2},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"hr" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/science)
 "hs" = (/obj/machinery/camera{c_tag = "MiniSat External NorthEast"; dir = 4; network = list("minisat"); start_active = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
 "ht" = (/obj/machinery/light/small,/turf/open/floor/plasteel/dark,/area/ruin/space/derelict/medical/chapel)
 "hu" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
@@ -477,7 +477,7 @@
 "ji" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "jj" = (/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel/white,/area/medical/chemistry)
 "jk" = (/obj/machinery/dna_scannernew,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
-"jl" = (/obj/item/reagent_containers/glass/beaker,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
+"jl" = (/obj/structure/closet/firecloset/full,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "jm" = (/obj/structure/closet/wardrobe/genetics_white,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "jn" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
 "jo" = (/obj/machinery/door/window{dir = 8},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
@@ -503,7 +503,7 @@
 "jI" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "jJ" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
 "jK" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
-"jL" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel,/area/science/storage)
+"jL" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "jM" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/door/firedoor,/turf/open/floor/plasteel/white,/area/medical/chemistry)
 "jN" = (/obj/machinery/door/airlock/medical{name = "Medical"},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "jO" = (/obj/structure/cable{icon_state = "2-4"},/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
@@ -523,29 +523,29 @@
 "kc" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
 "kd" = (/obj/structure/chair{dir = 1},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
 "ke" = (/obj/structure/table,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
-"kf" = (/obj/item/stack/cable_coil/cut/red,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
+"kf" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/science)
 "kg" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
-"kh" = (/obj/structure/window/reinforced/spawner,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"kh" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/science)
 "ki" = (/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/effect/turf_decal/stripes/line,/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "kj" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
 "kk" = (/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "kl" = (/obj/structure/window/reinforced/spawner,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
 "km" = (/obj/structure/chair{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
 "kn" = (/turf/closed/wall,/area/ruin/space/derelict/crew_quarters)
-"ko" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel/white,/area/medical/chemistry)
+"ko" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "kp" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "kq" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
 "kr" = (/obj/structure/cable,/obj/machinery/power/apc{name = "Worn-out APC"; pixel_y = -24},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "ks" = (/obj/machinery/portable_atmospherics/scrubber,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "kt" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "ku" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"kv" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"kw" = (/obj/structure/frame/computer,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"kx" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/obj/machinery/airalarm{dir = 1; pixel_y = -22},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
+"kv" = (/obj/structure/closet,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"kw" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{icon_state = "manifold"; dir = 1},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
+"kx" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "ky" = (/turf/closed/wall/r_wall,/area/science)
 "kz" = (/turf/closed/wall,/area/science)
 "kA" = (/obj/structure/table,/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage)
-"kB" = (/obj/structure/window/fulltile,/turf/open/floor/plasteel,/area/science)
+"kB" = (/obj/machinery/light/small{dir = 1},/obj/structure/closet,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "kC" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "kD" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "kE" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
@@ -573,18 +573,18 @@
 "la" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{icon_state = "manifold"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "lb" = (/obj/structure/lattice,/turf/open/floor/plasteel,/area/science)
 "lc" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/secondary)
-"ld" = (/obj/structure/lattice,/obj/item/stack/cable_coil/cut/red,/turf/template_noop,/area/space/nearstation)
+"ld" = (/obj/structure/grille,/turf/open/floor/plating/airless,/area/space)
 "le" = (/obj/machinery/camera,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "lf" = (/obj/structure/bed,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "lg" = (/obj/structure/window/reinforced/spawner,/obj/structure/table,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "lh" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/airlock/research{name = "Toxins Research"; req_access_txt = "7"},/turf/open/floor/plasteel/airless,/area/science)
 "li" = (/obj/machinery/door/firedoor,/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "lj" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"lk" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel,/area/science)
+"lk" = (/obj/machinery/camera{c_tag = "Central Hallway North-West"; dir = 2},/obj/structure/closet,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "ll" = (/obj/structure/lattice,/obj/structure/grille,/turf/open/floor/plasteel,/area/science)
 "lm" = (/obj/structure/closet/wardrobe,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "ln" = (/obj/item/stack/medical/bruise_pack,/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
-"lo" = (/obj/effect/decal/cleanable/dirt,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/science)
+"lo" = (/obj/machinery/airalarm{pixel_y = 22},/obj/structure/closet,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "lp" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "lq" = (/obj/structure/table,/obj/item/stock_parts/cell,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "lr" = (/obj/machinery/vending/sovietsoda,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
@@ -595,65 +595,65 @@
 "lw" = (/obj/machinery/atmospherics/components/unary/tank/air,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "lx" = (/turf/closed/wall,/area/ruin/space/derelict/atmospherics)
 "ly" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/atmospherics)
-"lz" = (/obj/effect/decal/cleanable/blood/gibs/old,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"lz" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "lA" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 4},/obj/machinery/door/firedoor,/turf/open/floor/plasteel/airless,/area/science)
-"lB" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/window/fulltile,/turf/open/floor/plasteel,/area/science)
+"lB" = (/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/science)
 "lC" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/science)
 "lD" = (/turf/template_noop,/area/ruin/space/derelict/hallway/secondary)
 "lE" = (/obj/structure/closet/l3closet,/obj/structure/window/reinforced/spawner/north,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "lF" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/ruin/space/derelict/crew_quarters)
-"lG" = (/obj/effect/decal/cleanable/blood/splatter,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"lH" = (/obj/machinery/camera{c_tag = "Engineering East"; dir = 8},/turf/open/floor/plasteel,/area/maintenance/solars/port)
+"lG" = (/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"lH" = (/obj/item/radio/intercom{pixel_x = 28},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/storage/equipment)
 "lI" = (/obj/structure/chair/stool,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"lJ" = (/obj/machinery/atmospherics/components/unary/portables_connector/visible{dir = 4},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"lK" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"lJ" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"lK" = (/obj/structure/window/reinforced/spawner/west,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/security)
 "lL" = (/obj/machinery/atmospherics/components/unary/portables_connector/visible{dir = 8},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "lM" = (/turf/open/floor/plasteel/airless{icon_state = "floorscorched2"},/area/crew_quarters/heads/captain/private)
 "lN" = (/obj/machinery/atmospherics/pipe/manifold/cyan/hidden,/obj/machinery/meter,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "lO" = (/obj/machinery/atmospherics/pipe/simple/cyan/hidden{dir = 9},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"lP" = (/obj/machinery/door/airlock/maintenance{name = "Atmospherics Access"; req_access_txt = "24"},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"lP" = (/obj/machinery/door/airlock/maintenance{name = "Atmospherics Access"; req_access_txt = "24"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "lQ" = (/obj/machinery/light/small{dir = 1},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "lR" = (/obj/structure/lattice,/turf/template_noop,/area/ruin/space/derelict/hallway/secondary)
 "lS" = (/obj/structure/closet/wardrobe/mixed,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "lT" = (/obj/machinery/atmospherics/components/unary/portables_connector/visible{dir = 4},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
-"lU" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"lV" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 5},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"lU" = (/obj/structure/window/reinforced/spawner/west,/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/security)
+"lV" = (/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/security)
 "lW" = (/obj/machinery/camera{c_tag = "Theatre Stage"; dir = 2},/turf/open/floor/plasteel,/area/storage/primary)
 "lX" = (/obj/structure/table,/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
 "lY" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
 "lZ" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/effect/mapping_helpers/airlock/cyclelink_helper,/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
 "ma" = (/obj/item/shard{icon_state = "medium"},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "mb" = (/turf/closed/wall/r_wall,/area/security)
-"mc" = (/obj/item/stock_parts/manipulator{pixel_x = -15; pixel_y = 10},/obj/item/stock_parts/manipulator,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"mc" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "md" = (/turf/closed/wall,/area/ruin/space/derelict/hallway/secondary)
 "me" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "mf" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/hallway/secondary)
-"mg" = (/obj/structure/chair/stool,/obj/effect/decal/remains/human,/obj/effect/decal/cleanable/blood/old,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"mg" = (/obj/structure/table,/turf/open/floor/plasteel,/area/crew_quarters/heads/captain/private)
 "mh" = (/obj/structure/table,/obj/item/reagent_containers/glass/beaker{list_reagents = list("sacid" = 50)},/obj/item/paper/crumpled/bloody/ruins/thederelict/unfinished,/obj/item/pen,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "mi" = (/obj/structure/table,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"mj" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"mk" = (/turf/open/floor/plasteel/airless{icon_state = "floorscorched1"},/area/ruin/space/derelict/atmospherics)
+"mj" = (/obj/machinery/atmospherics/pipe/layer_manifold,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"mk" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "ml" = (/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plasteel,/area/science/storage)
 "mm" = (/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "mn" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/medical{name = "Medical"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
-"mo" = (/obj/structure/window/reinforced,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
-"mp" = (/turf/open/floor/plasteel/airless{icon_state = "damaged5"},/area/ruin/space/derelict/atmospherics)
-"mq" = (/turf/open/floor/plasteel{icon_state = "damaged2"; initial_gas_mix = "TEMP=2.7"},/area/ruin/space/derelict/atmospherics)
-"mr" = (/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/atmospherics)
+"mo" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plating,/area/security/brig)
+"mp" = (/obj/structure/cable,/turf/open/floor/plasteel,/area/science)
+"mq" = (/obj/machinery/atmospherics/components/unary/portables_connector/visible{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"mr" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "ms" = (/turf/open/floor/plasteel/airless{icon_state = "damaged4"},/area/ruin/space/derelict/atmospherics)
-"mt" = (/obj/structure/window/fulltile,/turf/template_noop,/area/ruin/space/derelict/atmospherics)
+"mt" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{icon_state = "manifold"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "mu" = (/obj/structure/window/reinforced/spawner/east,/turf/open/space/basic,/area/space/nearstation)
 "mv" = (/obj/structure/window/reinforced/spawner/west,/turf/open/space/basic,/area/space/nearstation)
 "mw" = (/obj/structure/frame/computer,/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
 "mx" = (/obj/machinery/portable_atmospherics/canister,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
-"my" = (/obj/machinery/light/small,/turf/open/floor/plasteel/airless{icon_state = "damaged5"},/area/ruin/space/derelict/atmospherics)
-"mz" = (/obj/structure/lattice,/turf/template_noop,/area/ruin/space/derelict/atmospherics)
+"my" = (/obj/machinery/atmospherics/components/unary/portables_connector/visible{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"mz" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/obj/structure/cable{icon_state = "0-2"},/obj/structure/cable,/turf/open/floor/plating,/area/security/brig)
 "mA" = (/obj/item/shard{icon_state = "small"},/obj/structure/window/reinforced/spawner/east,/turf/open/space/basic,/area/space/nearstation)
 "mB" = (/obj/machinery/vending/hydronutrients,/turf/open/floor/plasteel,/area/security)
-"mC" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/maintenance,/turf/open/floor/plating,/area/ruin/space/derelict/hallway/primary)
+"mC" = (/obj/item/storage/toolbox/electrical{pixel_x = 1; pixel_y = -1},/obj/machinery/camera{c_tag = "MiniSat Antechamber"; dir = 4; network = list("minisat"); start_active = 1},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/storage/equipment)
 "mD" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/secondary)
 "mE" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/crew_quarters)
-"mF" = (/obj/structure/chair{dir = 1},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"mF" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "mG" = (/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/atmospherics)
 "mH" = (/obj/structure/window/reinforced/spawner,/obj/structure/window/reinforced/spawner/east,/turf/open/space/basic,/area/space/nearstation)
 "mI" = (/obj/structure/window/reinforced/spawner,/obj/structure/table,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
@@ -663,7 +663,7 @@
 "mM" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 5},/turf/open/floor/plasteel/dark,/area/ruin/space/derelict/medical/morgue)
 "mN" = (/turf/open/floor/plasteel/airless{icon_state = "damaged1"},/area/ruin/space/derelict/atmospherics)
 "mO" = (/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"mP" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"mP" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 5},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "mQ" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance{lootcount = 8; name = "8maintenance loot spawner"},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "mR" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/crew_quarters)
 "mS" = (/obj/machinery/door/window,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
@@ -675,7 +675,7 @@
 "mY" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 1},/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/secondary)
 "mZ" = (/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/secondary)
 "na" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
-"nb" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
+"nb" = (/obj/machinery/airalarm{dir = 4; pixel_x = -22},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/bridge/access)
 "nc" = (/obj/structure/cable{icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "nd" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "ne" = (/obj/machinery/door/firedoor,/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 4},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
@@ -685,7 +685,7 @@
 "ni" = (/obj/machinery/door/window/southleft,/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "nj" = (/obj/machinery/door/airlock/command{name = "Teleporter Room"},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
 "nk" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"nl" = (/obj/item/ammo_casing/a357{pixel_x = -5},/obj/item/ammo_casing/a357{pixel_x = 5; pixel_y = 6},/obj/item/ammo_casing/a357,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"nl" = (/obj/structure/cable{icon_state = "2-4"},/obj/machinery/airalarm{pixel_y = 22},/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/hallway/primary)
 "nm" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/airless,/area/crew_quarters/heads/captain/private)
 "nn" = (/obj/machinery/door/window,/turf/open/floor/plasteel,/area/security)
 "no" = (/obj/machinery/door/window{base_state = "right"; dir = 4; icon_state = "right"},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
@@ -695,7 +695,7 @@
 "ns" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "nt" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 8},/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/science)
 "nu" = (/obj/structure/cable{icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"nv" = (/turf/template_noop,/area/ruin/space/derelict/atmospherics)
+"nv" = (/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/security)
 "nw" = (/obj/machinery/vending/hydroseeds,/turf/open/floor/plasteel,/area/security)
 "nx" = (/turf/closed/wall,/area/security)
 "ny" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating,/area/maintenance/starboard/aft)
@@ -708,7 +708,7 @@
 "nF" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 4},/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "nG" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 1},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
 "nH" = (/obj/effect/spawner/structure/window/hollow/reinforced/directional{dir = 1},/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/secondary)
-"nI" = (/obj/structure/girder/reinforced,/turf/open/floor/plating/airless,/area/ruin/space/derelict/se_solar)
+"nI" = (/obj/structure/tank_dispenser/plasma,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/storage/equipment)
 "nJ" = (/obj/structure/cable{icon_state = "2-4"},/turf/closed/wall/r_wall,/area/ruin/space/derelict/se_solar)
 "nK" = (/obj/structure/cable{icon_state = "4-8"},/turf/closed/wall/r_wall,/area/ruin/space/derelict/se_solar)
 "nL" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
@@ -719,10 +719,10 @@
 "nQ" = (/turf/open/floor/plasteel/airless{icon_state = "damaged4"},/area/ruin/space/derelict/se_solar)
 "nR" = (/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "nS" = (/obj/structure/reagent_dispensers/fueltank,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
-"nT" = (/obj/docking_port/stationary{dheight = 0; dir = 2; dwidth = 11; height = 22; id = "whiteship_z4"; name = "KSS13: Derelict"; width = 35},/turf/template_noop,/area/template_noop)
+"nT" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/machinery/door/firedoor,/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/plasteel,/area/engine/engineering)
 "nU" = (/obj/machinery/power/terminal{dir = 1},/obj/structure/cable{icon_state = "0-2"},/obj/item/drone_shell/dusty,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "nV" = (/turf/open/floor/plating/airless,/area/ruin/space/derelict/se_solar)
-"nW" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"nW" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/door/airlock/medical/glass{name = "Chemistry Lab"; req_access_txt = "5; 33"},/turf/open/floor/plasteel/white,/area/medical/chemistry)
 "nX" = (/obj/item/storage/toolbox/syndicate,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "nY" = (/obj/structure/cable{icon_state = "0-2"},/obj/structure/cable,/obj/machinery/power/solar_control{dir = 1; id = "derelictsolar"; name = "Primary Solar Control"; track = 0},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "nZ" = (/obj/machinery/light/small{dir = 1},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 6},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
@@ -735,7 +735,7 @@
 "og" = (/obj/machinery/door/window{base_state = "right"; dir = 4; icon_state = "right"},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "oh" = (/obj/item/clothing/suit/space/syndicate/black/red,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "oi" = (/obj/effect/decal/remains/human{desc = "This guy seemed to have died in terrible way! Half his remains are dust."; name = "Syndicate agent remains"},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
-"oj" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 4},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"oj" = (/obj/machinery/airalarm{dir = 4; pixel_x = -22},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "ok" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/external,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "ol" = (/obj/structure/lattice,/turf/template_noop,/area/ruin/space/derelict/storage)
 "om" = (/turf/template_noop,/area/ruin/space/derelict/storage)
@@ -747,26 +747,26 @@
 "os" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "ot" = (/turf/open/floor/plasteel,/area/security)
 "ou" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/security)
-"ov" = (/obj/item/stack/cable_coil/cut/red,/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel,/area/security)
-"ow" = (/obj/item/stack/cable_coil/cut/red,/turf/template_noop,/area/ruin/space/derelict/atmospherics)
+"ov" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/security)
+"ow" = (/turf/open/floor/plating,/area/engine/engineering)
 "ox" = (/obj/structure/cable,/obj/machinery/power/solar{id = "derelictsolar"; name = "Derelict Solar Array"},/turf/open/floor/plasteel/airless,/area/solar/derelict_aft)
 "oy" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"oz" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"oA" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
+"oz" = (/obj/structure/tank_dispenser/plasma,/turf/open/floor/plasteel,/area/storage/primary)
+"oA" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "oB" = (/turf/closed/wall/r_wall,/area/security/brig)
 "oC" = (/turf/closed/wall,/area/security/brig)
 "oD" = (/obj/machinery/power/tracker,/obj/structure/cable,/turf/open/floor/plasteel/airless,/area/solar/derelict_aft)
 "oE" = (/obj/structure/frame/computer{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
-"oF" = (/obj/item/stack/rods,/turf/open/floor/plasteel,/area/science)
+"oF" = (/obj/effect/spawner/structure/window/hollow/reinforced/end,/obj/structure/cable,/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plating,/area/security/brig)
 "oG" = (/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/storage)
 "oH" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 1},/obj/machinery/atmospherics/pipe/manifold/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"oI" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/atmospherics)
+"oI" = (/obj/machinery/portable_atmospherics/canister/nitrous_oxide,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "oJ" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/secondary)
 "oK" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/science/mixing)
 "oL" = (/turf/closed/wall/r_wall,/area/science/mixing)
-"oM" = (/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel,/area/security)
+"oM" = (/obj/item/shard{icon_state = "medium"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "oN" = (/turf/closed/wall,/area/ruin/space/derelict/storage)
-"oO" = (/obj/effect/spawner/lootdrop/maintenance,/turf/template_noop,/area/ruin/space/derelict/atmospherics)
+"oO" = (/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "oP" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage)
 "oQ" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/secondary)
 "oR" = (/obj/structure/girder,/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage)
@@ -777,7 +777,7 @@
 "oW" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/secondary)
 "oX" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "oY" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/secondary)
-"oZ" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel,/area/security)
+"oZ" = (/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel,/area/security)
 "pa" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "pb" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "pc" = (/obj/structure/window/reinforced,/turf/open/space/basic,/area/space)
@@ -802,9 +802,9 @@
 "pv" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/closed/wall,/area/ruin/space/derelict/atmospherics)
 "pw" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/closed/wall,/area/ruin/space/derelict/atmospherics)
 "px" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{icon_state = "scrub_map_on"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"py" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"pz" = (/obj/machinery/atmospherics/pipe/layer_manifold,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"pA" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{icon_state = "manifold"; dir = 8},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"py" = (/obj/structure/closet/secure_closet/security,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/security)
+"pz" = (/obj/structure/closet/wardrobe/orange,/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/security)
+"pA" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "pB" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/storage)
 "pC" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/storage)
 "pD" = (/obj/structure/window/reinforced/spawner/west,/obj/structure/bed/roller,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
@@ -813,7 +813,7 @@
 "pG" = (/obj/machinery/door/airlock/maintenance{name = "Aux Storage"; req_access_txt = "23"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage)
 "pH" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plating,/area/ruin/space/derelict/hallway/secondary)
 "pI" = (/turf/open/floor/plating,/area/ruin/space/derelict/hallway/secondary)
-"pJ" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
+"pJ" = (/obj/structure/chair{dir = 1},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "pK" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
 "pL" = (/obj/machinery/power/apc{areastring = "/area/ruin/space/derelict/atmospherics"; dir = 1; name = "Worn-out APC"; pixel_y = 24},/obj/structure/cable{icon_state = "0-4"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
 "pM" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
@@ -853,34 +853,34 @@
 "qu" = (/turf/open/floor/plasteel,/area/security/brig)
 "qv" = (/obj/structure/closet/wardrobe/orange,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/obj/item/shovel/spade,/obj/item/cultivator,/turf/open/floor/plasteel,/area/security/brig)
 "qw" = (/turf/open/floor/plating,/area/science/mixing)
-"qx" = (/obj/machinery/airalarm{dir = 4; pixel_x = -22},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"qx" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "qy" = (/obj/structure/lattice,/turf/open/floor/plasteel,/area/security)
 "qz" = (/obj/item/stack/rods,/turf/open/floor/plasteel,/area/security)
 "qA" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/window/reinforced/spawner,/turf/open/floor/plasteel,/area/security)
 "qB" = (/obj/structure/window/reinforced/spawner,/turf/open/floor/plasteel,/area/security)
-"qC" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating,/area/security/brig)
+"qC" = (/obj/structure/window/reinforced/spawner,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "qD" = (/obj/structure/bed,/turf/open/floor/plasteel,/area/security/brig)
 "qE" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/security)
 "qF" = (/obj/machinery/camera{c_tag = "MiniSat Antechamber"; dir = 4; network = list("minisat"); start_active = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
-"qG" = (/obj/effect/spawner/structure/window/hollow/reinforced/end,/turf/open/floor/plating,/area/security/brig)
+"qG" = (/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "qH" = (/obj/structure/table,/turf/open/floor/plasteel,/area/security)
-"qI" = (/obj/structure/lattice,/obj/item/stack/cable_coil/cut/red,/turf/open/floor/plasteel,/area/security)
+"qI" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "qJ" = (/obj/machinery/door/window{dir = 8},/obj/item/shard{icon_state = "medium"},/turf/open/floor/plasteel,/area/security/brig)
-"qK" = (/obj/item/stack/rods,/turf/open/floor/plating,/area/science/mixing)
+"qK" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "qL" = (/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel/airless,/area/solar/port)
 "qM" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{icon_state = "2-4"},/turf/open/space/basic,/area/solar/port)
-"qN" = (/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plasteel/airless,/area/solar/port)
+"qN" = (/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "qO" = (/turf/closed/wall/r_wall,/area/maintenance/starboard/aft)
 "qP" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{icon_state = "2-4"},/turf/open/space/basic,/area/solar/port)
 "qQ" = (/turf/closed/wall,/area/awaymission/snowdin/post/minipost)
 "qR" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plating/airless,/area/ruin/space/derelict/arrival)
 "qS" = (/turf/closed/wall,/area/ruin/space/derelict)
-"qT" = (/turf/open/floor/plasteel,/area/ruin/space/derelict)
+"qT" = (/obj/structure/tank_dispenser/plasma,/turf/open/floor/plasteel,/area/science/storage)
 "qU" = (/obj/structure/bed/roller,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "qV" = (/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
-"qW" = (/obj/structure/lattice,/turf/open/floor/plasteel,/area/ruin/space/derelict)
-"qX" = (/obj/machinery/door/airlock/maintenance,/turf/open/floor/plating,/area/ruin/space/derelict/atmospherics)
-"qY" = (/obj/item/wirecutters,/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plating,/area/maintenance/starboard/aft)
+"qW" = (/obj/structure/cable{icon_state = "2-4"},/obj/structure/tank_dispenser/plasma,/turf/open/floor/plasteel,/area/science/storage)
+"qX" = (/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"qY" = (/obj/structure/window/fulltile,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "qZ" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating/airless,/area/maintenance/starboard/aft)
 "ra" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-2"},/turf/open/space/basic,/area/solar/port)
 "rb" = (/turf/closed/wall,/area/maintenance/solars/port)
@@ -920,10 +920,10 @@
 "rJ" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{icon_state = "scrub_map_on"; dir = 8},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "rK" = (/obj/structure/table,/turf/open/floor/plasteel,/area/science)
 "rL" = (/obj/machinery/airalarm{pixel_y = 22},/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
-"rM" = (/obj/structure/closet/emcloset/anchored,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"rN" = (/obj/structure/closet/firecloset/full,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"rM" = (/obj/structure/window/reinforced/spawner/west,/obj/effect/landmark/vr_spawn,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
+"rN" = (/obj/item/radio/intercom{broadcasting = 1; freerange = 0; frequency = 1485; listening = 0; name = "Station Intercom (Medbay)"; pixel_y = -30},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "rO" = (/obj/machinery/airalarm{pixel_y = 22},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"rP" = (/obj/machinery/camera{c_tag = "Engineering East"; dir = 8},/turf/open/floor/plasteel,/area/science)
+"rP" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plasteel,/area/science/storage)
 "rQ" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plasteel,/area/science)
 "rR" = (/obj/structure/lattice,/obj/item/stack/cable_coil/cut/red,/turf/open/floor/plasteel,/area/science)
 "rS" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
@@ -938,12 +938,12 @@
 "sb" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "2-8"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden,/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "sc" = (/obj/structure/closet/secure_closet/security/science,/turf/open/floor/plasteel,/area/security)
 "sd" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"se" = (/obj/structure/closet/secure_closet/security,/turf/open/floor/plasteel,/area/security)
-"sf" = (/obj/machinery/camera{c_tag = "Central Hallway North-West"; dir = 2},/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/atmospherics)
+"se" = (/obj/structure/lattice,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"sf" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
 "sg" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plating,/area/awaymission/snowdin/post/minipost)
 "sh" = (/obj/structure/closet/secure_closet/security/sec,/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
 "si" = (/obj/effect/spawner/structure/window/hollow/reinforced/end,/obj/structure/cable{icon_state = "0-2"},/obj/structure/cable,/turf/open/floor/plating,/area/awaymission/snowdin/post/minipost)
-"sj" = (/obj/machinery/camera{c_tag = "Engineering East"; dir = 8},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/atmospherics)
+"sj" = (/obj/machinery/airalarm{dir = 1; pixel_y = -22},/obj/machinery/portable_atmospherics/canister/nitrogen,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "sk" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 5},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 5},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "sl" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
 "sm" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 10},/obj/structure/closet/emcloset/anchored,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/storage)
@@ -952,7 +952,7 @@
 "sp" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 1},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{icon_state = "manifold"; dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "sq" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 4},/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
 "sr" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/airlock/engineering{name = "Port Quarter Solar Access"; req_access_txt = "10"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"ss" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"ss" = (/obj/effect/landmark/vr_spawn,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "st" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "su" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 1},/obj/structure/cable{icon_state = "0-8"},/obj/structure/cable,/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plating,/area/awaymission/snowdin/post/minipost)
 "sv" = (/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
@@ -970,15 +970,15 @@
 "sH" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 10},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 10},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "sI" = (/obj/machinery/airalarm{dir = 1; pixel_y = -22},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "sJ" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-4"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"sK" = (/obj/structure/girder,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"sK" = (/obj/structure/window/reinforced/spawner/west,/obj/structure/window/reinforced/spawner/north,/obj/machinery/portable_atmospherics/canister/nitrous_oxide,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "sL" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "sM" = (/obj/structure/chair/stool,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "sN" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/structure/chair/stool,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "sO" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 4},/obj/structure/chair/stool,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "sP" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
-"sQ" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 6},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
-"sR" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{icon_state = "manifold"; dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
-"sS" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
+"sQ" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/obj/effect/landmark/vr_spawn,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"sR" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{icon_state = "manifold"; dir = 1},/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
+"sS" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
 "sT" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
 "sU" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
 "sV" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage)
@@ -995,24 +995,108 @@
 "tg" = (/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "th" = (/obj/machinery/atmospherics/pipe/simple/cyan/visible{dir = 6},/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
 "ti" = (/obj/machinery/atmospherics/components/binary/valve,/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
-"tj" = (/obj/structure/closet/wardrobe/orange,/turf/open/floor/plasteel,/area/security)
+"tj" = (/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "tk" = (/obj/structure/window/reinforced/spawner/east,/turf/open/floor/plating/airless,/area/ruin/unpowered/no_grav)
 "tl" = (/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plating/airless,/area/ruin/unpowered/no_grav)
-"tm" = (/obj/structure/window/reinforced/spawner/north,/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/atmospherics)
-"tn" = (/obj/structure/window/reinforced/spawner/north,/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/atmospherics)
-"to" = (/obj/structure/window/reinforced/spawner/north,/turf/closed/wall,/area/ruin/space/derelict/atmospherics)
-"tp" = (/obj/structure/window/reinforced/spawner/north,/turf/template_noop,/area/ruin/space/derelict/atmospherics)
+"tm" = (/obj/structure/window/reinforced/spawner/west,/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
+"tn" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"to" = (/obj/machinery/door/airlock/maintenance,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/ruin/space/derelict/atmospherics)
+"tp" = (/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating,/area/maintenance/starboard/aft)
 "tq" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "tr" = (/obj/machinery/camera{c_tag = "Atmospherics Central"; dir = 4},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "ts" = (/obj/structure/table,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
-"tS" = (/turf/template_noop,/area/ruin/unpowered/no_grav)
+"tt" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
+"tu" = (/obj/machinery/light/small{dir = 4},/obj/machinery/portable_atmospherics/canister/nitrogen,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"tv" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"tw" = (/obj/machinery/camera{c_tag = "Engineering East"; dir = 8},/obj/structure/extinguisher_cabinet{pixel_x = 27},/turf/open/floor/plasteel,/area/science)
+"tx" = (/obj/machinery/portable_atmospherics/canister/toxins,/turf/open/floor/plasteel,/area/science)
+"ty" = (/obj/machinery/airalarm{pixel_y = 22},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tz" = (/obj/machinery/portable_atmospherics/canister/toxins,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tA" = (/obj/structure/bed/roller,/obj/item/radio/intercom{broadcasting = 1; freerange = 0; frequency = 1485; listening = 0; name = "Station Intercom (Medbay)"; pixel_y = -30},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
+"tB" = (/obj/structure/tank_dispenser/plasma,/turf/open/floor/plasteel,/area/ruin/space/derelict)
+"tC" = (/obj/structure/chair{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tD" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tE" = (/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tF" = (/obj/machinery/portable_atmospherics/canister/air,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tG" = (/obj/machinery/portable_atmospherics/canister/nitrogen,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tH" = (/obj/machinery/portable_atmospherics/canister/nitrous_oxide,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tI" = (/obj/machinery/camera{c_tag = "Engineering East"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tJ" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plasteel,/area/ruin/space/derelict)
+"tK" = (/obj/structure/window/reinforced/spawner/north,/obj/structure/reagent_dispensers/watertank,/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tL" = (/obj/structure/window/reinforced/spawner/north,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tM" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tN" = (/obj/machinery/portable_atmospherics/canister/carbon_dioxide,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tO" = (/obj/machinery/portable_atmospherics/canister/nitrogen,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
+"tP" = (/obj/machinery/portable_atmospherics/canister/toxins,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
+"tQ" = (/obj/structure/window/reinforced/spawner/north,/obj/structure/tank_dispenser/oxygen,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tR" = (/obj/machinery/portable_atmospherics/canister/nitrous_oxide,/obj/structure/cable,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
+"tS" = (/obj/structure/extinguisher_cabinet{pixel_x = -27},/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage)
+"tT" = (/obj/structure/tank_dispenser/oxygen,/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage)
+"tU" = (/turf/template_noop,/area/ruin/space/derelict/se_solar)
+"tV" = (/obj/structure/lattice,/turf/template_noop,/area/ruin/space/derelict/se_solar)
+"tW" = (/obj/structure/lattice,/obj/item/stack/cable_coil/cut/red,/turf/template_noop,/area/ruin/space/derelict/se_solar)
+"tX" = (/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tY" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"tZ" = (/obj/effect/landmark/vr_spawn,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"ua" = (/obj/item/radio/intercom{pixel_x = -28},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
+"ub" = (/obj/item/radio/intercom,/turf/closed/wall,/area/ruin/space/derelict/crew_quarters)
+"uc" = (/obj/machinery/camera{c_tag = "Engineering East"; dir = 8},/obj/item/radio/intercom{pixel_x = 28},/turf/open/floor/plasteel,/area/maintenance/solars/port)
+"ud" = (/obj/item/radio/intercom{pixel_y = 28},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"ue" = (/obj/structure/window/reinforced/spawner,/obj/item/radio/intercom{pixel_x = -28},/obj/machinery/camera{c_tag = "MiniSat External NorthEast"; dir = 4; network = list("minisat"); start_active = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"uf" = (/obj/structure/table,/obj/machinery/light{dir = 1},/turf/open/floor/plasteel,/area/science)
+"ug" = (/obj/machinery/light/small{dir = 4},/obj/item/radio/intercom{pixel_x = 28},/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
+"uh" = (/obj/structure/frame/computer,/turf/open/floor/plasteel/white/side{dir = 1},/area/ruin/space/derelict/crew_quarters)
+"ui" = (/turf/open/floor/plasteel/white/side{dir = 1},/area/ruin/space/derelict/crew_quarters)
+"uj" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel/white/side{dir = 1},/area/ruin/space/derelict/crew_quarters)
+"uk" = (/obj/structure/closet/emcloset/anchored,/turf/open/floor/plasteel/white/side{dir = 1},/area/ruin/space/derelict/crew_quarters)
+"ul" = (/obj/structure/closet/firecloset/full,/turf/open/floor/plasteel/white/side{dir = 1},/area/ruin/space/derelict/crew_quarters)
+"um" = (/obj/item/radio/intercom{pixel_x = 28},/turf/open/floor/plasteel,/area/science)
+"un" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uo" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 4},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"up" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"uq" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/maintenance,/turf/open/floor/plating,/area/maintenance/starboard/aft)
+"ur" = (/obj/effect/turf_decal/tile/yellow,/obj/effect/turf_decal/tile/yellow{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"us" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel,/area/security)
+"ut" = (/obj/machinery/airalarm{dir = 4; pixel_x = -22},/obj/machinery/light{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uu" = (/obj/structure/frame/computer,/turf/open/floor/plasteel,/area/security)
+"uv" = (/obj/machinery/light/small{dir = 4},/obj/item/extinguisher,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uw" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/security)
+"ux" = (/obj/machinery/camera{c_tag = "Brig Equipment Room"; dir = 4},/turf/open/floor/plasteel,/area/security/brig)
+"uy" = (/obj/machinery/light{dir = 8},/turf/open/floor/plating,/area/science/mixing)
+"uz" = (/obj/structure/frame/computer{icon_state = "0"; dir = 4},/turf/open/floor/plasteel,/area/security)
+"uA" = (/obj/structure/frame/computer{dir = 1},/turf/open/floor/plasteel,/area/security)
+"uB" = (/obj/machinery/door/poddoor/incinerator_toxmix,/turf/open/floor/plating,/area/science/mixing)
+"uC" = (/obj/structure/cable{icon_state = "0-4"},/obj/machinery/power/solar{id = "derelictsolar"; name = "Derelict Solar Array"},/turf/open/floor/plasteel/airless,/area/solar/port)
+"uD" = (/obj/structure/cable{icon_state = "0-8"},/obj/machinery/power/solar{id = "derelictsolar"; name = "Derelict Solar Array"},/turf/open/floor/plasteel/airless,/area/solar/port)
+"uE" = (/obj/machinery/light{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uF" = (/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uG" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/camera{c_tag = "Brig East"},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"uH" = (/obj/structure/frame/computer,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"uI" = (/obj/structure/extinguisher_cabinet{pixel_x = -27},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uJ" = (/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/tile/red,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uK" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
+"uL" = (/obj/structure/frame/computer{dir = 8},/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
+"uM" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 6},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
+"uN" = (/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uO" = (/obj/structure/frame/computer{icon_state = "0"; dir = 4},/turf/open/floor/plasteel,/area/maintenance/solars/port)
+"uP" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-4"},/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
+"uQ" = (/obj/structure/table,/obj/item/storage/toolbox/electrical{pixel_x = 1; pixel_y = -1},/turf/open/floor/plating/airless,/area/ruin/space/derelict/atmospherics)
+"uR" = (/obj/structure/table,/obj/item/storage/toolbox/electrical{pixel_x = 1; pixel_y = -1},/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
+"uS" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 4},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
+"uT" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/manifold/supply/hidden,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/secondary)
+"uU" = (/obj/docking_port/stationary{dheight = 0; dir = 2; dwidth = 11; height = 22; id = "whiteship_z4"; name = "KSS13: Derelict"; width = 35},/turf/open/space/basic,/area/template_noop)
+"uV" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/research{name = "Toxins Storage"; req_access_txt = "8"},/turf/open/floor/plasteel,/area/science/storage)
+"uW" = (/obj/effect/turf_decal/tile/purple{dir = 4},/obj/effect/turf_decal/tile/purple,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"uX" = (/obj/structure/cable{icon_state = "1-2"},/obj/effect/turf_decal/tile/purple{dir = 4},/obj/effect/turf_decal/tile/purple,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
+"uY" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/airlock/research/glass/incinerator/toxmix_exterior,/turf/open/floor/plasteel,/area/science)
+"uZ" = (/obj/structure/frame/computer{dir = 1},/turf/open/floor/plasteel,/area/science)
+"va" = (/obj/machinery/door/airlock/research/glass/incinerator/toxmix_interior,/turf/open/floor/plasteel,/area/science)
 "vf" = (/obj/structure/grille,/turf/open/floor/plating/airless,/area/space/nearstation)
 "wK" = (/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/se_solar)
 "Gu" = (/obj/structure/grille,/turf/template_noop,/area/space/nearstation)
 "Le" = (/obj/machinery/door/airlock/external{name = "Arrivals Docking Bay 1"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
 "Sv" = (/turf/closed/wall/r_wall,/area/space/nearstation)
 "Uz" = (/turf/open/floor/plating/airless,/area/space/nearstation)
-"ZB" = (/obj/structure/lattice,/turf/template_noop,/area/space/nearstation)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEvfvfvfvfvfvfvfvfaEadaEvfvfvfvfvfvfvfvfaEaEaEaE
@@ -1023,107 +1107,107 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEvfaEaraEaEaEaEaEaEcraEaEaEaEaEaEaraEvfaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEvfaEaraEaEaEaEaEaEabaEaEaEaEaEaEaraEvfaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEvfvfvfvfvfvfatauauavawaAatvfvfvfvfvfvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaEaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEUzataBaCaDaFaGatvfZBaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaEaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEUzatcMaCaDaFaGatvfvfaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEUzaHaDaIaJaMaOatvfvfaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaKaLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEUzaPaQaSaTaTaVatatvfaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaRaxaxaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEUzaZbabbaBaBaBewbcaEaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaWaxaXaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxUzUzUzUzUzUzSvUzUzUzUzUzUzSvUzUzUzUzUzUzaZbhcYdbdbbbaBdcbdaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaWaxaXaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxUzUzUzUzUzUzSvUzUzUzUzUzUzSvUzUzUzUzUzUzaZbhcYdbdbbbaBdccyaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaRaRbeaWaRbfbgaxaxaxbgaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaZatatatatgFatatGuaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxaxaxaRaxaRaRaRaxaRaRaRaxaxaxaxaxaxaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasbkaNazasGuaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaxbgaxbgaxaxaxaxaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasasbmasasaaaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaRaRbnaRbobpaWaRaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasasbqbrbsasaaaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaRaRaRaRaRaxaxbtaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasbkazbubvasaaaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxbwaRbxaRbyaxaxbzbjbjaxaxaxaxaxaxaxaxaxaxaxaxaxbjbjbjbjasbAazbBbCasaaaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxaxaxaRaxaRaRaRaxaRaRaRaxaxaxaxaxaxaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasbkaNbdasGuaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaxbgaxbgaxaxaxaxaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasasbmasascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaRaRbnaRbobpaWaRaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasasbqbrbsascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaRaRaRaRaRaxaxbtaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasdmazbubvascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxbwaRbxaRbyaxaxbzbjbjaxaxaxaxaxaxaxaxaxaxaxaxaxbjbjbjbjasbAazbBbCascyaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxbyaRbDaRbyaxaxbzbjbjaxaxbzbzbzbEbzbzbFbGbzaxaxbjbjbjbjasbHazbrbsascyaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaRboaRaxaRboaRaxaRbpbpaRbeaRbtbgaxaxbIbzbzbzbJbzbKbEbEbLbMbKbzbOaxaxbjbjbjbjasazazaNazascyaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblbgaxaxaxbgaxaxaxbgaRaxaRaxaxaWaxaxaxbPbjbjaxaxbObObKbQbRbLbKbObOaxaxbjbjbjbjasazazaNbSasasasaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaxaxaxaxaxaxaxaxaxaxaxbTaxbUbebVaxaxbjbjbjaxaxbWbXbYbKbFbEbZbObzaxaxbjbjbjbjasazazaNazazazcaaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEblvfblaEaEaEaEaEaEaEaEaEaxaxaxaxaxaxaxaxaxbjbjbjaxaxbPcccdbObEbObzbObzaxaxbjbjbjbjasbHazaNazasasasaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaEaEblvfblblblblblblblblblblaxaxaxaxaxaxaxaxaxbjbjbjaxaxaxcecfcfcfcfcgaxaxaxaxbjbjbjbjasazazaNazasbiaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaEaEblvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasazazckaUasbiaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfbfbaEaEblvfblblblblblblblblblblblblblblblblblblaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasbHazazaNaschaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfbfbararjScSararaEaEdrdrdraEaEaEararjSjSarararaEaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasasazcmaNasaaaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfbararararaEaEaEdrdrdrdrdrdrdraEaEaEarararararaEaxaxaxaxaxaxaxaxaxaEaEaEczcAcAcAcAcAcAcAcBcBcBcBcsctcsaaaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfbaEaraEaEaEaEaEdrdrembNemdrdraEaEaEaEaEcoaraEaEaEaEaEaEaEaEaEaEaEaEaEaEczcCcCcDcEcJcMcAcNcQcRcBcxcFcsaaaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrcGduememememdrdraEaEaEaEaEaraEaEaEaEaEaEaEaEaEaEaEaEaEaEcTcUcUcUcUcVcWcAdededecBcsctcsaaaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdrdrdrdrdrdrdremememememdrdrdrdrdrdraEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEcAcCcCcCcCdjdvcAdEdeeAcBcxcFcsaaaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdrdrdrdrdrdrdrdremcZfdfddidrdrdrcGdrdraEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEcAfvfvfvfwfycAcAfzfAfzcBcscXcsaaaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdreoemememememeGememeFememememememeNemdrdrdraEaEaEaEaEaEaEaEaEaEaEaEaEaEcscxcxcxcxcFcscsddcxcxcxcxcFcsaaaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdrenemememememeWemememememememememememdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrcsdlcxdmcKdndodpcKcKcKcKcKdqcsacaaaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdrememememememcZeYeZdiemfcemcZfdfddiemememdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrcsdwdxdydwdwcscscscscscscscscsdzchaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdremememememgwfnfqfrfjfjfjfjfjfjfjfugwememdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrcscxcxcFcxcxdFdGdHdIdJdKdLdIdMdNtSaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaEaEblvfblblblblblblblblblblaxaxaxaxaxaxaxaxaxbjbjbjaxaxaxcecfcfcfcfcgaxaxaxaxbjbjbjbjasazazaNazasbigYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaEaEblvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasazazckaUasbigYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfbfbaEaEblvfblblblblblblblblblblblblblblblblblblaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasdoazazaNaschgYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfbfbararjScSararaEaEdrdrdraEaEaEararjSjSarararaEaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasasazcmaNasacgYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfbararararaEaEaEdrdrdrdrdrdrdraEaEaEarararararaEaxaxaxaxaxaxaxaxaxaEaEaEczcAcAcAcAcAcAcAcBcBcBcBcsctcsacgYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEfbaEaraEaEaEaEaEdrdrembNemdrdraEaEaEaEaEcoaraEaEaEaEaEaEaEaEaEaEaEaEaEaEczcCcCcDcEcJdpcAcNcQcRcBjlcFcsacgYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrcGduememememdrdraEaEaEaEaEaraEaEaEaEaEaEaEaEaEaEaEaEaEaEcTcUcUcUcUcVcWcAdededecBcsctcsacgYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdrdrdrdrdrdrdremememememdrdrdrdrdrdraEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEcAcCcCcCcCdjdvcAdydeeAcBjLcFcsacgYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdrdrdrdrdrdrdrdremcZfdfddidrdrdrcGdrdraEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEcAfvfvfvfwfycAcAfzfAfzcBcscXcsacgYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdreoemememememeGememeFememememememeNemdrdrdraEaEaEaEaEaEaEaEaEaEaEaEaEaEcsdEdEdEdEcFcscscxcxcxcxcxcFcsacgYaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdrenemememememeWemememememememememememdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrcsdlcxdXehdnepeucKcKcKcKcKdqcsacacaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdrememememememcZeYeZdiemfcemcZfdfddiemememdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrcsdwdxeBdwdwcscscscscscscscscsdzchaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdremememememgwfnfqfrfjfjfjfjfjfjfjfugwememdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrcscxcxfNcxcxdFdGdHdIdJdKdLdIdMdNacaEaEaEaEaEaEaE
 aaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEdrdremememememgJfkfjfjfjfjfjfjfjfjfjgSgJemeFdrdraEaEaEaEaEaEaEaEaEfBaEaEaEaEcsdlcxdYcxcxdFdZeaeaeaeaeaeaecedacaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEclclclclclclclclclclemhzemememgJfjfjfjfjfjfjfjfjfjfjfjgJemezdrdrdraEaEaEaEaEaEaEaEaEaEaEaEaEcsdwdxepdwdweqeaeadkeseaeaeaeaeteuaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEclcpejejejejftdsdgdDclclclememhnfnfjfaaEaEaEaEaEfjfjfKhnemememdrdrdraEaEaEaEaEaEaEaEaEaEaEaEcscxddcFcxcxeBeaeaeaebeCeaeaeDeEacaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEclejejejejejfYdfejclcndtdPemememfQfjfjaEaEaEaEaEfjfjfUfVemfWemdrfjdraEaEaEaEaEaEaEaEaEaEaEarcscxcxeHcKeIeJeKeKereMeaeaeaeaetacaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEcldBejcuejejdCdOcHdTgiejclemememfjfjfjaEaEaEaEaEfjfjgdememghemfjfjdraEaEaEaEaEaEaEaEaEaEararcsgMcxcFcxcxeOePeQffeReSeaeSeTeUayaEaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEclejejcqejejftdfejclgjdaclememghgsfjfjaEaEaEaEaEfjfjfjfcememhIdrhAdraEaEaEaEaEaEfBaEaEarararcscscsfNcscxdFfeePfffgfhoEoEeQfieuaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEclclclclclclclclclclemhzemememgJfjfjfjfjfjfjfjfjfjfjfjgJemezdrdrdraEaEaEaEaEaEaEaEaEaEaEaEaEcsdwdxgQdwdweqeaeadkeseaeaeaeaetacaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEclcpejejejejftdsdgdDclclclememhnfnfjfaaEaEaEaEaEfjfjfKhnemememdrdrdraEaEaEaEaEaEaEaEaEaEaEaEcscxddgTgUcxhokokokwebeCeaeaeDeEacaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEclejejejejejfYdfejclcndtdPemememfQfjfjaEaEaEaEaEfjfjfUfVemfWemdrfjdraEaEaEaEaEaEaEaEaEaEaEarcskxcxeHcKeIeJeKeKereMeaeaeaeaetacaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEcldBejcuejejdCdOcHdTgiejclemememfjfjfjaEaEaEaEaEfjfjgdememghemfjfjdraEaEaEaEaEaEaEaEaEaEararcsgMcxlzlGcxeOePeQffeReSeaeSeTeUacaEaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEclejejcqejejftdfejclgjdaclememghgsfjfjaEaEaEaEaEfjfjfjfcememhIdrhAdraEaEaEaEaEaEfBaEaEarararcscscsfNcscxdFfeePfffgfhoEoEeQfiacaEaEaEaEaEaEaE
 aaaEaEaEaEaEaEaEaEaEaEaEaEclcbejejejejfYdUdVdhekemhnememgwgufjfjaEaEaEaEaEfjfjgvgwemememdrdrdraEaEaEcwfFfFfFfFfFfFfFfFfFcscxfNcscscsfofofpfDfDfDdzdzdzacchaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEclclclclclclclclclclelduduememgJfjfjfjfjfjfjfjfjfjfjfjgJememdrdrdraEaEaEaEcwfFfHfHfSgkgxgHgPfFcscxfNcsfCfCfDfDgpfDgyfDfDiIchacchaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEdrdAememgwemgIgJfjfjfjfjfjfjfjfjfjfjgSgJememdrdraEaEaEaEaEcwfFgUfSfSfSfSfSfSfFcscxfNcsfCfCfDgygDgygygQfDiIchacchaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEdrdrememgJememhnfjfjfjhcfjfjfjfjfjfjfjhnememdrdraEaEaEaEaEcwfFfSfSfSfSfSfSfSfFcscsgEcscscsfDgygygygyfDfDiIchacchaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEdrdrememgJemememcZfdfddiemememcZfdfddiemememdrdraEaEaEaEaEcwfFfFgKfFhmhmhmhmfFfxfxfTfxfxcsgZhphyhyhyfDchiIchacchaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEaEdrdremgJemememememfcemememghememememememdrdrdrcvcvcvhbhbhbfZehgbgbgcgcgcgThCgegegffxggcsfDhyhyhyhyfDchiIchacchaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEaEdrdrevgJememememememememememememememememcIcOcOcOcvcPfZfZfZfZglgmgngogogogoicgqfxfTfxfxcsfDgygyjFjFfDchiIchacchaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEaEaEdrdrdrdrdrdrdrdrdremcZfdfddidrdrdrdrdrdrcOemcOcvcPjOhqhqhqflgzgngogAgogoicfxfxgBfxfxcsfDgygyjFjFfDchiIchacchaEaEaEaEaEaE
-aaaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEaEaEaEdrdrdrdrdrdrdrdremememememdrdrdrdrdrdrcOcOcOcvcPhuhxhxheheheexhehehehehefZfZcscscscsfDjFjFjFlvfDchiIchacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEaEaEaEaraEaEaEaEardrdremememememdrdraEaEaEhHcOcOcOeVhohuhxhxhefOfOfOhefPfXfPhegOhOjqjqcLcLfDjFjFjFlMfDchiIchacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEcoaEaEaEaEaEaEaEaEeLeLeLeLeLeLeLeLardrdrruhzemdrdraEaEaEaEhHcOcOcOcvcPhuhxhxhefPfOfOlWhVfOfOhefZayaygCchayfDgDnmgDjFfDchiIchacchaEaEaEaEaEaE
-aEaEgXgXgXgXgXgXgXgXgXgXgXgXgXaEaEaEaEaEaEaEfIioioioioioiMfIaEdrdrdrdrdrdrdrcwcwcwcwcwcvcvcvcvcPtctdtehefPfOfOfOgafOhehefZaygrgrchayimimimimimimiririracchaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEclclclclclclclclclclelduduememgJfjfjfjfjfjfjfjfjfjfjfjgJememdrdrdraEaEaEaEcwfFfHfHfSgkgxgHgPfFcscxfNcsfCfCfDfDgpfDmgfDfDiIchacchaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEdrdAememgwemgIgJfjfjfjfjfjfjfjfjfjfjgSgJememdrdraEaEaEaEaEcwfFmCfSfSfSfSfSlHfFcscxfNcsfCfCfDgDgDgDgDgDfDiIchacchaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEdrdrememgJememhnfjfjfjhcfjfjfjfjfjfjldhnememdrdraEaEaEaEaEcwfFfSfSfSfSfSfSnIfFcscsgEcscscsfDgDgDgDgDfDfDiIchacchaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEdrdrememgJemememcZfdfddiemememcZfdfddiemememdrdraEaEaEaEaEcwfFfFgKfFhmhmhmhmfFnbfxfTfxfxcsgZhphyhyhyfDchiIchacchaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEaEdrdremgJemememememfcemememghememememememdrdrdrcvcvcvhbhbhbfZnlgbgbgcgcgcgchCgegegffxggcsfDhyhyhyhyfDchiIchacchaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEaEdrdrevgJememememememememememememememememcIcOcOcOcvcPfZfZfZfZglgmgngogogogoicgqfxfTfxfxcsfDgygyjFjFfDchiIchacchaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEaEaEdrdrdrdrdrdrdrdrdremcZfdfddidrdrdrdrdrdrcOemcOcvcPjOhqhqhqflgzgngogAgogoicfxfxgBfxfxcsfDgygyjFjFfDchiIchacchaEaEaEaEaEaE
+aaaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEaEaEaEdrdrdrdrdrdrdrdremememememdrdrdrdrdrdrcOcOcOcvcPhuhxhxheheheexhehehehehefZfZcscscscsfDjFjFjFlvfDchiIchacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEaEaEaEaraEaEaEaEardrdremememememdrdraEaEaEowcOcOcOeVnThuhxjRheozfOfOhefPfXfPhegOhOjqjqcLiIfDjFjFjFlMfDchiIchacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaraEaEaEaEaEaEaEaEeLeLeLeLeLeLeLeLardrdrruhzemdrdraEaEaEaEowcOcOcOcvcPhuhxhxhefPfOfOlWhVfOfOhefZayaygCchiIfDgDnmgDjFfDchiIchacchaEaEaEaEaEaE
+aEaEgXgXgXgXgXgXgXgXgXgXgXgXgXaEaEaEaEaEaEaEfIioioioioioiMfIaEdrdrdrdrdrdrdrcwcwcwcwcvcvcvcvcvcPtctdtehefPfOfOfOgafOhehefZaygrgrchiIimimimimimimiririracchaEaEaEaEaEaE
 aEaEgXhjhjhjhjhkhkhkhkhkhlhjgXaEaEaEaEaEaEaEfIioioiQiojjjrfIaEaEaEdrdrdraEaEhHaEaEhHaEaEhHaEaEfZhukMhxheheheexhehehehehefZfZfZfZfZfZirisiCiEiFiEiGiPiracchaEaEaEaEaEaE
-aEaEgXgXgXhjhthkhkhkiaiaibiaiaiaiaiahvhKhKhKeLjsjEjMjPeLkoeLhviphvhvhvhvhvhvhvhvhvhvhvhvhvhvhvfZhuhxhxfZhxhxhxhxfZgzgzhDgzgzgzgLgLgmiriYisiYiEiEiPiEiracchaEaEaEaEaEaE
-aEGugXhFgXgXgXgXgXhGiaiqitiyitititiahMjkhWhMhMeehWkthMhXkJjfjfjfhvfRhihMhMhMhMhMhMjfjfjfjfjfhvhxhuhxhxhxhxhxgLhxgzhDgzgLgLgLgzgmgmgLjoiEiEiEiEiEiEiEiracchaEaEaEaEaEaE
-aEhQhRhShThShUhShThSiaiqitiqitiqitiahZhMhMhMhMefhMktjfegkLhMhMhMdQhMhMhMhMhMhMhMhMhMhMhYhMhMhvgGhuhxhxfZhxhxhxgLjyjyjyjyjyjyjyjyjyjyjyiEiEjTiEiEiEjViracchaEaEaEaEaEaE
-aEhQieifigeXinijiiijiaiqitiqitiqitibhMhMhMhMhMhMhMkPizhMkLhMhMiNdQhMhMhMhMhMhMhMhYhYhYhMhMhMhvhxhuhxhxfZfZfZfZhxjyiOjWjWjWjLkamljWjWjyisisiEiskbiEkciracchaEaEaEaEaEaE
-pciuiviwixiwiAhShTgNiaiqiRiqfmiqgRiaiBhMhMhMhMhdmIlgmIegkLhMhMiNdQhMhMhMhMhMhMhYhghghghghghghvhxhuhhhxfZhxhxhxhxjyjWjWjWjWmKjWjWjWjWjykdkdiEkdkmiEiEiracchaEaEaEaEaEaE
-iHiIiJiJiJiKiLijiiijiaiqmMfJfLfMgthaihhMhMhMihikihlnihiSkLhNhMnDhvhvhvhvlEeihYhMhYjkiZhMjkjfhvfZjGkifZfZhxhxhxhxjyjWjWjWjWmKjWjWjWjWjyiEiEiEiEkqisiYiracchaEaEaEaEaEaE
-jaiTiUiViWiViAiXhUhSiaiqitititjpitiaiBhMhMhMhMeghMjbhMhMkLhMhMhMjchMjciDhMhMhMhMhYhYhYhYhMjfhvhxhuhhhxfZhxhxhxhxjyodjWjWjWmKjWjWjWjWjyiriEiEiririririracchaEaEaEaEaEaE
-aEhQieijiijeiLijiiijiaiaiaiaiaiaiaiahZhMhMhMjgeyjijijijimmhMkxjlhvjmhvhMhMhMhMgYeihMhMhMiZhMhvhxhuhxhxfZhxkKhxjRjyjyjyjyjymKjyjyjyjyjykyliligWjdjdjdgWacchaEaEaEaEaEaE
-aEhQhRhShTjujvjwjxjwjzjAjAjAjBjAjCgXiBhMhMhMjDpDqUqUhMhvmnjNhvhvhvhvhvhMhMhMhMeghMhMhMhMhMhMhvhxhuhhjRfZhxoVhxhxhxhxkykzrBkUlbrKrKrKkUkyhfhflehfhfjtgWaEaEaEaEaEaEaEaE
-aEGujXjXjXjXjXjXjXjXjXjXjXjXgXgXtfgXhvhvhvhvhvhvhvhvhvhvnijQhvhvhvhvhvhvhvhvhvhvjfjfjfjfjfjfhvhxjZkFjYjYoyoHoUhqhqpalhlAlkkUllkUkUkUkUkyjHhfhfhfhfjIgWjJjKaEaEaEaEaEaE
-aEaEjXdRrLdSdRdRdRdSdSdWdXjXknkpkDkukukukvhrkpkukuknkwkukDkurMrNknhxhxrOhxhxhvhvhvhvhvhvhvhvhvhxhukMhxfZhxpbhxhxhxhukykzkBlolBlClklCkzkygWhfhfhfhfhfjUhPLeaEaEaEaEaEaE
-aEaEjXhsdWdRdRdRdRdRdSdRdRnjkSnWojkukEkukukukuopkuknkGkukDkukukHknkIkKhxoqhxfZfZfZfZhxhxhxnehxhxhukMhxfZhxrvhxhxhxhukykzlbkUkUkBkBkBntlhnFkjkkhPhfhfgWjJjKaEaEaEaEaEaE
-aEaEjXlXdRdRdRdRdRdRdRdSdRjXknkukOkQkRkSkTkSkSkWkYkZkSkSsbsdsHkuknhxlaljluljsYljlQljncndndsZndndnfngmbmbmbhxhxhxsIhukykzlbkUkUkUkUrPkzkygWhfkrhfhfksgWaEaEaEaEaEaEaEaE
-aEaEjXjXjXjXjXjXjXjXjXjXjXjXknkunhknknknhwknknknhBknkukukXkNsJnknojYnpnqnrnstansnsnsnunCnCtbnCnCnCnLmbmBmbmbsKhxfZmCkykzkUkzlbkUlblbrQkygWhEgWhfhfkCgWacacaEaEaEaEaEaE
-aEaEaEaEvfaEaEaEaEaEaEaEaEaEknkunhknlfnZoSknlfnZoSknlFlFlFmRmSmVknkIoVoXhxhxnehxhxhxhxmbmbmbmbmbmbmWmbnnnwmbnxnxnxnykykzkUkzrRrRlblbkykygWhJgWgWgWgWgWgVacaEaEaEaEaEaE
-aEaEaEaEvfaEaEaEaEaEaEaEaEaEknkunhknlphLlqknlphLlpknlrlzlzkuosrSknhxoVpehxhxnehxhxhxhxmbrTrUourVotovototoBoBoCoCoCnykykzoFkzoKoKoKoKoLhfkVhfhfjtkVhfgVgVacaEaEaEaEaEaE
-aEaEaEaEvfaEaEaEaEaEknlFlFlFknrgrhknknknknknknknknknkulGrWptsLkulxlxpvpwlxlxlxlxlxlPlxmbrXototototoMoZotoBpdquqvoCnykykzlbkzqwqwqwqwoLhfhfhfhPhfhfhfhfgVacaEaEaEaEaEaE
-aEaEaEaEvfaEaEaEaEaEknqxkukuknkunhkukukumcrYkumekuknidmgmhmisMkulxlspypzlttglwlwlxltlxmbrZotqyqzotqBqAqBqCququqDoCnykylblbkUqwqwqwqwoLhfhfhfhfhfhPhflmgVacaEaEaEaEaEaE
-aEaEaEaEvfaEaEaEaEaEmEkukEkuknkupopupupupxkukukukuknkGsamJmisNkHlxlJlKpAlLthlNlOlxlPlxmbscqyqyqyqyotqEotqCquqDqDoCnykykzkzkzqwqwqwqwoLqFhPhfhfhfhfhfhfgVacaEaEaEaEaEaE
-aEaEaEaEvfarararararknidrwrxryrxrzlflfkulflfkukukuknkulImirAsOkulxlTlUlVlLtiltlslxlslxmbotqyototototoZotqGquqDqDoCnykykzkUkyqwqwqwqwoLhfhfhfhfhfhfhflSgVacaEaEaEaEaEaE
-aEaEaEaEvfaEaEaraEaEmEkurCkumOkurDrErErFrGlfkukukuknkukulIlIoskulxltlsltmamalslslxlPlxmbqHqHqHqyqIsetjotqJquququoCnykykykykyqwqKqwqwoLlYlZlYjJjJjJjJjJgVacaEaEaEaEaEaE
-aEaEaEaEvfaEqLqMqNaEknkukukuknkunhlflfkulflfkukukumXnlkukukusPkulxmjltltltlsltmklxlPlxmbmbmbmbmbmbmbmbmboBoBoBoBoBnyqOaEayayayayayayaytkhPtlayayayayaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEqLqPqNaEknlFlFlFknknrHknqQqQqQqQqQknknknknknknknmSknlxmoltltltltmpmqsfmrmsmtnvmznvlynvnvnvmzltlslslslynyqOaEchaEaEchaEaEchqRnGqRchaEaEchaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEqLqPqNaEaEaEaEaEknkukDkusgshqVqVqQqWjhjnjnjnsQsRsSjnlxmwmxltltltlsmyltltmtmzmzmzmrlyownvnvmzltozltoAqXqYqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
-aEaEaEaEvfaEaEraaEaErbrcrcrcknkukDkusiqVqVrdqQqWjhjnjnjnsTsUjnkelxmFlsltltltlsltltmrmGmtmzmzmzoImzmzmzmznvltltsjlynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEqLqPqNaErerfrfrfknkuskspsqqVqVilqQqTjhjnjnkfsTjnkgkelxkhklklltlsltltlttmtntotptptplynvnvnvmznvnvltlslynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
-aEaEaEaEvfaEqLqPqNaErerfrfrfsrkNssstsusvslrdqQqTjhjnjnjnsTjnjnkelxltlsltltmNlsltltmGmplxmrnvmzlylylylylylylylylylynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEriacaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEqLqPqNaErjrfrfrfrbswswsxqQqQqQqQqQqSoNoNoNoNsVoNoNoNlxlsltlsltmGmNltmsmNmpmtmroOmztqtqnvnvmznvnvnvltlxnyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
-aEaEaEaEqLrkrkrlrkrkrmrfrfrfrbswsyszswsAswsAswsAsAoNororsWpBpCsmlxltmPmaltltltmQltmpmtmznvnvmzlxtrnvnvmznvnvltlslxnyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEqLrnqNaErorfrflHrbswsAsBswsCswsDswsAsAoNomolsXoroPpElxlxlxlxmGltlsltltlxlxlxlxlxlxlxtqmzmzmzltltlslslxrpmfmdfZaEaEaEaEaEaEaEaEaEaEaEayacayaYacaEaEaEaEaEaE
-aEaEaEaEvfaEqLrnqNaErerfrfrfrbswsEsFsAsAsAsAsGsAsAoNomororkAoGpFoNaEaElxmTmGmGltltlxaEaEaEaEaElxtstsnvltlslslslslxoJlcoQmdfZaEaEaEaEaEaEaEaEaEaEacacaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEqLrnqNaErerfrfrqrbswswswswswswswswswswoNoRoNoNoNoNpGoNmdmdlxlxlxlxlxlxlxlxlxlxlxlxlxlxlxlxlxlxlxlxlxlxoTlclclcmYaEaEaEaEaEpHsnpHaEaEacaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEaEraaEaErerfrfrfrrlDlDlDlDlDlDlDlDlRlRmZmUmUmUnanbpJpKpKpLpMpNpOpPpQpRpSpTpUpVpVpVpVpVpVpVpVpVpVpVpWoWoYmZlclcmDaEaEaEaEaEmupImvaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEqLrnqNaErerfrfrfrrlDlDlDlDlDlDlDlDlDlRmZmZmZmUmUmUmUpXpXpXpXpYpZqaqbqcqdqeqfqgqgqgqgqgqgqgqgqgqgqgqhqgrIlclclcmDaEaEaEaEaEmApImvaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEqLrnqNaErbrsrsrsrbnznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznzmdqimZmZlclclcnAfsfsfsfsfsmHqjmvaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEqLrtqNaEacacacacacacacacacacacacacacacacacacacacacacacacacacacchacacacacaceueueuacacacaYacacacacnBqknBmZlclclcsonEmZmZmZpIpIpImvaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfaEaEaraEaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanBaEaEaEaEnBqlnBpfpfmfnHmfnHmffEfEfEfEfEjSaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEvfvfvfvfvfvfvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanInVnVnBnJnKqmnBnMnMmfnNmfnNmfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaZBZBnVnBnOnBqnnQnRnSmfnNmfnNmfaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aEaEaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaZBnVnVnBnUnVqomLnXnRmfnNmfnNmfaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aEaEaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaZBldnVwKnBnYnBqpnRoaobmfocmfnNmfaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aEaEaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaZBnVwKogoeofogqqohoinRmfnNmfnNmfaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaZBnVnRnRnBnPnBqrqsqtrJmfnNmfocmfaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanBnBnBaanBnBoknBnBnBnBnBmfnNmfocmfaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEaEaEaEarpgaraEaEaEaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEaEaEaEaEphaEaEaEaEaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEonononaEpiaEonononaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEpjpkpkplpmplpnpnfGaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEoxoxoxaEooaEoxoxoxaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEaEaEaEaEppaEaEaEaEaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEonononaEpiaEonononaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfarpqpkpkprpmprpnpnpsarvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEoxoxoxaEpiaEoxoxoxaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfaEaEaEaEaEoDaEaEaEaEaEvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavfvfvfvfvfvfvfvfvfvfvfvfvfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aEaEgXgXgXhjhthkhkhkiaiaibiaiaiaiaiahvhKhKhKeLjsjEjMjPeLnWeLhviphvhvhvhvhvhvhvhvhvhvhvhvhvhvhvfZhukMhxfZhxhxhxhxfZgzgzhDgzgzgzgLgLgmiriYisiYiEiEiPiEiracchaEaEaEaEaEaE
+aEGugXhFgXgXgXgXgXhGiaiqitiyitititiahMjkhWhMhMeehWkthMhXkJjfjfjfhvfRhioAoIhWhMhWhMjfjfjfjfjfhvojhuhxhxhxhxhxgLhxgzhDgzgLgLgLgzgmgmgLjoiEiEiEiEiEiEiEiracchaEaEaEaEaEaE
+aEhQhRhShThShUhShThSiaiqitiqitiqitiahZhMhMhMhMefhMktjfegkLhMhMhMdQhMhMhMhMhMhMhMhMhMhMhYpJpJhvgGqxqKhxfZhxqNhxgLjyjyjyjyjyjyjyjyjyjyjyiEiEjTiEiEiEjViracchaEaEaEaEaEaE
+aEhQieifigeXinijiiijiaiqitiqitiqitibhMhMhMhMhMhMhMkPizhMkLhMhMiNdQhMhMhMhMhMhMhMhYhYhYhMhMhMhvhxhukMhxfZfZfZfZhxjyiOjWqTqTqWkamljWjWjyisisiEiskbiEkciracchaEaEaEaEaEaE
+pciuiviwixiwiAhShTgNiaiqiRiqfmiqgRiaiBhMhMhMhMhdmIlgmIrMkLhMhMiNdQhMhMrNhMhMhMhYhghghghghghghvhxhuhhhxfZrOhxhxhxjyjWjWjWjWmKjWjWjWjWjykdkdiEkdkmiEiEiracchaEaEaEaEaEaE
+iHiIiJiJiJiKiLijiiijiaiqmMfJfLfMgthaihhMhMhMihikihlnihiSkLhNhMnDhvhvhvhvlEeihYhMhYjkhWhWjkjfhvfZjGkifZfZhxhxhxhxjyjWjWjWjWmKjWjWjWjWjyiEiEiEiEkqisiYiracchaEaEaEaEaEaE
+jaiTiUiViWiViAiXhUhSiaiqitititjpitiaiBhMhMhMhMeghMjbsshMkLhMhMhMjchMjciDhMhMhMhMhYhYhYhYhMjfhvhxhuhhhxfZhxhxhxhxjyodrPrPrPmKjWjWjWjWjyiriEiEiririririracchaEaEaEaEaEaE
+aEhQieijiijeiLijiiijiaiaiaiaiaiaiaiahZhMhMhMjgeyjijijijimmhMsjoAhvjmhvhMhMhMhMsKeihMhMhMiZhMhvhxhuhhhxfZhxsQhxjRjyjyjyjyjyuVjyjyjyjyjykyliligWjdjdjdgWacchaEaEaEaEaEaE
+aEhQhRhShTjujvjwjxjwjzjAjAjAjBjAjCgXiBhMhMhMjDpDqUtAhMhvmnjNhvhvhvhvhvhMhMhMhMtmhMhMhMhMhMhMhvhxhuhhjRfZhxoVtZhxhxuWkykzrBhrlbufrKrKkUkyhfhflehfhfjtgWaEaEaEaEaEaEaEaE
+aEGujXjXjXjXjXjXjXjXjXjXjXjXgXgXtfgXhvhvhvhvhvhvhvhvhvhvnijQhvhvhvhvhvhvhvhvhvhvjfjfjfjfjfjfhvhxjZkFjYjYoyoHoUhqhqpalhlAkfkhllkUkUkUkUkyjHhfhfhfhfjIgWjJjKaEaEaEaEaEaE
+aEaEjXdRrLdSdRdRdRdSdSdWugjXknkpkDkvkvkvkBlkkplokvknuhuiujuiukulknhxhxrOhxudhvhvhvhvhvhvhvhvhvhxhukMhxfZhxpbhxhxhxuXkykzhrkUkUkUkUumkzkygWhfhfhfhfhfjUhPLeaEaEaEaEaEaE
+aEaEjXhsdWdRdRdRdRdRdSdRdRnjkSunuokukEkukukukuopkuknkGkukDkukutuknkIkKhxoqhxfZfZfZfZhxhxhxneudhxhukMhxfZhxrvhxhxhxuXkykzlBlClClClClCntlhnFkjkkhPhfhfgWjJjKaEaEaEaEaEaE
+aEaEjXlXdRdRdRdRdRdRdRdSdRjXknkukOkQkRkSkTkSkSkWkYkZkSkSsbsdsHtvknhxlaljluljsYljlQljncndndsZndndnfngmbmbmbhxhxhxhxuXkykzhrkUkUkUkUtwkzkygWhfkrhfhfksgWaEaEaEaEaEaEaEaE
+aEaEjXjXjXjXjXjXjXjXjXjXjXjXknkunhknknknhwknknknhBknkukukXkNsJnknojYnpnqnrnstansnslJnunCnCtbupupupnLmbmBmbmbhxhxsIuXkykzuYkztxkUlblbrQkygWhEgWhfhfkCgWacacaEaEaEaEaEaE
+aEaEaEaEvfaEaEaEaEaEaEaEaEaEknkGnhknlfnZoSknlfnZoSknlFlFlFmRmSmVknkIoVoXhxhxnehxhxhuhxmbmbmbmbmbmbmWmbnnnwmbnxnxnxuqkykzhrkzrRrRlbuZkykygWhJgWgWgWgWgWgVacaEaEaEaEaEaE
+aEaEaEaEvfaEaEaEaEaEaEaEaEaEknkunhknlphLlqknlphLlpknlrkukukuosrSknhxoVpehxhxneururhuurmbrTrUourVuslKototoBoBoCoCoCnykykzhrkzoKoKoKoKoLhfkVhfhfjtkVhfgVgVacaEaEaEaEaEaE
+aEaEaEaEvfaEaEaEaEaEknlFlFlFknrgrhknknknknknknknknknkukurWptsLkulxlxpvpwlxlxlxlxlxlPlxmbrXototototlUlVotoBpdquqvoCnykykzhrkzqwqwqwqwoLhfhfhfhPhfhfhfhfgVacaEaEaEaEaEaE
+aEaEaEaEvfaEaEaEaEaEknutkukuknkunhkvkvkvkvrYkvmekuknidlImhmisMkulxtqmcmjtqtglwlwlxmklxmbrZotuuqzotqBqAqBmoququqDoCnykykUmpvaqwqwqwqwoLuahfhfhfhfhPhflmgVacaEaEaEaEaEaE
+aEaEaEaEvfaEaEaEaEaEmEkukEkuknkupopupupupxkukukukHubkGsamJmisNuvlxmqmrmtmythlNlOlxlPlxmbscqyqyqyqyotqEuwmzuxqDqDoCnykykzkzkzuyqwqwqwoLqFhPhfhfhfhfhfhfgVacaEaEaEaEaEaE
+aEaEaEaEvfarararararknidrwrxryrxrzlflfkulflfkukukuknkulImirAsOkulxlTmFmPlLtilttqlxmklxmbuzqyototototnvovoFquqDqDoCnykykzkUkyqwqwqwqwoLhfhfhfhfhfhfhflSgVacaEaEaEaEaEaE
+aEaEaEaEvfaEaEaraEaEmEkurCkumOkurDrErErFrGlfkukukuknkukulIlIoskulxtqtqtqoMmalsoOlxlPlxmbqHqHqHuAoZpypzotqJquququoCnykykykykyuBuBuBuBoLlYlZlYjJjJjJjJjJgVacaEaEaEaEaEaE
+aEaEaEaEvfaEuCqMuDaEknuEkukuknkunhlflfuFlflfkukukumXkukukukusPkulxpAtqtqtqtqtqmklxlPlxmbmbmbmbmbmbmbmbmboBoBoBoBoBnyqOaEayayayayayayaytkhPtlayayayayaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCqPuDaEknlFlFlFknknrHknqQqQqQqQqQknknknknknknknmSknlxklqCqCtqtqtqqGuGqXuHqYtqsetqlytytztztztztztztqlynyqOaEchaEaEchaEaEchqRnGqRchaEaEchaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCqPuDaEaEaEaEaEknuIkDuJsgshuKuLqQtBjhjnjnsfuMsRsSjnlxmwmxtqtqtqtqtjtqmkqYsesesetqlytnqIqIqIqIqIqIqItotpqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
+aEaEaEaEvfaEaEraaEaErbrcrcrcknuNkDuJsiqVqVrdqQtBjhjnjnttsTsUjnkelxtClstqltltlsltltqGqIqIqIqIqIqItDtFtGtGtGtGtHtIlynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCqPuDaEreuOrfrfknuNskspsqqVqVilqQtJjhjnjnttsTjnkgkelxueklklltlsltltlttKtLtLtLtQtQlytqtFtMtMtMtMtNtqlynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCqPuDaErerfrfrfsrkNuPstsusvslrdqQtJjhtOtPtRsTjnjnkelxtqtqtqltmNlsltlttXtqtqtqtqselylylylylylylylylylynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEriacaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCqPuDaErjrfrfrfrbswswsxqQqQqQqQqQqSoNoNoNoNsVoNoNoNlxtqtqtqltmGmNltmstqtqqYtqtEsetqtqtstqsetqtqtqtqlxnyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
+aEaEaEaEqLrkrkrlrkrkrmrfrfrfrbswsyszswsAswsAswsAsAoNtSorsWpBpCsmlxtYtYtYltltltmQuQtXtststqtstslxtrtqtqsetqtqtqtqlxnyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCrnuDaErouOrfucrbswsAsBswsCswsDswsAsAoNomolsXoroPpElxlxlxlxmGltlsltltlxlxlxlxlxlxlxtqsesesetqtqtqtqlxrpmfmdfZaEaEaEaEaEaEaEaEaEaEaEayacayaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCrnuDaErerfrfrfrbswsEsFsAsAsAsAsGsAsAoNomortTkAoGpFoNaEaElxmTmGmGltltlxaEaEaEaEaElxtsuRtqtqtqtqtqtqlxoJlcoQmdfZaEaEaEaEaEaEaEaEaEaEacacaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCrnuDaErerfrfrqrbswswswswswswswswswswoNoRoNoNoNoNpGoNmdmdlxlxlxlxlxlxlxmdmdmdmdmdlxlxlxlxlxlxlxlxlxlxoTlclclcmYaEaEaEaEaEpHsnpHaEaEacaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEvfaEaEraaEaErerfrfrfrrlDlDlDlDlDlDlDlDlRlRmZmUmUmUnauSuTpKpKpLpMpNpOpPpQpRpSpTpUpVpVpVpVpVpVpVpVpVpVpVpWoWoYmZlclcmDaEaEaEaEaEmupImvaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEvfaEuCrnuDaErerfrfrfrrlDlDlDlDlDlDlDlDlDlRmZmZmZmUmUmUmUpXpXpXpXpYpZqaqbqcqdqeqfqgqgqgqgqgqgqgqgqgqgqgqhqgrIlclclcmDaEaEaEaEaEmApImvaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEvfaEuCrnuDaErbrsrsrsrbnznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznzmdqimZmZlclclcnAfsfsfsfsfsmHqjmvaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEvfaEuCrtuDaEacacacacacacacacacacacacacacacacacacacacacacacacacacacchacacacacacchacacacacacaYacacacacnBqknBmZlclclcsonEmZmZmZpIpIpImvaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEvfaEaEaraEaEvfgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYaaaaaaaaaaaanBaEaEaEaEnBqlnBpfpfmfnHmfnHmffEfEfEfEfEjSaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEvfvfvfvfvfvfvfgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYaaaaaaaatUtUnBnMnMnBnJnKqmnBnMnMmfnNmfnNmfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYaaaaaaaatUtUtVtVnVnBnOnBqnnQnRnSmfnNmfnNmfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYuUgYgYgYgYgYgYgYgYgYgYgYgYaaaaaaaatUtUtVnVnVnBnUnVqomLnXnRmfnNmfnNmfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYaaaaaaaatUtVtWnVwKnBnYnBqpnRoaobmfocmfnNmfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYaaaaaaaatUtVnVwKogoeofogqqohoinRmfnNmfnNmfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYaaaaaaaatUtVnVnRnRnBnPnBqrqsqtrJmfnNmfocmfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYaaaaaaaanBnBnBnBnBnBoknBnBnBnBnBmfnNmfocmfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEaEaEaEarpgaraEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEaEaEaEaEphaEaEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEonononaEpiaEonononaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEpjpkpkplpmplpnpnfGaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEoxoxoxaEooaEoxoxoxaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEaEaEaEaEppaEaEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEonononaEpiaEonononaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfarpqpkpkprpmprpnpnpsarvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEoxoxoxaEpiaEoxoxoxaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEaEaEaEaEoDaEaEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+gYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfvfvfvfvfvfvfvfvfvfvfvfvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 "}
