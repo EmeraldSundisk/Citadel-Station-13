@@ -1,0 +1,114 @@
+"a" = (/turf/open/space/basic,/area/space)
+"b" = (/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/plasteel/airless,/area/space)
+"c" = (/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"d" = (/turf/open/floor/plasteel/dark/airless,/area/space)
+"e" = (/obj/structure/table/wood/bar,/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"f" = (/turf/open/floor/plating/airless,/area/space)
+"g" = (/obj/structure/window/reinforced/spawner/north,/obj/structure/window/reinforced/spawner/west,/turf/open/floor/carpet/green,/area/space)
+"h" = (/obj/structure/window/reinforced/spawner/north,/turf/open/floor/carpet/green,/area/space)
+"i" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/airless,/area/space)
+"j" = (/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/airless,/area/space)
+"k" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"l" = (/turf/open/floor/carpet/green,/area/space)
+"m" = (/obj/structure/table/wood,/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"n" = (/obj/structure/chair/comfy/brown{dir = 8},/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"o" = (/turf/closed/wall/rust,/area/space)
+"p" = (/obj/machinery/light/broken{icon_state = "tube-broken"; dir = 8},/turf/open/floor/plasteel/dark/airless,/area/space)
+"q" = (/obj/structure/lattice,/turf/open/space/basic,/area/space)
+"r" = (/obj/structure/table/wood/bar,/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/plasteel/airless,/area/space)
+"s" = (/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/airless,/area/space)
+"t" = (/obj/structure/girder,/turf/open/space/basic,/area/space)
+"u" = (/obj/effect/turf_decal/stripes/line{dir = 10},/turf/open/floor/plasteel/airless,/area/space)
+"v" = (/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel/airless,/area/space)
+"w" = (/obj/effect/turf_decal/stripes/line{dir = 6},/turf/open/floor/plasteel/airless,/area/space)
+"x" = (/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/airless,/area/space)
+"y" = (/obj/structure/chair/stool/bar,/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"z" = (/obj/structure/fans/tiny,/turf/open/floor/plasteel/dark/airless,/area/space)
+"A" = (/obj/structure/table/wood/bar,/obj/machinery/light{dir = 4},/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"B" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plating/airless,/area/space)
+"C" = (/obj/structure/girder,/turf/open/floor/plating/airless,/area/space)
+"D" = (/obj/effect/turf_decal/delivery,/turf/open/floor/plasteel/airless,/area/space)
+"E" = (/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/obj/machinery/light/broken,/turf/open/floor/plasteel/airless,/area/space)
+"F" = (/obj/structure/table/wood/bar,/obj/structure/window/reinforced/spawner,/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"G" = (/obj/structure/table/wood/bar,/obj/structure/disposaloutlet{dir = 8},/obj/structure/window/reinforced/spawner,/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"H" = (/obj/effect/turf_decal/stripes/line{dir = 9},/turf/open/floor/plasteel/airless,/area/space)
+"I" = (/obj/structure/chair/stool/bar,/obj/effect/decal/cleanable/dirt,/turf/open/floor/carpet{icon_state = "carpetsymbol"},/area/space)
+"J" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/dark/airless,/area/space)
+"K" = (/obj/effect/decal/cleanable/glass,/turf/open/floor/plating/airless,/area/space)
+"L" = (/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/obj/effect/decal/cleanable/generic,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/airless,/area/space)
+"M" = (/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/obj/machinery/light/broken,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/airless,/area/space)
+"N" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/stairs/left,/area/space)
+"O" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/stairs/medium,/area/space)
+"P" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/stairs/right,/area/space)
+"Q" = (/obj/structure/window/reinforced/spawner/north,/obj/effect/decal/cleanable/dirt,/turf/open/floor/carpet/green,/area/space)
+"R" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/stairs,/area/space)
+"S" = (/obj/effect/decal/cleanable/shreds,/turf/open/floor/plating/airless,/area/space)
+"T" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/carpet/green,/area/space)
+"U" = (/obj/structure/grille/broken,/obj/effect/decal/cleanable/glass,/turf/open/floor/plating/airless,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaabbcmmcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaabbcmmcbaddaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaabbcmmnbopdaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaqijkmmcbrddaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaqisbbbbrddaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaqisskeFGoddHoqaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaatsbskeuvwddaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaqoxbbIedddzJaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaqtbbbIedddJJiaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaqKbbskeeABJCqaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaafDbsskcycsssiqaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaqisssbbbsbLbiqaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaqisEsbbMssiqaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaqghNOPQhRaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaSTTlllTaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaffCUqaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaqfffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
