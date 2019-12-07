@@ -67,17 +67,17 @@
 "bo" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
 "bp" = (/obj/machinery/door/window{base_state = "right"; dir = 4; icon_state = "right"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
 "bq" = (/obj/machinery/light/small{dir = 8},/obj/structure/sign/warning/vacuum/external{pixel_y = 32},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
-"br" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
+"br" = (/obj/structure/grille,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating/airless,/area/space/nearstation)
 "bs" = (/turf/open/floor/plasteel{icon_state = "damaged1"},/area/ruin/space/derelict/solar_control)
 "bt" = (/obj/machinery/door/window,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
-"bu" = (/turf/open/floor/plasteel{icon_state = "damaged5"},/area/ruin/space/derelict/solar_control)
+"bu" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel{icon_state = "damaged5"},/area/ruin/space/derelict/solar_control)
 "bv" = (/obj/item/stock_parts/matter_bin,/turf/open/floor/plasteel{icon_state = "damaged4"},/area/ruin/space/derelict/solar_control)
 "bw" = (/obj/structure/rack,/obj/item/circuitboard/machine/smes,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
 "bx" = (/obj/structure/rack,/obj/item/circuitboard/machine/microwave,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
 "by" = (/obj/structure/rack,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
 "bz" = (/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/bridge/ai_upload)
 "bA" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
-"bB" = (/turf/open/floor/plasteel{icon_state = "damaged2"},/area/ruin/space/derelict/solar_control)
+"bB" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel{icon_state = "damaged2"},/area/ruin/space/derelict/solar_control)
 "bC" = (/obj/item/stack/cable_coil/cut/red{amount = 2},/turf/open/floor/plasteel{icon_state = "damaged3"},/area/ruin/space/derelict/solar_control)
 "bD" = (/obj/structure/rack,/obj/item/circuitboard/machine/cryo_tube,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/ai_upload)
 "bE" = (/turf/open/floor/plasteel/airless{icon_state = "damaged4"},/area/ruin/space/derelict/bridge/ai_upload)
@@ -147,7 +147,7 @@
 "cQ" = (/obj/structure/rack,/obj/item/circuitboard/machine/smes,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage/engine_storage)
 "cR" = (/obj/structure/rack,/obj/item/stock_parts/capacitor,/obj/item/stock_parts/manipulator,/turf/open/floor/plasteel,/area/ruin/space/derelict/storage/engine_storage)
 "cS" = (/turf/closed/wall/r_wall,/area/maintenance/solars/port/fore)
-"cT" = (/turf/open/space/basic,/area/maintenance/disposal/incinerator)
+"cT" = (/obj/structure/grille,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating/airless,/area/space/nearstation)
 "cU" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "cV" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "cW" = (/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
@@ -163,11 +163,11 @@
 "dg" = (/obj/machinery/light/small{dir = 4},/obj/item/stock_parts/matter_bin{pixel_x = -10; pixel_y = 5},/obj/item/stock_parts/matter_bin{pixel_x = 5; pixel_y = 5},/obj/item/stock_parts/matter_bin,/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
 "dh" = (/obj/structure/sign/warning/securearea,/turf/closed/wall/r_wall,/area/ruin/space/derelict/gravity_generator)
 "di" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
-"dj" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
+"dj" = (/obj/structure/cable{icon_state = "1-2"},/turf/closed/wall/r_wall,/area/maintenance/solars/port/fore)
 "dk" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "dl" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
 "dm" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance,/obj/machinery/camera{c_tag = "MiniSat Antechamber"; dir = 4; network = list("minisat"); start_active = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
-"dn" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"dn" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating,/area/maintenance/solars/port/fore)
 "do" = (/obj/structure/closet,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/obj/machinery/camera{c_tag = "MiniSat Antechamber"; dir = 4; network = list("minisat"); start_active = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/solar_control)
 "dp" = (/obj/structure/rack,/obj/effect/spawner/lootdrop/maintenance,/obj/machinery/camera{c_tag = "Primary Tool Storage"},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "dq" = (/obj/item/reagent_containers/food/drinks/beer,/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
@@ -196,7 +196,7 @@
 "dN" = (/obj/structure/cable{icon_state = "1-4"},/turf/closed/wall/r_wall,/area/ruin/space/derelict/eva)
 "dO" = (/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
 "dP" = (/obj/structure/noticeboard,/turf/closed/wall/r_wall,/area/ruin/space/derelict/gravity_generator)
-"dQ" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/eva)
+"dQ" = (/obj/machinery/power/smes,/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel,/area/maintenance/solars/port/fore)
 "dR" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
 "dS" = (/obj/structure/lattice,/turf/open/floor/plasteel,/area/ruin/space/derelict/teleporter)
 "dT" = (/obj/machinery/door/airlock/engineering{name = "Engineering Access"; req_access_txt = "10"},/obj/structure/cable{icon_state = "4-8"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/gravity_generator)
@@ -263,7 +263,7 @@
 "fc" = (/obj/item/shard,/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
 "fd" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "fe" = (/obj/structure/table,/obj/item/rack_parts,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
-"ff" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
+"ff" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/maintenance/solars/port/fore)
 "fg" = (/obj/structure/table,/obj/machinery/power/apc{name = "Worn-out APC"; pixel_y = -24},/obj/structure/cable,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "fh" = (/obj/structure/table,/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
 "fi" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance{lootcount = 2; name = "2maintenance loot spawner"},/obj/structure/sign/poster/official/get_your_legs{pixel_y = 32},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
@@ -273,16 +273,16 @@
 "fm" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,/turf/open/floor/plasteel/dark,/area/ruin/space/derelict/medical/morgue)
 "fn" = (/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "fo" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/bridge)
-"fp" = (/obj/machinery/door/window{dir = 2; name = "Captain's Quarters"; req_access_txt = "20"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
+"fp" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/maintenance/solars/port/fore)
 "fq" = (/obj/item/clothing/head/helmet/space/syndicate/black/engie,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "fr" = (/obj/item/shard{icon_state = "small"},/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "fs" = (/obj/structure/window/reinforced/spawner,/turf/open/space/basic,/area/space/nearstation)
 "ft" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 1},/turf/open/floor/plating,/area/ruin/space/derelict/gravity_generator)
 "fu" = (/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
-"fv" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/ruin/space/derelict/eva)
-"fw" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/eva)
+"fv" = (/turf/open/floor/plating,/area/maintenance/disposal/incinerator)
+"fw" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "2-4"},/turf/open/space/basic,/area/solar/port/fore)
 "fx" = (/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/bridge/access)
-"fy" = (/obj/machinery/door/airlock/command{name = "E.V.A."; req_access_txt = "18"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
+"fy" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "4-8"},/turf/open/space/basic,/area/solar/port/fore)
 "fz" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating,/area/ruin/space/derelict/storage/engine_storage)
 "fA" = (/obj/machinery/door/airlock/engineering{name = "Engineering Secure Storage"; req_access_txt = "10"},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage/engine_storage)
 "fB" = (/obj/item/stack/cable_coil/cut/red,/turf/open/space/basic,/area/space)
@@ -325,7 +325,7 @@
 "gm" = (/turf/open/floor/plasteel/airless{icon_state = "damaged3"},/area/ruin/space/derelict/hallway/primary)
 "gn" = (/turf/open/floor/plasteel/airless{icon_state = "damaged2"},/area/ruin/space/derelict/hallway/primary)
 "go" = (/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/hallway/primary)
-"gp" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/crew_quarters/heads/captain/private)
+"gp" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/maintenance/solars/port/fore)
 "gq" = (/turf/open/floor/plating/airless,/area/ruin/space/derelict/bridge/access)
 "gr" = (/turf/open/floor/plasteel/airless,/area/ruin/unpowered/no_grav)
 "gs" = (/obj/item/stack/ore/slag,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
@@ -386,13 +386,13 @@
 "hv" = (/turf/closed/wall,/area/ruin/space/derelict/medical)
 "hw" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/door/airlock{id_tag = "Dorm6"; name = "Cabin 2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "hx" = (/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"hy" = (/turf/open/space/basic,/area/crew_quarters/heads/captain/private)
+"hy" = (/obj/machinery/power/terminal{dir = 1},/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plasteel,/area/maintenance/solars/port/fore)
 "hz" = (/obj/machinery/light/small,/turf/open/floor/plasteel,/area/ruin/space/derelict/singularity_engine)
 "hA" = (/obj/item/storage/box/lights/mixed,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "hB" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/door/airlock{id_tag = "Dorm5"; name = "Cabin 1"},/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "hC" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/window{base_state = "right"; dir = 4; icon_state = "right"},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "hD" = (/turf/open/floor/plasteel/airless{icon_state = "damaged4"},/area/ruin/space/derelict/hallway/primary)
-"hE" = (/turf/open/floor/plasteel/airless,/area/solar/port/fore)
+"hE" = (/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel/airless,/area/solar/port/fore)
 "hF" = (/obj/structure/table,/obj/machinery/computer/pod/old{name = "ProComp IIe"; pixel_y = 7; id = "derelict_gun"},/turf/open/floor/plasteel/chapel,/area/ruin/space/derelict/medical/chapel)
 "hG" = (/obj/machinery/door/morgue{name = "coffin storage"; req_access_txt = "22"},/turf/open/floor/plasteel/dark,/area/ruin/space/derelict/medical/chapel)
 "hH" = (/turf/open/floor/plating,/area/maintenance/department/medical)
@@ -513,7 +513,7 @@
 "jS" = (/turf/open/space/basic,/area/space/nearstation)
 "jT" = (/turf/open/floor/plating,/area/security/checkpoint/customs)
 "jU" = (/obj/machinery/door/airlock/external{name = "Arrivals Docking Bay 1"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
-"jV" = (/obj/machinery/camera{c_tag = "Telecomms Monitoring"; dir = 8; network = list("tcomms")},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
+"jV" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-8"},/turf/open/space/basic,/area/solar/port/fore)
 "jW" = (/turf/open/floor/plasteel,/area/science/storage)
 "jX" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/teleporter)
 "jY" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
@@ -577,7 +577,7 @@
 "le" = (/obj/machinery/camera,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "lf" = (/obj/structure/bed,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "lg" = (/obj/structure/window/reinforced/spawner,/obj/structure/table,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
-"lh" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/airlock/research{name = "Toxins Research"; req_access_txt = "7"},/turf/open/floor/plasteel/airless,/area/science)
+"lh" = (/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plasteel/airless,/area/solar/port/fore)
 "li" = (/obj/machinery/door/firedoor,/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
 "lj" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "lk" = (/obj/machinery/camera{c_tag = "Central Hallway North-West"; dir = 2},/obj/structure/closet,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
@@ -596,7 +596,7 @@
 "lx" = (/turf/closed/wall,/area/ruin/space/derelict/atmospherics)
 "ly" = (/turf/closed/wall/r_wall,/area/ruin/space/derelict/atmospherics)
 "lz" = (/obj/structure/cable{icon_state = "2-4"},/obj/structure/reagent_dispensers/watertank,/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"lA" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 4},/obj/machinery/door/firedoor,/turf/open/floor/plasteel/airless,/area/science)
+"lA" = (/obj/structure/sign/warning/vacuum/external{pixel_x = 0; pixel_y = -32},/turf/open/floor/plasteel,/area/maintenance/solars/port/fore)
 "lB" = (/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/science)
 "lC" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/science)
 "lD" = (/turf/closed/wall,/area/maintenance/department/bridge)
@@ -693,7 +693,7 @@
 "nq" = (/obj/structure/cable{icon_state = "0-8"},/obj/structure/cable{icon_state = "0-2"},/obj/structure/cable{icon_state = "0-4"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3{icon_state = "manifold"; dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "nr" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "ns" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
-"nt" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 8},/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/science)
+"nt" = (/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/closed/wall/r_wall,/area/ruin/space/derelict/eva)
 "nu" = (/obj/structure/cable{icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "nv" = (/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/security)
 "nw" = (/obj/machinery/vending/hydroseeds,/turf/open/floor/plasteel,/area/security)
@@ -705,7 +705,7 @@
 "nC" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "nD" = (/obj/machinery/light{dir = 4},/obj/structure/chair{dir = 8},/turf/open/floor/plasteel/white,/area/ruin/space/derelict/medical)
 "nE" = (/obj/machinery/door/firedoor,/obj/effect/spawner/lootdrop/maintenance,/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/secondary)
-"nF" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 4},/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
+"nF" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "nG" = (/obj/structure/sign/departments/science{pixel_y = -32},/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "nH" = (/obj/effect/spawner/structure/window/hollow/reinforced/directional{dir = 1},/turf/open/floor/plating/airless,/area/ruin/space/derelict/hallway/secondary)
 "nI" = (/obj/structure/tank_dispenser/plasma,/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/storage/equipment)
@@ -740,7 +740,7 @@
 "ol" = (/obj/structure/lattice,/turf/template_noop,/area/ruin/space/derelict/storage)
 "om" = (/turf/template_noop,/area/ruin/space/derelict/storage)
 "on" = (/obj/structure/cable{icon_state = "0-2"},/obj/machinery/power/solar{id = "derelictsolar"; name = "Derelict Solar Array"},/turf/open/floor/plasteel/airless,/area/solar/derelict_aft)
-"oo" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/lattice/catwalk,/turf/template_noop,/area/solar/derelict_aft)
+"oo" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/obj/structure/cable{icon_state = "0-8"},/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plating,/area/ruin/space/derelict/eva)
 "op" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/crew_quarters)
 "oq" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/hallway/primary)
 "or" = (/turf/open/floor/plating/airless,/area/ruin/space/derelict/storage)
@@ -883,7 +883,7 @@
 "qY" = (/obj/structure/window/fulltile,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "qZ" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating/airless,/area/maintenance/starboard/aft)
 "ra" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-2"},/turf/open/space/basic,/area/solar/port)
-"rb" = (/obj/structure/lattice/catwalk,/turf/open/space/basic,/area/solar/port/fore)
+"rb" = (/obj/effect/spawner/structure/window/hollow/reinforced/end{dir = 4},/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plating,/area/ruin/space/derelict/eva)
 "rc" = (/obj/machinery/door/airlock/maintenance,/turf/open/floor/plating,/area/ruin/space/derelict/singularity_engine)
 "rd" = (/obj/structure/table,/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
 "re" = (/turf/closed/wall,/area/maintenance/solars/port/aft)
@@ -1037,7 +1037,7 @@
 "tW" = (/obj/structure/lattice,/obj/item/stack/cable_coil/cut/red,/turf/template_noop,/area/ruin/space/derelict/se_solar)
 "tX" = (/obj/structure/window/reinforced/spawner/west,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
 "tY" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plasteel,/area/ruin/space/derelict/atmospherics)
-"tZ" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/science/research/lobby)
+"tZ" = (/obj/machinery/door/airlock/command{name = "E.V.A."; req_access_txt = "18"},/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/eva)
 "ua" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/science/research/lobby)
 "ub" = (/obj/item/radio/intercom,/turf/closed/wall,/area/ruin/space/derelict/crew_quarters)
 "uc" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/maintenance/solars/port/aft)
@@ -1098,7 +1098,7 @@
 "vf" = (/obj/structure/grille,/turf/open/floor/plating/airless,/area/space/nearstation)
 "vg" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 4},/obj/machinery/door/airlock/security{name = "Security Checkpoint"; req_access_txt = "1"},/turf/open/floor/plasteel,/area/awaymission/snowdin/post/minipost)
 "vh" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{icon_state = "scrub_map_on"; dir = 1},/turf/open/floor/plasteel,/area/ruin/space/derelict/storage)
-"vi" = (/obj/structure/frame/computer{icon_state = "0"; dir = 4},/obj/structure/sign/warning/vacuum/external{pixel_x = -32},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
+"vi" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-2"},/turf/open/space/basic,/area/solar/port/fore)
 "vj" = (/obj/machinery/light/small{dir = 1},/obj/structure/toilet{dir = 8},/turf/open/floor/plasteel,/area/crew_quarters/toilet/restrooms)
 "vk" = (/obj/structure/table,/turf/open/floor/plasteel/white,/area/medical/medbay/zone2)
 "vl" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle{dir = 4},/turf/open/floor/plating,/area/medical/medbay/zone2)
@@ -1182,84 +1182,116 @@
 "wL" = (/obj/machinery/door/window{base_state = "right"; dir = 4; icon_state = "right"},/obj/structure/cable{icon_state = "1-2"},/obj/structure/sign/warning/vacuum/external{pixel_x = -32; pixel_y = -32},/turf/open/floor/plasteel/airless,/area/ruin/space/derelict/se_solar)
 "wM" = (/obj/machinery/airalarm{dir = 8; pixel_x = 24},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
 "wN" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/open/floor/plating/airless,/area/maintenance/solars/port/aft)
+"wO" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"wP" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-8"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden,/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer3,/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge/access)
+"wQ" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "1-2"},/turf/open/space/basic,/area/solar/port/fore)
+"wR" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-8"},/turf/open/space/basic,/area/solar/port/fore)
+"wS" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
+"wT" = (/obj/machinery/door/window{dir = 2; name = "Captain's Quarters"; req_access_txt = "20"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/ruin/space/derelict/bridge)
+"wU" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/crew_quarters/heads/captain/private)
+"wV" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-4"},/turf/open/space/basic,/area/solar/port/fore)
+"wW" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "2-8"},/turf/open/space/basic,/area/solar/port/fore)
+"wX" = (/obj/machinery/airalarm{pixel_y = 22},/turf/open/floor/plasteel,/area/crew_quarters/heads/captain/private)
+"wY" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/crew_quarters/heads/captain/private)
+"wZ" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/space/basic,/area/solar/port/fore)
+"xa" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "1-4"},/turf/open/space/basic,/area/solar/port/fore)
+"xb" = (/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel,/area/crew_quarters/heads/captain/private)
+"xc" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/crew_quarters/heads/captain/private)
+"xd" = (/obj/structure/lattice/catwalk,/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "1-4"},/turf/open/space/basic,/area/solar/port/fore)
+"xe" = (/obj/machinery/camera{c_tag = "Telecomms Monitoring"; dir = 8; network = list("tcomms")},/obj/item/radio/intercom{pixel_x = 28},/turf/open/floor/plasteel,/area/security/checkpoint/customs)
+"xf" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/science/research/lobby)
+"xg" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/airlock/research{name = "Toxins Research"; req_access_txt = "7"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless,/area/science)
+"xh" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 4},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless,/area/science)
+"xi" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 8},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/science)
+"xj" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/airlock/research{name = "Toxins Research"; req_access_txt = "7"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel/airless,/area/science)
+"xk" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/turf_decal/stripes/line{icon_state = "warningline"; dir = 4},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/supply/hidden{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{icon_state = "intact"; dir = 8},/turf/open/floor/plasteel,/area/ruin/space/derelict/arrival)
+"xl" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/hallway/secondary/exit/departure_lounge)
+"xm" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
+"xn" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
+"xo" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
+"xp" = (/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
+"xq" = (/obj/structure/frame/computer{icon_state = "0"; dir = 4},/obj/structure/sign/warning/vacuum/external{pixel_x = -32},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
+"xr" = (/obj/machinery/power/terminal,/obj/structure/cable,/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
+"xs" = (/obj/machinery/power/smes,/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
+"xt" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plasteel,/area/maintenance/solars/port/aft)
 "Gu" = (/obj/structure/grille,/turf/template_noop,/area/space/nearstation)
 "Le" = (/obj/machinery/door/airlock/external{name = "Arrivals Docking Bay 1"},/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plating,/area/ruin/space/derelict/arrival)
 "Sv" = (/turf/closed/wall/r_wall,/area/space/nearstation)
 "Uz" = (/turf/open/floor/plating/airless,/area/space/nearstation)
 
 (1,1,1) = {"
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEvfvfvfvfvfvfvfvfaEadaEvfvfvfvfvfvfvfvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEvfaEaEaEaEaEaEaEaEabaEaEaEaEaEaEaEaEvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEvfaEafagahaEahahahabahahahaEaeahahaEvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEvfaEaiaiajakamalamanaoaoaoakaoaoaqaEvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEvfarapapapaEapapapciapapapaEapapaparvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEvfaEaraEaEaEaEaEaEcraEaEaEaEaEaEaraEvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEvfaEaraEaEaEaEaEaEabaEaEaEaEaEaEaraEvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEvfvfvfvfvfvfatauauavawaAatvfvfvfvfvfvfaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxaEaxaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEUzatcMaCaDaFaGatvfvfaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxaxaxaEaEaEaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEUzaHaKaIaJaMaOatvfvfaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfvfvfvfvfvfvfvfaEadaEvfvfvfvfvfvfvfvfaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaEaEaEaEaEaEabaEaEaEaEaEaEaEaEvfaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEafagahaEahahahabahahahaEaeahahaEvfaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaiaiajakamalamanaoaoaoakaoaoaqaEvfaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfarapapapaEapapapciapapapaEapapaparvfaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaraEaEaEaEaEaEcraEaEaEaEaEaEaraEvfaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaraEaEaEaEaEaEabaEaEaEaEaEaEaraEvfaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEvfvfvfvfvfvfatauauavawaAatvfvfvfvfvfvfaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxaEaxaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEUzatcMaCaDaFaGatvfvfaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxaxaxaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEUzaHaKaIaJaMaOatvfvfaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxbqaLaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEUzaPaQaSaTaTaVatatvfaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxaRaxaxaxaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEUzaZbabbaBaBaBewbcaEaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxaWaxaXaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxUzUzUzUzUzUzSvUzUzUzUzUzUzSvUzUzUzUzUzUzaZbhcYdbdbbbdIdccyaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxaRaRbeaWaRbfbgaxaxaxbgaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaZatatatatgFatatGuaEaEaEaEaEaEaEaE
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaxaxaxaxaxaRaxaRaRaRaxaRaRaRaxaxaxaxaxaxaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasbkaNbdasGuaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaxbgaxbgaxaxaxaxaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasasbmasascyaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaRaRbnaRbobpaWaRaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasaseibreHascyaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxaRaRaRaRaRaxaxbtaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasdmazbubvascyaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxbwaRbxaRbyaxaxbzbjbjaxaxaxaxaxaxaxaxaxaxaxaxaxbjbjbjbjasbAazbBbCascyaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblaRaxaRaxaRaxaRaxaRaxaxbyaRbDaRbyaxaxbzbjbjaxaxbzbzbzbEbzbzbFbGbzaxaxbjbjbjbjasbHazbrbsascyaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblaRboaRaxaRboaRaxaRbpbpaRbeaRbtbgaxaxbIbzbzbzbJbzbKbEbEbLbMbKbzbOaxaxbjbjbjbjasazazaNazascyaEaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblbgaxaxaxbgaxaxaxbgaRaxaRaxaxaWaxaxaxbPbjbjaxaxbObObKbQbRbLbKbObOaxaxbjbjbjbjasazazaNbSasasasaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblaxaxaxaxaxaxaxaxaxaxaxbTaxbUbebVaxaxbjbjbjaxaxbWbXbYbKbFbEbZbObzaxaxbjbjbjbjasazazaNazazazcaaEaEaEaEaEaEaE
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblvfblaEaEaEaEaEaEaEaEaEaxaxaxaxaxaxaxaxaxbjbjbjaxaxbPcccdbObEbObzbObzaxaxbjbjbjbjasbHazaNeIasasasaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEblvfblblblblblblblblblblaxaxaxaxaxaxaxaxaxbjbjbjaxaxaxcecfcfcfcfcgaxaxaxaxbjbjbjbjasazazaNazasbiaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEblvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfvfaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasazazckaUasbiaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEblvfblblblblblblblblblblblblblblblblblblaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasdoazazaNaschaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEcScScScScScScSaEaEdrdrdraEaEaEararjSjSarararaEaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasasazcmaNasacaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfararararararararararfbfbfbfbfbfbcSdrdrdrdrdrdrdraEaEaEarararararaEaxaxaxaxaxaxaxaxaxczcTczdFcAcAcAcAcAcAcAcBcBcBcBcsctcsacaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaraEaEaEaEaEaEaEfbfbfbfbfbfbcSdrdrembNemdrdraEaEaEaEaEcoaraEaEcwaEaEaEaEaEaEaEaEczcTczdFcCcCcDcEcJdpcAcNcQcRcBjlcFcsacaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEaEaEaEaEaEfbfbfbfbfbfbcScGduememememdrdraEaEaEaEaEaraEaEcwaEaEaEaEaEaEaEczczcTczdNcUcUcUcUcVcWcAdededecBcsctcsacaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEaEaEaraEaEcScScScScScScSdremememememdrdrdrdrdrdraEaEaEaEcwaEaEaEaEaEaEaEczcTcTcTdQcCcCcCcCdjdvcAdydeeAcBjLcFcsacaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEaEararardrdrdrdrdrdrdrdrdremcZfdfddidrdrdrcGdrdraEaEaEaEcwaEaEaEaEaEaEaEczczcTczdQfvfvfvfwfycAcAfzfAfzcBcscXcsacaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfararrbararararardrdreoemememememeGememeFememememememeNemdrdrdraEaEcwaEaEaEaEaEaEaEczcTcTcTeddEdEdEdEcFcscsgZcxgZgZcxcFcsacaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEarcwardrdrenemememememeWemememememememememememdrdrdrhphphphphphphphphphpczczczczeddlcxdXehdnepeucKcKcKcKcKdqcsacacaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEcwaEdrdrememememememcZeYeZdiemfcemcZfdfddiemememrchXhXhXhXhXhXhXhXhXhXhXhXhXhXhXkgdwdxeBdwdwcscscscscscscscscsdzchaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEaEardrdremememememgwfnfqfrfjfjfjfjfjfjfjfugwememdrdrhphphphphphphphphphphphphphpcscxcxfNcxcxeUdGdHfidJdKdLgUdMetacaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaraEaEaEardrdremememememgJfkfjfjfjfjfjfjfjfjfjgSgJemeFdrdraEaEaEaEaEaEaEaEaEfBaEaEaEaEcsdlcxdYcxcxeUdZeaeaeaeaeaeaeceEacaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEclclclclclclclclclclemhzemememgJfjfjfjfjfjfjfjfjfjfjfjgJemezdrdrdraEaEaEaEaEaEaEaEaEaEaEaEaEcsdwdxgQdwdweqeaeadkeseaeaeaeaeJacaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEclcpejejejejftdsdgdDclclclememhnfnfjfaaEaEaEaEaEfjfjfKhnemememdrdrdraEaEaEaEaEaEaEaEaEaEaEaEcscxddgTgVhJhokokokwebeCeaeaeDeOacaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEclejejejejejfYdfejclcndtdPemememfQfjfjaEaEaEaEaEfjfjfUfVemfWemdrfjdraEaEaEaEaEaEaEaEaEaEaEarcskxcxjOcKkjkVeKeKereMeaeaeaeaeJacaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEcldBejcuejejdCdOcHdTgiejclemememfjfjfjaEaEaEaEaEfjfjgdememghemfjfjdraEaEaEaEaEaEaEaEaEaEararcsgMcxfNlGcxeUePeQffeReSeaeSeTfRacaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEclejejcqejejftdfejclgjdaclememghgsfjfjaEaEaEaEaEfjfjfjfcememhIdrhAdraEaEaEaEaEaEfBaEaEarararcscscsfNcscxeUfeePfffgfhoEoEeQhgacaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEclcbejejejejfYdUdVdhekemhnememgwgufjfjaEaEaEaEaEfjfjgvgwemememdrdrdraEaEaEcwfFfFfFfFfFfFfFfFfFcscxfNfDfDfDfDfofpfDfDfDdzdzdzacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEclclclclclclclclclclelduduememgJfjfjfjfjfjfjfjfjfjfjfjgJememdrdrdraEaEaEaEcwfFfHfHfSgkgxgHgPfFcscxfNfDgDgDfDfDgpfDmgfDfDkOlDacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaraEaEaEardrdAememgwemgIgJfjfjfjfjfjfjfjfjfjfjgSgJememdrdraEaEaEaEaEcwfFmCfSfSfSfSfSlHfFcscxfNfDgDgDlRgDgDgDgDgDmAkOlDacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEaEardrdrememgJememhnfjfjfjhcfjfjfjfjfjfjfjhnememdrdraEaEaEaEaEcwfFfSfSfSfSfSfSnIfFcscsgEfDfDfDfDgDgDgDgDfDfDkOlDacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEcwaEdrdrememgJemememcZfdfddiemememcZfdfddiemememdrdraEaEaEaEaEcwfFfFgKfFhmhmhmhmfFnbfxfTfxfxcsfDmOgDgDgDfDlDkOlDacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEarcwardrdremgJemememememfcemememghememememememdrdrdrcvcvcvhbhbhbfZnlgbgbgcgcgcgchigegegffxggcsfDhyhyhyhyfDlDkOlDacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfararrbararararardrdrevgJememememememememememememememememcIcOcOcOcvcPfZfZfZfZglgmgngogogogoicgqfxfTfxfxcsfDgygyjFjFfDlDkOlDacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEarararardrdrdrdrdrdrdrdrdremcZfdfddidrdrdrdrdrdrcOlmcOcvcPlzhqhqhCflgzgngogAgogoicfxfxgBfxfxcsfDgygyjFjFfDlDkOlDacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEaEaEaEaEaEdrdrdrdrdrdrdrdremememememdrdrdrdrdrdrcOlScOcvcPlYhxhxheheheexhehehehehefZfZcscscscsfDjFjFjFlvfDlDkOlDacchaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhErbhEaEaEaEaEaEaEaraEaEaEaEardrdremememememdrdrhHhHcvcOcOlZcOeVnTnhhxjRheozfOfOhefPfXfPhegOhOjqjqcLiIfDjFjFjFlMfDlDkOlDacchaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblaRaxaRaxaRaxaRaxaRaxaxaxbgaxbgaxaxaxaxaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasasbmasascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblaRaxaRaxaRaxaRaxaRaxaxaRaRbnaRbobpaWaRaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasaseiaNeHascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblaRaxaRaxaRaxaRaxaRaxaxaRaRaRaRaRaxaxbtaxbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjasdmazbubvascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblaRaxaRaxaRaxaRaxaRaxaxbwaRbxaRbyaxaxbzbjbjaxaxaxaxaxaxaxaxaxaxaxaxaxbjbjbjbjasbAazbBbCascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblaRaxaRaxaRaxaRaxaRaxaxbyaRbDaRbyaxaxbzbjbjaxaxbzbzbzbEbzbzbFbGbzaxaxbjbjbjbjasbHazaNbsascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblaRboaRaxaRboaRaxaRbpbpaRbeaRbtbgaxaxbIbzbzbzbJbzbKbEbEbLbMbKbzbOaxaxbjbjbjbjasazazaNazascyaEaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblbgaxaxaxbgaxaxaxbgaRaxaRaxaxaWaxaxaxbPbjbjaxaxbObObKbQbRbLbKbObOaxaxbjbjbjbjasazazaNbSasasasaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblaxaxaxaxaxaxaxaxaxaxaxbTaxbUbebVaxaxbjbjbjaxaxbWbXbYbKbFbEbZbObzaxaxbjbjbjbjasazazaNazazazcaaEaEaEaEaEaEaE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaEaEaEblbrblaEaEaEaEaEaEaEaEaEaxaxaxaxaxaxaxaxaxbjbjbjaxaxbPcccdbObEbObzbObzaxaxbjbjbjbjasbHazaNeIasasasaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEblbrblblblblblblblblblblaxaxaxaxaxaxaxaxaxbjbjbjaxaxaxcecfcfcfcfcgaxaxaxaxbjbjbjbjasazazaNazasbiaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEblbrcTcTcTcTcTcTcTcTcTcTcTcTcTcTcTcTcTcTaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasazazckaUasbiaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEblbrblblblblblblblblblblblblblblblblblblaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasdoazazaNaschaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfvfvfvfvfvfvfvfvfvfvfcScScScSdjcScSaEaEdrdrdraEaEaEararjSjSarararaEaxbjbjbjbjbjbjbjaxaEaEaEcjbjbjbjbjbjbjbjbjasasazcmaNasacaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaraEaEaEaraEaEaEdndQfffffpfbcSdrdrdrdrdrdrdraEaEaEarararararaEaxaxaxaxaxaxaxaxaxczfvczdFcAcAcAcAcAcAcAcBcBcBcBcsctcsacaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEfwfyfyfyfyfyfyfygphyfbfbfbfbcSdrdrembNemdrdraEaEaEaEaEcoaraEaEcwaEaEaEaEaEaEaEaEczfvczdFcCcCcDcEcJdpcAcNcQcRcBjlcFcsacaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhEjVlhaEaEaEaEaEaEdnlAfbfbfbfbcScGduememememdrdraEaEaEaEaEaraEaEcwaEaEaEaEaEaEaEczczfvczntcUcUcUcUcVcWcAdededecBcsctcsacaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhEjVlhaEaEaEaraEaEcScScScScScScSdremememememdrdrdrdrdrdraEaEaEaEcwaEaEaEaEaEaEaEczfvfvfvdFcCcCcCcCnFdvcAdydeeAcBjLcFcsacaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhEjVlhaEaEararardrdrdrdrdrdrdrdrdremcZfdfddidrdrdrcGdrdraEaEaEaEcwaEaEaEaEaEaEaEczczfvczdNoooooorbtZcAcAfzfAfzcBcscXcsacaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfararviararararardrdreoemememememeGememeFememememememeNemdrdrdraEaEcwaEaEaEaEaEaEaEczfvfvfveddEdEdEdEwOcscsgZcxgZgZcxcFcsacaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhEjVlhaEarcwardrdrenemememememeWemememememememememememdrdrdrhphphphphphphphphphpczczczczeddlcxdXehwPepeucKcKcKcKcKdqcsacacaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhEjVlhaEcwaEdrdrememememememcZeYeZdiemfcemcZfdfddiemememrchXhXhXhXhXhXhXhXhXhXhXhXhXhXhXkgdwdxeBdwdwcscscscscscscscscsdzchaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfvfvfaEhEwQlhaEaEardrdremememememgwfnfqfrfjfjfjfjfjfjfjfugwememdrdrhphphphphphphphphphphphphphpcscxcxfNcxcxeUdGdHfidJdKdLgUdMetacaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvffwfyfyfywRaEaEaEardrdremememememgJfkfjfjfjfjfjfjfjfjfjgSgJemeFdrdraEaEaEaEaEaEaEaEaEfBaEaEaEaEcsdlcxdYcxcxeUdZeaeaeaeaeaeaeceEacaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfviclclclclclclclclclclemhzemememgJfjfjfjfjfjfjfjfjfjfjfjgJemezdrdrdraEaEaEaEaEaEaEaEaEaEaEaEaEcsdwdxgQdwdweqeaeadkeseaeaeaeaeJacaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfviclcpejejejejftdsdgdDclclclememhnfnfjfaaEaEaEaEaEfjfjfKhnemememdrdrdraEaEaEaEaEaEaEaEaEaEaEaEcscxddgTgVhJhokokokwebeCeaeaeDeOacaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfviclejejejejejfYdfejclcndtdPemememfQfjfjaEaEaEaEaEfjfjfUfVemfWemdrfjdraEaEaEaEaEaEaEaEaEaEaEarcskxcxjOcKkjkVeKeKereMeaeaeaeaeJacaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfvicldBejcuejejdCdOcHdTgiejclemememfjfjfjaEaEaEaEaEfjfjgdememghemfjfjdraEaEaEaEaEaEaEaEaEaEararcsgMcxfNlGcxeUePeQwSeReSeaeSeTfRacaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfviclejejcqejejftdfejclgjdaclememghgsfjfjaEaEaEaEaEfjfjfjfcememhIdrhAdraEaEaEaEaEaEfBaEaEarararcscscsfNcscxeUfeePwSfgfhoEoEeQhgacaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfviclcbejejejejfYdUdVdhekemhnememgwgufjfjaEaEaEaEaEfjfjgvgwemememdrdrdrarararcwfFfFfFfFfFfFfFfFfFcscxfNfDfDfDfDfowTfDfDfDdzdzdzacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfviclclclclclclclclclclelduduememgJfjfjfjfjfjfjfjfjfjfjfjgJememdrdrdraEaEaEaEcwfFfHfHfSgkgxgHgPfFcscxfNfDgDgDfDfDwUfDmgfDfDkOlDacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfwVfyfyfywWaEaEaEardrdAememgwemgIgJfjfjfjfjfjfjfjfjfjfjgSgJememdrdraEaEaEaEaEcwfFmCfSfSfSfSfSlHfFcscxfNfDgDgDlRwXwYgDgDgDmAkOlDacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEvfvfvfaEhEwZlhaEaEardrdrememgJememhnfjfjfjhcfjfjfjfjfjfjfjhnememdrdraEaEaEaEaEcwfFfSfSfSfSfSfSnIfFcscsgEfDfDfDfDgDwYgDgDfDfDkOlDacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhExalhaEcwaEdrdrememgJemememcZfdfddiemememcZfdfddiemememdrdraEaEaEaEaEcwfFfFgKfFhmhmhmhmfFnbfxfTfxfxcsfDmOwYgDgDfDlDkOlDacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhExalhaEarcwardrdremgJemememememfcemememghememememememdrdrdrcvcvcvhbhbhbfZnlgbgbgcgcgcgchigegegffxggcsfDxbxcgDgDfDlDkOlDacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfararviararararardrdrevgJememememememememememememememememcIcOcOcOcvcPfZfZfZfZglgmgngogogogoicgqfxfTfxfxcsfDgygyjFjFfDlDkOlDacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhExalhaEarararardrdrdrdrdrdrdrdrdremcZfdfddidrdrdrdrdrdrcOlmcOcvcPlzhqhqhCflgzgngogAgogoicfxfxgBfxfxcsfDgygyjFjFfDlDkOlDacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhExalhaEaEaEaEaEaEdrdrdrdrdrdrdrdremememememdrdrdrdrdrdrcOlScOcvcPlYhxhxheheheexhehehehehefZfZcscscscsfDjFjFjFlvfDlDkOlDacchaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEhExdlhaEaEaEaEaEaEaraEaEaEaEardrdremememememdrdrhHhHcvcOcOlZcOeVnTnhhxjRheozfOfOhefPfXfPhegOhOjqjqcLiIfDjFjFjFlMfDlDkOlDacchaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEvfaEaEaraEaEaEaEaEeLeLeLeLeLeLeLeLardrdrruhzemdrdrhHhHhHcvcOcOcOcOcvcPlYhxhxhefPfOfOlWhVfOfOhefZayaygCchiIfDgDnmgDjFfDlDkOlDacchaEaEaEaEaEaE
 aEaEgXgXgXgXgXgXgXgXgXgXgXgXgXaEaraEaEaEaEaEfIioioioioioiMfIaEdrdrdrdrdrdrdrhYhHhYcvcvcvcvcvcvcPtctdtehefPfOfOfOgafOhehefZaygrgrchiIimimimimimimirociracchaEaEaEaEaEaE
 aEaEgXhjhjhjhjhkhkhkhkhkhlhjgXaEaraEaEaEaEaEfIioioiQiojjjrfIaEaEaEdrdrdraEiDhHhHhHhHhHhHhHhHiZjbjcjmhxheheheexhehehehehefZfZfZfZfZfZirisiCiEiFiEiGiPiracchaEaEaEaEaEaE
 aEaEgXgXgXhjhthkhkhkiaiaibiaiaiaiaiahvhKhKhKeLjsjEjMjPeLnWeLhvipkLkLkLkLkLkLldkLkLkLkLkLkLkLkLfZhukMhxqhhxhxhxhxfZgzgzhDgzgzgzgLgLgmiriYisiYiEiEiPiEiracchaEaEaEaEaEaE
 aEGugXhFgXgXgXgXgXhGiaiqitiyitititiahMjkhWlnhMeehWkthMpokJjfjfjfkLlEowoIpJrNsKrNtmvkvkvkvkvkkLojhuhxhxhxhxhxgLhxgzhDgzgLgLgLgzgmgmgLjoiEiEiEiEiEiEiEiracchaEaEaEaEaEaE
-aEhQhRhShThShUhShThSiaiqitiqitiqitiahZhMhMhMhMefhMktjfegkJhMhMhMvltmtmtmtmtmtmtmtmtmtmvmvnvnkLgGqxqKhxuPhxqNnGgLjyjyjyjyjyjyjyjyjyjyjyiEiEjTiEiEiEjViracchaEaEaEaEaEaE
+aEhQhRhShThShUhShThSiaiqitiqitiqitiahZhMhMhMhMefhMktjfegkJhMhMhMvltmtmtmtmtmtmtmtmtmtmvmvnvnkLgGqxqKhxuPhxqNnGgLjyjyjyjyjyjyjyjyjyjyjyiEiEjTiEiEiExeiracchaEaEaEaEaEaE
 aEhQieifigeXinijiiijiaiqitiqitiqitibhMhMvohMhMqjhMkPizhMvpvqhMiNvltmtmtmtmtmtmtmvmvmvmtmtmtmkLhxhukMhxofofofofoyjyiOjWqTqTqWkamljWjWjyisisiEiskbiEkciracchaEaEaEaEaEaE
 pciuiviwixiwiAhShTgNiaiqiRiqfmiqgRiaiBhMkthMhMhdmIlgmIrMkJhMhMiNvltmtmvrtmvssKtmvsvsvsvsvsvskLhxhuhhhxofoHoyoyoyjyjWjWjWjWmKjWjWjWjWjyoUkdiEkdkmiEiEiracchaEaEaEaEaEaE
 iHiIiJiJiJiKiLijiiijiaiqmMfJfLfMgthaihihvtihihikihvuihiSvvhNhMnDkLkLkLkLvwvxtmtmvyvzrNrNvzvkkLfZjGkifZofoyoyoyoyjyjWjWjWjWmKjWjWjWjWjyiEiEiEiEkqisiYiracchaEaEaEaEaEaE
 jaiTiUiViWiViAiXhUhSiaiqitititjpitiaiBhMvAhMhMeghMvBsshMvCvDvDhMvEtmvFvGtmtmtmvHvHvmvmvmtmvkkLhxhuhhhxofoyoyoyoyjyodrPrPrPmKjWjWjWjWjyiriEiEiririririracchaEaEaEaEaEaE
 aEhQieijiijeiLijiiijiaiaiaiaiaiaiaiahZhMvIhMjgeyjijijijimmhMsjoAkLvJkLtmtmtmtmvKvxtmtmtmvLtmkLhxhuhhhxofoypaoypbjyjyjyjyjyuVjyjyjyjyjykyliligWjdjdjdgWacchaEaEaEaEaEaE
 aEhQhRhShTjujvjwjxjwjzjAjAqFjBjAjCgXiBhMqRhMjDpDqUtAhMhvmnjNhvhvkLkLkLtmtmtmtmvMtmtmtmtmtmtmkLhxhuhhjRofoyrrrvoyoyrzkykzrBhrlbufrKrKkUkyhfhflehfhfjtgWaEaEaEaEaEaEaEaE
-aEGujXjXjXjXjXjXjXjXjXjXjXjXgXgXtfgXhvhvhvhvhvhvhvhvhvhvnijQhvhvkLkLkLkLkLkLkLkLvkvkvkvkvkvkkLhxjZkFjYsysBsIsQtZtZualhlAkfkhllkUuWkUkUkyjHhfhfhPhfjIgWjJjKaEaEaEaEaEaE
+aEGujXjXjXjXjXjXjXjXjXjXjXjXgXgXtfgXhvhvhvhvhvhvhvhvhvhvnijQhvhvkLkLkLkLkLkLkLkLvkvkvkvkvkvkkLhxjZkFjYsysBsIsQsBxfuaxgxhkfkhllkUuWkUkUkyjHhfhfhPhfjIgWjJjKaEaEaEaEaEaE
 aEaEjXdRrLdSdRdRdRdSdSdWugjXknkpkDkvkvkvkBlkkplokvknuhvOujuiukulknhxhxrOhxudkLkLkLkLkLkLkLkLkLhxhukMuXofoyvNoyoyoyvUkykzhrkUkUkUkUumkzkygWvVhfhfhfhfjUhPLeaEaEaEaEaEaE
-aEaEjXhsdWdRdRdRdRdRdSdRdRnjkSunuokukEkukukukuopkuknkGkukDkukutuknkIkKhxoqhxfZfZfZfZhxhxhxneudhxhuvPhxofoyvWoyoyoyvXkykzlBlClClClClCntlhnFvYkkhPhfvZgWjJjKaEaEaEaEaEaE
+aEaEjXhsdWdRdRdRdRdRdSdRdRnjkSunuokukEkukukukuopkuknkGkukDkukutuknkIkKhxoqhxfZfZfZfZhxhxhxneudhxhuvPhxofoyvWoyoyoyvXkykzlBlClClClClCxixjxkvYkkhPhfvZgWjJjKaEaEaEaEaEaE
 aEaEjXlXdRdRdRdRdRdRdRdSdRjXknkurhkQkRkSkTkSwakWkYkZkSkSsbsdsHtvvQhxlaljluljsYljlQljncndndsZndndnfngmbmbmboyoyoyoyvUkykzhrkUkUkUkUtwkzkygWwbkrhfhfksgWaEaEaEaEaEaEaEaE
 aEaEjXjXjXjXjXjXjXjXjXjXjXjXknkusPknknknhwknknknhBknkukukXkNsJnknojYnpnqnrnstansnslJnunCnCtbupupvRnLmbmBmbmboyoywcvUkykzuYkztxkUlblbrQkygWwdgWhfwekCgWacacaEaEaEaEaEaE
 aEaEaEaEvfaEaEaEaEaEaEaEaEaEknkGsPknlfnZoSknlfnZoSknlFlFlFmRmSmVknkIoVoXhxhxnehxhxhuhxmbmbmbmbmbmbmWmbnnnwmbnxnxnxuqkykzhrkzrRrRlbuZkykygWwfgWgWgWgWgWwgacaEaEaEaEaEaE
-aEaEaEaEvfaEaEaEaEaEaEaEaEaEknkusPknlphLlqknlphLlpknlrkukukuosrSknhxoVpehxhxneururhuurmbrTrUourVuslKwhotoBoBoCoCoCnykykzhrkzoKoKoKoKoLwiwjwkwiwlwjwiwgwgacaEaEaEaEaEaE
+aEaEaEaEvfaEaEaEaEaEaEaEaEaEknkusPknlphLlqknlphLlpknlrkukukuosrSknhxoVpehxhxneururhuurmbrTrUourVuslKwhotoBoBoCoCoCnykykzhrkzoKoKoKoKoLwiwjxlwiwlwjwiwgwgacaEaEaEaEaEaE
 aEaEaEaEvfaEaEaEaEaEknlFlFlFknrgryknknknknknknknknknkuwmrWptsLkulxlxpvpwlxlxlxlxlxlPlxmbrXototototlUlVotoBpdquqvoCnykykzhrkzqwqwqwqwoLwiwiwkwnwiwiwiwowgacaEaEaEaEaEaE
 aEaEaEaEvfaEaEaEaEaEknfCututknkusPkvkvkvkvrYkvmekuknidlImhmisMkulxtqmcmjtqtglwlwlxmklxmbrZotuuqzotqBqAqBmoququqDoCnykykUmpvaqwqwqwqwoLwpwiwkwiwiwnwiwqwgacaEaEaEaEaEaE
 aEaEaEaEvfaEaEaEaEaEmEkukEkuknkurDpupupupxkukukukHubkGsamJmisNuvlxmqmrmtmythlNlOlxlPlxmbscqyqyqyqyotqEuwmzuxqDqDoCnykykzkzkzuyqwqwqwoLwrwnwkwiwiwiwiwowgacaEaEaEaEaEaE
@@ -1269,13 +1301,13 @@ aEaEaEaEvfaEuCqMuDaEknvbvcvcknkusPlfwAuFwBlfwCkukumXkukukukusPkulxpAtqtqtqtqtqmk
 aEaEaEaEvfaEuCqPuDaEknlFlFlFknknveknqQqQqQqQqQknknknknknknknmSknlxklqCqCtqtqtqqGuGqXuHqYtqsetqlytytztztztztztztqlynyqOaEchaEaEchaEaEchwDwEwDchaEaEchaEaYacaEaEaEaEaEaE
 aEaEaEaEvfaEuCqPuDaEaEaEaEaEknuIkDuJsgshuKuLqQtBjhjnjnsfuMsRsSjnlxmwmxtqtqtqtqtjtqmkqYsesesetqlytnqIqIqIqIqIqIqItotpqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
 aEaEaEaEvfaEaEraaEaErerfrfrfreuNkDuJsiqVqVrdqQtBjhjnjnttsTsUjnkelxtClstqltltlsltltqGqIqIqIqIqIqItDtFtGtGtGtGtHtIlynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEuCqPuDaErjrmrororeuNskspvgqVqVilqQtJjhjnjnttsTjnvhkelxueklklltlsltltlttKtLtLtLtQtQlytqtFtMtMtMtMtNtqlynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
-aEaEaEaEvfaEuCqPuDaErjrorororqkNvSstsusvslrdqQtJjhtOtPtRsTjnjnkelxtqtqtqltmNlsltlttXtqtqtqtqselylylylylylylylylylynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEriacaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEuCqPuDaErsrorororeswswsxqQqQqQqQqQqSoNoNoNoNsVoNoNoNlxtqtqtqltmGmNltmstqtqqYtqtEsetqtqtstqsetqtqtqtqlxnyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
-aEaEaEaEqLrkrkrlrkrkucrorororeswwFszswvjswvjswsAsAoNtSorsWpBpCsmlxtYtYtYltltltmQuQtXtststqtstslxtrtqtqsetqtqtqtqlxnyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEuCrnuDaEuOvirowGreswsAwHswsCswsDswwIsAoNomolsXoroPpElxlxlxlxmGltlsltltlxlxlxlxlxlxlxtqsesesetqtqtqtqlxrpmfmdmdaEaEaEaEaEaEaEaEaEaEaEayacayaYacaEaEaEaEaEaE
-aEaEaEaEvfaEuCrnuDaErjrorororeswsEsFsAsAsAsAsGsAsAoNomortTkAoGpFoNaEaElxmTmGmGltltlxaEaEaEaEaElxtsuRtqtqtqtqtqtqlxoJlcoQmdmdaEaEaEaEaEaEaEaEaEaEacacaEaYacaEaEaEaEaEaE
-aEaEaEaEvfaEuCrnuDaErjrorowMreswswswswswswswswswswoNoRoNoNoNoNpGoNmdmdlxlxlxlxlxlxlxmdmdmdmdmdlxlxlxlxlxlxlxlxlxlxoTlclclcmYaEaEaEaEaEpHsnpHaEaEacaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEvfaEuCqPuDarrjrmrororeuNskspvgqVqVilqQtJjhjnjnttsTjnvhkelxueklklltlsltltlttKtLtLtLtQtQlytqtFtMtMtMtMtNtqlynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCqPuDaErjroxmxnrqkNvSstsusvslrdqQtJjhtOtPtRsTjnjnkelxtqtqtqltmNlsltlttXtqtqtqtqselylylylylylylylylylynyqZaEaEaEaEaEaEaEaEaEaEaEaEaEriacaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCqPuDaErsroxororeswswsxqQqQqQqQqQqSoNoNoNoNsVoNoNoNlxtqtqtqltmGmNltmstqtqqYtqtEsetqtqtstqsetqtqtqtqlxnyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacayaYacaEaEaEaEaEaE
+aEaEaEaEqLrkrkrlrkrkucxpxororeswwFszswvjswvjswsAsAoNtSorsWpBpCsmlxtYtYtYltltltmQuQtXtststqtstslxtrtqtqsetqtqtqtqlxnyqZaEaEaEaEaEaEaEaEaEaEaEaEaEaEacaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaruCrnuDaEuOxqxowGreswsAwHswsCswsDswwIsAoNomolsXoroPpElxlxlxlxmGltlsltltlxlxlxlxlxlxlxtqsesesetqtqtqtqlxrpmfmdmdaEaEaEaEaEaEaEaEaEaEaEayacayaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCrnuDaErjxrxororeswsEsFsAsAsAsAsGsAsAoNomortTkAoGpFoNaEaElxmTmGmGltltlxaEaEaEaEaElxtsuRtqtqtqtqtqtqlxoJlcoQmdmdaEaEaEaEaEaEaEaEaEaEacacaEaYacaEaEaEaEaEaE
+aEaEaEaEvfaEuCrnuDaErjxsxtwMreswswswswswswswswswswoNoRoNoNoNoNpGoNmdmdlxlxlxlxlxlxlxmdmdmdmdmdlxlxlxlxlxlxlxlxlxlxoTlclclcmYaEaEaEaEaEpHsnpHaEaEacaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEvfaEaEraaEaErjrorororolclclclclclclclclclcmZmUmUmUnauSuTpKpKpLpMpNpOpPpQpRpSpTpUpVpVpVpVpVpVpVpVpVpVpVpWoWoYmZlclcmDaEaEaEaEaEmupImvaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEvfaEuCrnuDaErjrorororolclclclclclclclclclcmZmZmZmUmUmUmUpXpXpXpXpYpZqaqbqcqdqeqfqgqgqgqgqgqgqgqgqgqgqgvTqgrIlclclcmDaEaEaEaEaEmupImvaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEvfaEuCrnuDaErewNwNwNrenznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznznzmdnznznznzmdqilclclclclcnAfsfsfsfsfsmHpImvaEaEaEaEaEaEaEaEaEaEaEaEaE
@@ -1292,7 +1324,7 @@ aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgY
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEaEaEaEaEphaEaEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEonononaEpiaEonononaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEpjpkpkplpmplpnpnfGaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
-aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEoxoxoxaEooaEoxoxoxaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEoxoxoxaEpiaEoxoxoxaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEaEaEaEaEppaEaEaEaEaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfaEonononaEpiaEonononaEvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
 aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYgYvfarpqpkpkprpmprpnpnpsarvfaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
