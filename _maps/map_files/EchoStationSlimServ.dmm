@@ -1036,7 +1036,7 @@
 "tV" = (/obj/structure/cable/yellow{icon_state = "1-8"},/obj/structure/cable/yellow{icon_state = "0-8"},/turf/open/floor/plating,/area/maintenance/department/crew_quarters/bar)
 "tW" = (/obj/structure/cable/yellow{icon_state = "1-2"},/turf/open/floor/plasteel/dark,/area/maintenance/department/crew_quarters/bar)
 "tX" = (/obj/structure/cable/yellow{icon_state = "1-2"},/turf/open/floor/plasteel,/area/hallway/secondary/command)
-"tY" = (/obj/structure/cable/yellow,/turf/open/floor/plasteel,/area/hallway/secondary/command)
+"tY" = (/obj/structure/cable/yellow,/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plasteel,/area/hallway/secondary/command)
 "tZ" = (/obj/structure/table/wood,/obj/machinery/computer/libraryconsole/bookmanagement{pixel_y = 8},/turf/open/floor/plasteel/grimy,/area/library)
 "ua" = (/obj/structure/table/wood,/obj/machinery/computer/libraryconsole{pixel_y = 2},/turf/open/floor/wood,/area/library)
 "ub" = (/turf/open/floor/plasteel/dark,/area/hallway/primary/port/aft)
