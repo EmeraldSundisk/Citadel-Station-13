@@ -266,6 +266,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Aft Primary Hallway"
 	icon_state = "hallA"
 
+/area/hallway/primary/civilianwing
+	name = "Civilian Wing"
+	icon_state = "hall_service"
+
 /area/hallway/primary/fore
 	name = "Fore Primary Hallway"
 	icon_state = "hallF"
@@ -419,6 +423,16 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "Sleep"
 	nightshift_public_area = NIGHTSHIFT_AREA_NONE
 
+/area/crew_quarters/dorms/blue
+	name = "Blue Dorms"
+	icon_state = "Sleep"
+	nightshift_public_area = NIGHTSHIFT_AREA_NONE
+
+/area/crew_quarters/dorms/purple
+	name = "Purple Dorms"
+	icon_state = "Sleep"
+	nightshift_public_area = NIGHTSHIFT_AREA_NONE
+
 /area/crew_quarters/rehab_dome
 	name = "Rehabilitation Dome"
 	icon_state = "Sleep"
@@ -459,6 +473,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters/lounge
 	name = "Lounge"
 	icon_state = "yellow"
+	nightshift_public_area = NIGHTSHIFT_AREA_RECREATION
+
+/area/crew_quarters/lounge/jazz
+	name = "Jazz Lounge"
+	icon_state = "yellow"
+	ambientsounds = list('sound/ambience/ambidet1.ogg','sound/ambience/ambidet2.ogg')
 	nightshift_public_area = NIGHTSHIFT_AREA_RECREATION
 
 /area/crew_quarters/fitness
@@ -1028,6 +1048,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Hydroponics"
 	icon_state = "hydro"
 
+/area/hydroponics/lobby
+	name = "Hydroponics Lobby"
+	icon_state = "hydro"
+
 /area/hydroponics/garden
 	name = "Garden"
 	icon_state = "garden"
@@ -1183,6 +1207,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Port Emergency Storage"
 	icon_state = "emergencystorage"
 
+/area/storage/emergency/generic
+	name = "Emergency Storage"
+	icon_state = "emergencystorage"
+
 /area/storage/tech
 	name = "Technical Storage"
 	icon_state = "auxstorage"
@@ -1199,6 +1227,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Construction Area"
 	icon_state = "yellow"
 	ambientsounds = ENGINEERING
+
+/area/construction/secondary
+	name = "Seecondary Construction Area"
+	icon_state = "yellow"
 
 /area/construction/minisat_exterior
 	name = "Minisat Exterior"
