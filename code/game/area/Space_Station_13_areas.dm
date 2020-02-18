@@ -491,6 +491,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "fitness"
 	nightshift_public_area = NIGHTSHIFT_AREA_RECREATION
 
+/area/crew_quarters/fitness/pool
+	name = "Pool"
+	icon_state = "fitness"
+	clockwork_warp_fail = "Pool's closed."
+	nightshift_public_area = NIGHTSHIFT_AREA_RECREATION
+
 /area/crew_quarters/cafeteria
 	name = "Cafeteria"
 	icon_state = "cafeteria"
@@ -547,6 +553,15 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Cryogenics"
 	icon_state = "cryosleep"
 
+/area/crew_quarters/barbershop
+	name = "Barbershop"
+	icon_state = "blue"
+	nightshift_public_area = NIGHTSHIFT_AREA_RECREATION
+
+/area/crew_quarters/observatory
+	name = "Observatory"
+	icon_state = "Sleep"
+
 /area/library
 	name = "Library"
 	icon_state = "library"
@@ -596,7 +611,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/lawoffice
 	name = "Law Office"
 	icon_state = "law"
-
 
 //Engineering
 
@@ -1229,7 +1243,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	ambientsounds = ENGINEERING
 
 /area/construction/secondary
-	name = "Seecondary Construction Area"
+	name = "Secondary Construction Area"
 	icon_state = "yellow"
 
 /area/construction/minisat_exterior
@@ -1276,6 +1290,40 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Storage Wing"
 	icon_state = "storage_wing"
 
+//Routers
+
+/area/router
+	name = "Router"
+	icon_state = "yellow"
+	ambientsounds = ENGINEERING
+
+/area/router/service
+	name = "Service Router"
+	icon_state = "green"
+
+/area/router/public
+	name = "Public Router"
+	icon_state = "yellow"
+
+/area/router/sec
+	name = "Security Router"
+	icon_state = "blue"
+
+/area/router/medsci
+	name = "MedSci Router"
+	icon_state = "yellow"
+
+/area/router/eva
+	name = "EVA Router"
+	icon_state = "yellow"
+
+/area/router/air
+	name = "Airbridge Router"
+	icon_state = "red"
+
+/area/router/eng
+	name = "Engineering Router"
+	icon_state = "yellow"
 
 //AI
 
