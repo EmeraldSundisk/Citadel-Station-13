@@ -903,6 +903,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Courtroom"
 	icon_state = "courtroom"
 
+/area/security/courtroom/jury
+	name = "Jury Room"
+	icon_state = "courtroom"
+
 /area/security/prison
 	name = "Prison Wing"
 	icon_state = "sec_prison"
@@ -1324,6 +1328,14 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/router/eng
 	name = "Engineering Router"
 	icon_state = "yellow"
+
+/area/router/aux
+	name = "Routing System"
+	icon_state = "yellow"
+	requires_power = FALSE
+	has_gravity = STANDARD_GRAVITY
+	blob_allowed = FALSE //While part of the station, what good will it do you?
+	valid_territory = FALSE
 
 //AI
 
