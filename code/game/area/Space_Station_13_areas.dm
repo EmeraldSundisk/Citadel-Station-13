@@ -1045,6 +1045,27 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Mining Dock"
 	icon_state = "mining"
 
+/area/quartermaster/miningdock/airless
+	name = "Mining Dock"
+	icon_state = "mining"
+	has_gravity = STANDARD_GRAVITY
+	valid_territory = FALSE
+	outdoors = TRUE
+	ambientsounds = SPACE
+	blob_allowed = FALSE //While part of the station, what good will it do you?
+
+/area/quartermaster/miningdock/airless/no_grav
+	name = "Mining Dock"
+	icon_state = "mining"
+	dynamic_lighting = DYNAMIC_LIGHTING_IFSTARLIGHT
+	power_light = FALSE
+	power_equip = FALSE
+	power_environ = FALSE
+	valid_territory = FALSE
+	outdoors = TRUE
+	ambientsounds = SPACE
+	blob_allowed = FALSE //While part of the station, what good will it do you?
+
 /area/quartermaster/miningdock/abandoned
 	name = "Abandoned Mining Dock"
 	icon_state = "mining"
@@ -1334,8 +1355,15 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "yellow"
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
-	blob_allowed = FALSE //While part of the station, what good will it do you?
+	always_unpowered = TRUE
+	dynamic_lighting = DYNAMIC_LIGHTING_IFSTARLIGHT
+	power_light = FALSE
+	power_equip = FALSE
+	power_environ = FALSE
 	valid_territory = FALSE
+	outdoors = TRUE
+	ambientsounds = SPACE
+	blob_allowed = FALSE //While part of the station, what good will it do you?
 
 //AI
 
