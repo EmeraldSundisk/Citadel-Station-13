@@ -625,6 +625,18 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Engineering"
 	icon_state = "engine"
 
+/area/engine/teg_hot
+	name = "Hot Loop"
+	icon_state = "red"
+
+/area/engine/teg_cold
+	name = "Cold Loop"
+	icon_state = "blue"
+
+/area/engine/workshop
+	name = "Engineering Workshop"
+	icon_state = "engine"
+
 /area/engine/atmos
 	name = "Atmospherics"
 	icon_state = "atmos"
@@ -1080,6 +1092,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/janitor
 	name = "Custodial Closet"
+	icon_state = "janitor"
+	flags_1 = NONE
+
+/area/janitor/aux
+	name = "Auxiliary Custodial Closet"
 	icon_state = "janitor"
 	flags_1 = NONE
 
