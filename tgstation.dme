@@ -14,6 +14,8 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
+#include "_maps\boxstation.dm"
+#include "_maps\map_files\BoxStation\BoxStation.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\__513_compatibility.dm"
@@ -564,6 +566,8 @@
 #include "code\game\atoms_movable.dm"
 #include "code\game\communications.dm"
 #include "code\game\data_huds.dm"
+#include "code\game\say.dm"
+#include "code\game\shuttle_engines.dm"
 #include "code\game\sound.dm"
 #include "code\game\world.dm"
 #include "code\game\area\ai_monitored.dm"
