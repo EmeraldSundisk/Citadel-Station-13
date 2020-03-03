@@ -322,6 +322,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Service Hallway"
 	icon_state = "hall_service"
 
+/area/hallway/secondary/civilian
+	name = "Civilian Wing"
+	icon_state = "hallFS"
+
+
 //Command
 
 /area/bridge
