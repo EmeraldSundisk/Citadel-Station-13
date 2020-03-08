@@ -92,6 +92,10 @@
 	name = "To the future HoS"
 	info = "I'm gonna be rather disappointed if CentCom doesn't brief you about this station, but if they don't <B>I wrote up another letter for your department that should cover it pretty well.</B> Make sure your officers read it if they aren't up to speed. <BR>\n<BR>\nSomething you in particular should know is that if someone's getting to be too much to handle, the boys and I have constructed a 'discount transfer centre' just behind the router. <B>Use it only as a last resort</B> - the walls may be reinforced but they're still thin, and you'll have big trouble on your hands if the AI or any cyborgs find out about it. <BR>\n<BR><I>-LC</I>"
 
+/obj/item/paper/guides/cogstation/letter_supp
+	name = "To future Supply Staff:"
+	info = "Cargo, move freight. Miners, don't die. Your jobs are pretty straightforward, which is likely why they originally fell under Engineering on this station as opposed to their own department. Although we've considerably readjusted this part of the station to accommodate you, there are potential differences you should be aware of.<BR>\n<BR>\nEngineering<I>will</I> have access to some of your department, namely the warehouse and mining dock. Mining operations on this station were originally asteroid-based, hence the catwalk into the great beyond. Although you won't need to worry about being space-worthy due to a newly installed shuttle dock, they might need to get out there. <BR>\n<BR>\nYou'll have all your usual means of shipping out goods, but the disposal network is more complex with a separate line for mail and trash. I've left another note that explains this in detail, but know trash is the janitor's responsibility, not yours. <BR>\n<BR>\nThe biggest difference has to be this station's router system, which allows departments to ship goods between themselves. Even if the belts aren't working properly they'll still have their own request consoles, so you'll want to check for orders regularly. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\nArchitectural Analyst"
+
 /obj/item/paper/fluff/cogstation/sleepers
 	name = "Re: Sleepers?"
 	info = "Yes, the sleepers are meant to be publicly accessible. Policies in this station's original location encouraged crew to visit the clinic or treat themselves when it came to minor injuries. <BR>\n<BR>\n<B>This is no excuse for you not to do your jobs.</B> You may wish to keep an eye on the sleepers as to ensure they're being used responsibly. Remember, allowing an overdose to happen under your watch isn't much different from administering that overdose yourself. <BR>\n<BR>\n<I>- Dr. Halley</I>"
@@ -110,11 +114,7 @@
 
 /obj/item/paper/fluff/cogstation/letter_qm
 	name = "To the future Quartermaster:"
-	info = "If you're wondering where your office is,<I>you don't have one</I>. If that bothers you, go check out the crate waiting for you in the bridge. <BR>\n<BR>\n%s-C. Donnelly <BR>Architectural Analyst"
-
-/obj/item/paper/fluff/cogstation/qm_gear
-	name = "Oh whoa, what's this?"
-	info = "So here's everything you'd need to build your own office. You're on your own for raw materials, but you're in charge of the miners so it shouldn't be hard to get them. <BR>\n<BR>\nAs for where to set it up, one idea is the old package processing area. We refit the podbay to take a standard cargo shuttle, so it's not gonna see much use. <BR>\n<BR>\n%s-C. Donnelly <BR>Architectural Analyst"
+	info = "Sorry if this office seems like an afterthought - as I mentioned in my letter to your department at large, you used to be a sub-department of Engineering on this station. Fortunately that's not the case here and you have cargo techs as opposed to other quartermasters, but you should keep the following in mind: <BR>\n<BR>\n- Keep your miners focused on where they're supposed to mine. I get the allure of deep space can be tempting, but we want them somewhere we can be fairly confident they'll come back alive and with ores. <BR>\n<BR>\n- You and your Cargo Technicians have been given access to the Routing Depot at the heart of the station, but you'll need a space suit to safely reach it. You've been given one for this very reason, but your techs will need to source their own. <BR>\n<BR>\n- The fact that you've been given an office and had a good portion of your department refurbished as opposed to being told to make do should be seen as an indication that there <I>are</I> people in this company that care about you, even if it doesn't feel that way sometimes. Remember that before trying to 'declare independence' as 'Cargonia'. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\nArchitectural Analyst"
 
 /obj/item/paper/fluff/cogstation/letter_chap
 	name = "A message from the DHDA"
