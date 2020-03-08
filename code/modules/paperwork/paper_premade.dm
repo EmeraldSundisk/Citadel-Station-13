@@ -120,6 +120,10 @@
 	name = "A message from the DHDA"
 	info = "Regardless of what the name leads you to believe, Cogstation is neither Ratvarian in origin nor designed by members of this so-called 'clock cult'. Despite a potential common enemy and instances of exhibiting peaceful behavior, their beliefs have been labeled 'Heretical' by the Department of Higher-Dimensional Affairs and following them is grounds for immediate termination.  <BR>\nAs the station's designated Chaplain, it is advised you correct anyone who claims this station and/or its designers are Ratvarian. While they are most likely misinformed or 'joking around', untruths gain credibility the more they are repeated. <BR>\n<BR>\n<I>Soulstone Obelisk</I> <BR>\n<BR>\nDepartment of Higher-Dimensional Affairs"
 
+/obj/item/paper/fluff/cogstation/cluwne
+	name = "Mysterious Note"
+	info = "<B>ThE rInGmAsTeR dOeSn'T rUn ThE cIrCus... HONK!!!</B>"
+
 ///////////	CentCom
 
 /obj/item/paper/fluff/stations/centcom/disk_memo
