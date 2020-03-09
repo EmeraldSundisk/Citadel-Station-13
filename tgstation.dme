@@ -18,6 +18,7 @@
 #include "_maps\cogstation.dm"
 #include "_maps\shuttles\arrival_cog.dmm"
 #include "_maps\shuttles\arrival_cogstation.dmm"
+#include "_maps\shuttles\whiteship_cog.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\__513_compatibility.dm"
