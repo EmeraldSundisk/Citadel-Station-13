@@ -244,8 +244,9 @@ Difficulty: Very Hard
 	var/list/stored_items = list()
 	var/list/blacklist = list()
 
-/obj/machinery/smartfridge/black_box/update_icon()
-	return
+/obj/machinery/smartfridge/black_box/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/update_icon_blocker)
 
 /obj/machinery/smartfridge/black_box/accept_check(obj/item/O)
 	if(!istype(O))
@@ -432,6 +433,7 @@ Difficulty: Very Hard
 			H.dropItemToGround(W)
 		var/datum/job/clown/C = new /datum/job/clown()
 		C.equip(H)
+		C.after_spawn(H, H, TRUE)
 		qdel(C)
 		affected_targets.Add(H)
 

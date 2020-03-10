@@ -415,7 +415,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["feature_cock_shape"]				>> features["cock_shape"]
 	S["feature_cock_color"]				>> features["cock_color"]
 	S["feature_cock_length"]			>> features["cock_length"]
-	S["feature_cock_girth"]				>> features["cock_girth"]
+	S["feature_cock_diameter"]			>> features["cock_diameter"]
 	S["feature_has_sheath"]				>> features["sheath_color"]
 	//balls features
 	S["feature_has_balls"]				>> features["has_balls"]
@@ -423,13 +423,11 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["feature_balls_size"]				>> features["balls_size"]
 	S["feature_balls_shape"]			>> features["balls_shape"]
 	S["feature_balls_sack_size"]		>> features["balls_sack_size"]
-	S["feature_balls_fluid"]			>> features["balls_fluid"]
 	//breasts features
 	S["feature_has_breasts"]			>> features["has_breasts"]
 	S["feature_breasts_size"]			>> features["breasts_size"]
 	S["feature_breasts_shape"]			>> features["breasts_shape"]
 	S["feature_breasts_color"]			>> features["breasts_color"]
-	S["feature_breasts_fluid"]			>> features["breasts_fluid"]
 	S["feature_breasts_producing"]		>> features["breasts_producing"]
 	//vagina features
 	S["feature_has_vag"]				>> features["has_vag"]

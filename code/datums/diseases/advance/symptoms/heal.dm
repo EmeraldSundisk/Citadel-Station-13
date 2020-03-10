@@ -279,7 +279,7 @@
 		M.emote("deathgasp")
 	M.fakedeath("regenerative_coma")
 	M.update_stat()
-	M.update_canmove()
+	M.update_mobility()
 	addtimer(CALLBACK(src, .proc/uncoma, M), 300)
 
 /datum/symptom/heal/coma/proc/uncoma(mob/living/M)
@@ -288,7 +288,7 @@
 	active_coma = FALSE
 	M.cure_fakedeath("regenerative_coma")
 	M.update_stat()
-	M.update_canmove()
+	M.update_mobility()
 
 /datum/symptom/heal/coma/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
 	var/heal_amt = 4 * actual_power
@@ -448,9 +448,11 @@
 	symptom_delay_max = 1
 	passive_message = "<span class='notice'>Your skin glows faintly for a moment.</span>"
 	var/cellular_damage = FALSE
-	threshold_desc = "<b>Transmission 6:</b> Additionally heals cellular damage and toxin lovers.<br>\
-					  <b>Resistance 7:</b> Increases healing speed."
-
+	threshold_desc = list(
+	"Transmission 6" = "Additionally heals cellular damage and toxin lovers.",
+	"Resistance 7" = "Increases healing speed.",
+	)
+	
 /datum/symptom/heal/radiation/Start(datum/disease/advance/A)
 	if(!..())
 		return

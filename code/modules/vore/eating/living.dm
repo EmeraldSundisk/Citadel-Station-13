@@ -158,7 +158,7 @@
 		swallow_time = istype(prey, /mob/living/carbon/human) ? belly.human_prey_swallow_time : belly.nonhuman_prey_swallow_time
 
 	//Timer and progress bar
-	if(!do_after(user, swallow_time, prey))
+	if(!do_after(user, swallow_time, TRUE, prey))
 		return FALSE // Prey escaped (or user disabled) before timer expired.
 
 	if(!prey.Adjacent(user)) //double check'd just in case they moved during the timer and the do_mob didn't fail for whatever reason
@@ -237,6 +237,8 @@
 			return
 		//Actual escaping
 		B.release_specific_contents(src,TRUE) //we might as well take advantage of that specific belly's handling. Else we stay blinded forever.
+		message_admins("[src] used OOC escape to escape from [B.owner]'s belly.")
+		log_consent("[src] used OOC escape to escape from [B.owner]'s belly.")
 		src.stop_sound_channel(CHANNEL_PREYLOOP)
 		SEND_SIGNAL(src, COMSIG_CLEAR_MOOD_EVENT, "fedprey", /datum/mood_event/fedprey)
 		for(var/mob/living/simple_animal/SA in range(10))
@@ -255,6 +257,8 @@
 			return
 		//Actual escaping
 		belly.go_out(src) //Just force-ejects from the borg as if they'd clicked the eject button.
+		message_admins("[src] used OOC escape from a dogborg sleeper.")
+		log_consent("[src] used OOC escape from a dogborg sleeper.")
 	else
 		to_chat(src,"<span class='alert'>You aren't inside anyone, though, is the thing.</span>")
 
@@ -380,6 +384,9 @@
 	if(!istype(tasted))
 		return
 
+	if(!tasted.client?.prefs_vr.lickable)
+		return
+
 	if(src == stat)
 		return
 
@@ -400,10 +407,4 @@
 			taste_message += "they haven't bothered to set their flavor text"
 		else
 			taste_message += "a plain old normal [src]"
-
-/*	if(ishuman(src))
-		var/mob/living/carbon/human/H = src
-		if(H.touching.reagent_list.len) //Just the first one otherwise I'll go insane.
-			var/datum/reagent/R = H.touching.reagent_list[1]
-			taste_message += " You also get the flavor of [R.taste_description] from something on them"*/
 	return taste_message
