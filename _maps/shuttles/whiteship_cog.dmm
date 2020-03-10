@@ -25,22 +25,23 @@
 "y" = (/obj/structure/table/reinforced,/obj/item/paper_bin,/obj/item/pen,/turf/open/floor/plasteel/grimy,/area/shuttle/abandoned)
 "z" = (/obj/structure/window/shuttle,/turf/open/floor/plating,/area/shuttle/abandoned)
 "A" = (/obj/machinery/door/window/eastright,/obj/structure/toilet{contents = newlist(/obj/item/toy/snappop/phoenix); dir = 4},/turf/open/floor/plasteel,/area/shuttle/abandoned)
-"B" = (/obj/machinery/light{dir = 4; light_color = "#c1caff"},/obj/machinery/airalarm/all_access{dir = 8; pixel_x = 24},/turf/open/floor/plasteel,/area/shuttle/abandoned)
-"C" = (/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 8},/obj/structure/closet/crate/secure/weapon,/obj/item/gun/energy/laser/carbine,/turf/open/floor/plasteel,/area/shuttle/abandoned)
+"B" = (/obj/machinery/light{dir = 4; light_color = "#c1caff"},/obj/machinery/flasher{id = "cogws"; pixel_x = 24},/turf/open/floor/plasteel,/area/shuttle/abandoned)
+"C" = (/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 8},/obj/structure/closet/crate/secure/weapon,/obj/item/gun/energy/laser/carbine,/obj/machinery/button/flasher{id = "cogws"; pixel_x = -24; pixel_y = 8},/turf/open/floor/plasteel,/area/shuttle/abandoned)
 "D" = (/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 8},/obj/structure/closet/crate/secure/weapon,/obj/effect/turf_decal/tile/red{dir = 4},/obj/item/gun/energy/e_gun/stun,/turf/open/floor/plasteel,/area/shuttle/abandoned)
 "E" = (/obj/machinery/light{dir = 8; light_color = "#e8eaff"},/obj/machinery/airalarm/all_access{dir = 4; pixel_x = -24},/turf/open/floor/plasteel/grimy,/area/shuttle/abandoned)
 "F" = (/obj/structure/chair/comfy/shuttle{dir = 4},/turf/open/floor/plasteel/grimy,/area/shuttle/abandoned)
 "G" = (/obj/machinery/computer/shuttle/white_ship{dir = 8},/turf/open/floor/plasteel/grimy,/area/shuttle/abandoned)
-"H" = (/obj/item/clothing/glasses/sunglasses/blindfold,/turf/open/floor/plasteel,/area/shuttle/abandoned)
+"H" = (/obj/item/clothing/glasses/sunglasses/blindfold,/obj/machinery/airalarm/all_access{dir = 8; pixel_x = 24},/turf/open/floor/plasteel,/area/shuttle/abandoned)
 "I" = (/obj/structure/table/reinforced,/obj/item/clothing/glasses/sunglasses,/turf/open/floor/plasteel/grimy,/area/shuttle/abandoned)
 "J" = (/obj/structure/curtain,/obj/machinery/shower{name = "shower"; pixel_y = 12},/obj/item/soap/nanotrasen,/turf/open/floor/plasteel/white,/area/shuttle/abandoned)
 "K" = (/obj/structure/mirror{pixel_y = 32},/obj/structure/sink{pixel_y = 28},/turf/open/floor/plasteel/white,/area/shuttle/abandoned)
 "L" = (/obj/machinery/door/airlock/shuttle,/turf/open/floor/plasteel/white,/area/shuttle/abandoned)
 "M" = (/obj/structure/toilet{dir = 8},/obj/machinery/light/small{brightness = 3; dir = 8},/obj/machinery/airalarm/all_access{dir = 1; pixel_y = -24},/turf/open/floor/plasteel/white,/area/shuttle/abandoned)
+"N" = (/obj/machinery/door/airlock/external,/obj/structure/fans/tiny,/obj/docking_port/mobile{dir = 2; dwidth = 7; height = 9; id = "whiteship"; movement_force = list("KNOCKDOWN" = 0, "THROW" = 0); name = "Prisoner Transport"; port_direction = 8; preferred_direction = 4; width = 13},/turf/open/floor/plasteel/dark,/area/shuttle/abandoned)
 
 (1,1,1) = {"
 abcdddcccdddd
-efgchgcigjkjd
+efgchgcigjNjd
 lfmmncopqrsjj
 gtnnnuvwxssyz
 cAnnBcCDcEFGz
