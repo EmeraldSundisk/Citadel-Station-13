@@ -118,7 +118,7 @@
 
 /obj/item/paper/fluff/cogstation/letter_qm
 	name = "To the future Quartermaster:"
-	info = "Sorry if this office seems like an afterthought - as I mentioned in my letter to your department at large, you used to be a sub-department of Engineering on this station. Fortunately that's not the case here and you have cargo techs as opposed to other quartermasters, but you should keep the following in mind: <BR>\n<BR>\n- Keep your miners focused on where they're supposed to mine. I get the allure of deep space can be tempting, but we want them somewhere we can be fairly confident they'll come back alive and with ores. <BR>\n<BR>\n- You and your Cargo Technicians have been given access to the Routing Depot at the heart of the station, but you'll need a space suit to safely reach it. You've been given one for this very reason, but your techs will need to source their own. <BR>\n<BR>\n- The fact that you've been given an office and had a good portion of your department refurbished as opposed to being told to make do should be seen as an indication that there <I>are</I> people in this company that care about you, even if it doesn't feel that way sometimes. Remember that before trying to 'declare independence' as 'Cargonia'. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\nArchitectural Analyst"
+	info = "Sorry if this office seems like an afterthought - as I mentioned in my letter to your department at large, you used to be a sub-department of Engineering on this station. Fortunately that's not the case here and you have cargo techs as opposed to other quartermasters, but you should keep the following in mind: <BR>\n<BR>\n- Keep your miners focused on where they're supposed to mine. I get the allure of deep space can be tempting, but we want them somewhere we can be fairly confident they'll come back alive and with ores. <BR>\n<BR>\n- Anyone with maintenance access can enter the Routing Depot at the heart of the station, but you'll need a space suit to safely reach it. You've been given one for this very reason, but your techs will need to source their own. <BR>\n<BR>\n- The fact that you've been given an office and had a good portion of your department refurbished as opposed to being told to make do should be seen as an indication that there <I>are</I> people in this company that care about you, even if it doesn't feel that way sometimes. Remember that before trying to 'declare independence' as 'Cargonia'. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\nArchitectural Analyst"
 
 /obj/item/paper/fluff/cogstation/letter_chap
 	name = "A message from the DHDA"
@@ -139,6 +139,22 @@
 /obj/item/paper/fluff/cogstation/survey
 	name = "Fwd: Survey Report"
 	info = "After a thorough investigation, I'm happy to say that this translocation and its consequences weren't for naught. CogStation appears to have made it in one piece, with the only exception being a 'drone factory' satellite. I suspect it met a fate similar to parts of the station's original home, which means there's the possibility it's not terribly far from here. <BR>\n<BR>\nI can see some of CogStation's components being alien to local crews, but fortunately some of the station's previous staff appear to have anticipated this and left some advice. The assessment team and I have decided to do the same where appropriate, although I can see some areas that might be worth redesigning to better suit area protocol. I've brought them up to the Chief Architect, you should hear from them in a couple of hours. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\n<BR>\nArchitectural Analyst"
+
+/obj/item/paper/fluff/cogstation/router_off
+	name = "ROUTER STATUS: INACTIVE"
+	info = "This router line has been closed while we determine possible solutions. While you are free to use the request and supply consoles, you should plan on receiving your deliveries elsewhere. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\n<BR>\nArchitectural Analyst"
+
+/obj/item/paper/fluff/cogstation/router_verylimited
+	name = "ROUTER STATUS: VERY LIMITED"
+	info = "Currently, this router is only capable of making deliveries to Engineering, Cargo and the recycler, via manual input from the Routing Depot. It is not yet capable of receiving deliveries, meaning you should expect to receive any orders elsewhere. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\n<BR>\nArchitectural Analyst"
+
+/obj/item/paper/fluff/cogstation/router_limited
+	name = "ROUTER STATUS: LIMITED"
+	info = "Currently, this router cannot receive deliveries from the Airbridge, MedSci, Security, or Service Routers. Cargo and the recycler are the only points currently accepting deliveries from here, although manual input from the routing depot is currently required. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\n<BR>\nArchitectural Analyst"
+
+/obj/item/paper/fluff/cogstation/router_cargo
+	name = "ROUTER STATUS: VERY LIMITED"
+	info = "Currently, this router cannot receive deliveries from the Airbridge, MedSci, Security, or Service Routers. It is not yet capable of making deliveries, beyond sending items to the recycler. <BR>\n<BR>\n<I>-C. Donnelly</I> <BR>\n<BR>\nArchitectural Analyst"
 
 ///////////	CentCom
 
