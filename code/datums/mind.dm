@@ -67,7 +67,7 @@
 	var/datum/skill_holder/skill_holder
 
 /datum/mind/New(var/key)
-	skill_holder = new()
+	skill_holder = new(src)
 	src.key = key
 	soulOwner = src
 	martial_art = default_martial_art
@@ -124,6 +124,8 @@
 	transfer_martial_arts(new_character)
 	if(active || force_key_move)
 		new_character.key = key		//now transfer the key to link the client to our new body
+	if(new_character.client)
+		LAZYCLEARLIST(new_character.client.recent_examines)
 	current.update_atom_languages()
 
 //CIT CHANGE - makes arousal update when transfering bodies
@@ -331,14 +333,20 @@
 
 /datum/mind/proc/enslave_mind_to_creator(mob/living/creator)
 	if(iscultist(creator))
-		SSticker.mode.add_cultist(src)
+		if(iscultist(creator, TRUE))
+			SSticker.mode.add_cultist(src)
+		else
+			src.add_antag_datum(/datum/antagonist/cult/neutered/traitor)
 
 	else if(is_revolutionary(creator))
 		var/datum/antagonist/rev/converter = creator.mind.has_antag_datum(/datum/antagonist/rev,TRUE)
 		converter.add_revolutionary(src,FALSE)
 
 	else if(is_servant_of_ratvar(creator))
-		add_servant_of_ratvar(current)
+		if(is_servant_of_ratvar(creator, TRUE))
+			add_servant_of_ratvar(current)
+		else
+			add_servant_of_ratvar(current, FALSE, FALSE, /datum/antagonist/clockcult/neutered/traitor)
 
 	else if(is_nuclear_operative(creator))
 		var/datum/antagonist/nukeop/converter = creator.mind.has_antag_datum(/datum/antagonist/nukeop,TRUE)
