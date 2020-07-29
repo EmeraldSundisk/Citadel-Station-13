@@ -3510,5 +3510,6 @@
 #include "modular_citadel\code\modules\reagents\chemistry\recipes\fermi.dm"
 #include "modular_citadel\code\modules\reagents\objects\clothes.dm"
 #include "modular_citadel\code\modules\reagents\objects\items.dm"
+#include "C:\Users\Chaz\Documents\stonkwerks\ks13resto.dmm"
 #include "C:\Users\Chaz\Documents\stonkwerks\oldstationresto.dmm"
 // END_INCLUDE
