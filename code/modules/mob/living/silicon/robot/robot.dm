@@ -72,8 +72,8 @@
 	toner = tonermax
 	diag_hud_set_borgcell()
 
-	verbs += /mob/living/proc/lay_down //CITADEL EDIT gimmie rest verb kthx
-	verbs += /mob/living/silicon/robot/proc/rest_style
+	add_verb(src, /mob/living/proc/lay_down) //CITADEL EDIT gimmie rest verb kthx
+	add_verb(src, /mob/living/silicon/robot/proc/rest_style)
 
 //If there's an MMI in the robot, have it ejected when the mob goes away. --NEO
 /mob/living/silicon/robot/Destroy()
@@ -99,7 +99,7 @@
 		radio.keyslot = null
 	//END CITADEL EDIT
 	if(connected_ai)
-		connected_ai.connected_robots -= src
+		set_connected_ai(null)
 	if(shell)
 		GLOB.available_ai_shells -= src
 	else
@@ -222,19 +222,19 @@
 	if(thruster_button)
 		thruster_button.icon_state = "ionpulse[ionpulse_on]"
 
-/mob/living/silicon/robot/Stat()
-	..()
-	if(statpanel("Status"))
-		if(cell)
-			stat("Charge Left:", "[cell.charge]/[cell.maxcharge]")
-		else
-			stat(null, text("No Cell Inserted!"))
+/mob/living/silicon/robot/get_status_tab_items()
+	. = ..()
+	. += ""
+	if(cell)
+		. += "Charge Left: [cell.charge]/[cell.maxcharge]"
+	else
+		. += text("No Cell Inserted!")
 
-		if(module)
-			for(var/datum/robot_energy_storage/st in module.storages)
-				stat("[st.name]:", "[st.energy]/[st.max_energy]")
-		if(connected_ai)
-			stat("Master AI:", connected_ai.name)
+	if(module)
+		for(var/datum/robot_energy_storage/st in module.storages)
+			. += "[st.name]: [st.energy]/[st.max_energy]"
+	if(connected_ai)
+		. += "Master AI: [connected_ai.name]"
 
 /mob/living/silicon/robot/restrained(ignore_grab)
 	. = 0
@@ -454,10 +454,12 @@
 			if(U.action(src))
 				to_chat(user, "<span class='notice'>You apply the upgrade to [src].</span>")
 				if(U.one_use)
+					U.afterInstall(src)
 					qdel(U)
 				else
 					U.forceMove(src)
 					upgrades += U
+					U.afterInstall(src)
 			else
 				to_chat(user, "<span class='danger'>Upgrade error.</span>")
 				U.forceMove(drop_location())
@@ -560,11 +562,10 @@
 	gib()
 
 /mob/living/silicon/robot/proc/UnlinkSelf()
-	if(src.connected_ai)
-		connected_ai.connected_robots -= src
-		src.connected_ai = null
-	lawupdate = 0
-	scrambledcodes = 1
+	set_connected_ai(null)
+	lawupdate = FALSE
+	locked_down = FALSE
+	scrambledcodes = TRUE
 	//Disconnect it's camera so it's not so easily tracked.
 	if(!QDELETED(builtInCamera))
 		QDEL_NULL(builtInCamera)
@@ -586,10 +587,10 @@
 		W.attack_self(src)
 
 
-/mob/living/silicon/robot/proc/SetLockdown(state = 1)
+/mob/living/silicon/robot/proc/SetLockdown(state = TRUE)
 	// They stay locked down if their wire is cut.
 	if(wires.is_cut(WIRE_LOCKDOWN))
-		state = 1
+		state = TRUE
 	if(state)
 		throw_alert("locked", /obj/screen/alert/locked)
 	else
@@ -991,7 +992,7 @@
 		builtInCamera.c_tag = real_name	//update the camera name too
 	mainframe = AI
 	deployed = TRUE
-	connected_ai = mainframe
+	set_connected_ai(mainframe)
 	mainframe.connected_robots |= src
 	lawupdate = TRUE
 	lawsync()
@@ -1021,6 +1022,32 @@
 	R.undeploy()
 	return TRUE
 
+/datum/action/innate/custom_holoform
+	name = "Select Custom Holoform"
+	desc = "Select one of your existing avatars to use as a holoform."
+	icon_icon = 'icons/mob/actions/actions_silicon.dmi'
+	button_icon_state = "custom_holoform"
+	required_mobility_flags = NONE
+
+/datum/action/innate/custom_holoform/Trigger()
+	if(!..())
+		return FALSE
+	var/mob/living/silicon/S = owner
+
+	//if setting the holoform succeeds, attempt to set it as the current holoform for the pAI or AI
+	if(S.attempt_set_custom_holoform())
+		if(istype(S, /mob/living/silicon/pai))
+			var/mob/living/silicon/pai/P = S
+			P.chassis = "custom"
+		else if(istype(S, /mob/living/silicon/ai))
+			var/mob/living/silicon/ai/A = S
+			if(A.client?.prefs?.custom_holoform_icon)
+				A.holo_icon = A.client.prefs.get_filtered_holoform(HOLOFORM_FILTER_AI)
+			else
+				A.holo_icon = getHologramIcon(icon('icons/mob/ai.dmi', "female"))
+
+	return TRUE
+
 
 /mob/living/silicon/robot/proc/undeploy()
 
@@ -1041,6 +1068,8 @@
 	if(mainframe.laws)
 		mainframe.laws.show_laws(mainframe) //Always remind the AI when switching
 	mainframe = null
+
+
 
 /mob/living/silicon/robot/attack_ai(mob/user)
 	if(shell && (!connected_ai || connected_ai == user))
@@ -1090,9 +1119,8 @@
 	. = ..(user)
 
 /mob/living/silicon/robot/proc/TryConnectToAI()
-	connected_ai = select_active_ai_with_fewest_borgs()
+	set_connected_ai(select_active_ai_with_fewest_borgs(z))
 	if(connected_ai)
-		connected_ai.connected_robots += src
 		lawsync()
 		lawupdate = 1
 		return TRUE
@@ -1132,10 +1160,6 @@
 			bellyup = 1
 	update_icons()
 
-/mob/living/silicon/robot/adjustStaminaLossBuffered(amount, updating_health = 1)
-	if(istype(cell))
-		cell.charge -= amount*5
-
 /mob/living/silicon/robot/verb/viewmanifest()
 	set category = "Robot Commands"
 	set name = "View Crew Manifest"
@@ -1143,3 +1167,14 @@
 	if(usr.stat == DEAD)
 		return //won't work if dead
 	ai_roster()
+
+/mob/living/silicon/robot/proc/set_connected_ai(new_ai)
+	if(connected_ai == new_ai)
+		return
+	. = connected_ai
+	connected_ai = new_ai
+	if(.)
+		var/mob/living/silicon/ai/old_ai = .
+		old_ai.connected_robots -= src
+	if(connected_ai)
+		connected_ai.connected_robots |= src

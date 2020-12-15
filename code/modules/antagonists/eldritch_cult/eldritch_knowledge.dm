@@ -247,7 +247,8 @@
 		if(LH.target && LH.target.stat == DEAD)
 			to_chat(carbon_user,"<span class='danger'>Your patrons accepts your offer...</span>")
 			var/mob/living/carbon/human/H = LH.target
-			H.become_husk()
+			H.become_husk("burn") //Husks the target with removable husking, but causes a bunch of additional burn damage to prevent it from being 'too easy' to do
+			H.adjustFireLoss(200)
 			LH.target = null
 			var/datum/antagonist/heretic/EC = carbon_user.mind.has_antag_datum(/datum/antagonist/heretic)
 
@@ -263,12 +264,19 @@
 		if(!LH.target)
 			var/datum/objective/A = new
 			A.owner = user.mind
-			var/datum/mind/targeted =  A.find_target()//easy way, i dont feel like copy pasting that entire block of code
-			LH.target = targeted.current
+			var/list/targets = list()
+			for(var/i in 0 to 3)
+				var/datum/mind/targeted =  A.find_target()//easy way, i dont feel like copy pasting that entire block of code
+				if(!targeted)
+					break
+				targets[targeted.current.real_name] = targeted.current
+			LH.target = targets[input(user,"Choose your next target","Target") in targets]
+
+			if(!LH.target && targets.len)
+				LH.target = pick(targets)	//Tsk tsk, you can and will get another target if you want it or not.
 			qdel(A)
 			if(LH.target)
 				to_chat(user,"<span class='warning'>Your new target has been selected, go and sacrifice [LH.target.real_name]!</span>")
-
 			else
 				to_chat(user,"<span class='warning'>target could not be found for living heart.</span>")
 

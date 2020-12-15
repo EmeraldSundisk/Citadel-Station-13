@@ -55,6 +55,7 @@
 		icon_state = "[src.base_state]open"
 
 /obj/machinery/door/window/update_atom_colour()
+	. = ..()
 	if((color && (color_hex2num(color) < 255)))
 		visible = TRUE
 		if(density)
@@ -397,7 +398,7 @@
 	return ..()
 
 /obj/machinery/door/window/clockwork/emp_act(severity)
-	if(prob(80/severity))
+	if(prob(severity/1.25))
 		open()
 
 /obj/machinery/door/window/clockwork/ratvar_act()

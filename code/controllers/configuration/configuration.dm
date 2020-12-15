@@ -197,10 +197,9 @@
 	var/list/banned_edits = list(NAMEOF(src, entries_by_type), NAMEOF(src, entries), NAMEOF(src, directory))
 	return !(var_name in banned_edits) && ..()
 
-/datum/controller/configuration/stat_entry()
-	if(!statclick)
-		statclick = new/obj/effect/statclick/debug(null, "Edit", src)
-	stat("[name]:", statclick)
+/datum/controller/configuration/stat_entry(msg)
+	msg = "Edit"
+	return msg
 
 /// Your typical GET but returns a config.
 /datum/controller/configuration/proc/GetEntryDatum(entry_type)
@@ -392,6 +391,8 @@ Example config:
 	for(var/T in storyteller_cache)
 		var/datum/dynamic_storyteller/S = T
 		var/config_tag = initial(S.config_tag)
+		if(!config_tag)
+			continue
 		var/probability = (config_tag in probabilities) ? probabilities[config_tag] : initial(S.weight)
 		var/min_players = (config_tag in min_player_counts) ? min_player_counts[config_tag] : initial(S.min_players)
 		if(probability <= 0)

@@ -9,7 +9,12 @@
 #define DISABLE_BITFIELD(variable, flag) (variable &= ~(flag))
 #define CHECK_BITFIELD(variable, flag) (variable & (flag))
 #define TOGGLE_BITFIELD(variable, flag) (variable ^= (flag))
-
+#define COPY_SPECIFIC_BITFIELDS(a,b,flags)\
+	do{\
+		var/_old = a & ~(flags);\
+		var/_cleaned = b & (flags);\
+		a = _old | _cleaned;\
+	} while(0);
 #define CHECK_MULTIPLE_BITFIELDS(flagvar, flags) (((flagvar) & (flags)) == (flags))
 
 GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768))
@@ -157,3 +162,6 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 		REMOVE_TRAIT(x, TRAIT_KEEP_TOGETHER, KEEP_TOGETHER_ORIGINAL);\
 	else if(!HAS_TRAIT(x, TRAIT_KEEP_TOGETHER))\
 	 	x.appearance_flags &= ~KEEP_TOGETHER
+
+/// 33554431 (2^24 - 1) is the maximum value our bitflags can reach.
+#define MAX_BITFLAG_DIGITS 8
