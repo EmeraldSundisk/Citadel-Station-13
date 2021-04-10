@@ -17,7 +17,7 @@
 /obj/item/clothing/mask/gas/examine(mob/user)
 	. = ..()
 	if(flavor_adjust)
-		. += "<span class='info'>Alt-click to toggle identity concealment. It's currently <b>[flags_inv & HIDEFACE ? "on" : "off"]</b>.</span>"
+		. += "<span class='info'>Alt-click to toggle identity concealment. it's currently <b>[flags_inv & HIDEFACE ? "on" : "off"]</b>.</span>"
 
 /obj/item/clothing/mask/gas/AltClick(mob/user)
 	. = ..()
@@ -143,17 +143,14 @@
 			"Blanc" = image(icon = src.icon, icon_state = "mime"),
 			"Excité" = image(icon = src.icon, icon_state = "sexymime"),
 			"Triste" = image(icon = src.icon, icon_state = "sadmime"),
-			"Effrayé" = image(icon = src.icon, icon_state = "scaredmime"),
-			"Timid Woman" = image(icon = src.icon, icon_state = "timidwoman"),
-			"Timid Man" = image(icon = src.icon, icon_state = "timidman")
+			"Effrayé" = image(icon = src.icon, icon_state = "scaredmime")
 			)
 
 /obj/item/clothing/mask/gas/mime/ui_action_click(mob/user)
 	if(!istype(user) || user.incapacitated())
 		return
 
-	var/static/list/options = list("Blanc" = "mime", "Triste" = "sadmime", "Effrayé" = "scaredmime", "Excité" ="sexymime",
-	"Timid Woman" = "timidwoman", "Timid Man" = "timidman")
+	var/static/list/options = list("Blanc" = "mime", "Triste" = "sadmime", "Effrayé" = "scaredmime", "Excité" ="sexymime")
 
 	var/choice = show_radial_menu(user,src, mimemask_designs, custom_check = FALSE, radius = 36, require_near = TRUE)
 
@@ -172,20 +169,6 @@
 	icon_state = "sexymime"
 	item_state = "sexymime"
 	actions_types = list()
-
-/obj/item/clothing/mask/gas/timidcostume
-	name = "timid woman mask"
-	desc = "Most people who wear these are not really that timid."
-	clothing_flags = ALLOWINTERNALS
-	icon_state = "timidwoman"
-	item_state = "timidwoman"
-	flags_cover = MASKCOVERSEYES
-	resistance_flags = FLAMMABLE
-
-/obj/item/clothing/mask/gas/timidcostume/man
-	name = "timid man mask"
-	icon_state = "timidman"
-	item_state = "timidman"
 
 /obj/item/clothing/mask/gas/monkeymask
 	name = "monkey mask"

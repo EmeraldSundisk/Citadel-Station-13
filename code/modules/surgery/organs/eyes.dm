@@ -404,7 +404,6 @@
 		on_mob.set_light(1, 1, current_color_string)
 
 /obj/effect/abstract/eye_lighting
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	var/obj/item/organ/eyes/robotic/glow/parent
 
 /obj/effect/abstract/eye_lighting/Initialize()

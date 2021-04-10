@@ -15,6 +15,7 @@
 	stop_automated_movement = 1
 	status_flags = CANPUSH
 	pass_flags = PASSTABLE
+	ventcrawler = VENTCRAWLER_ALWAYS
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxHealth = 150
@@ -41,9 +42,7 @@
 	/obj/screen,
 	/obj/singularity,
 	/mob/living/simple_animal/hostile/morph,
-	/obj/effect,
-	/mob/camera
-	))
+	/obj/effect))
 
 	var/playstyle_string = "<span class='big bold'>You are a morph,</span></b> an abomination of science created primarily with changeling cells. \
 							You may take the form of anything nearby by shift-clicking it. This process will alert any nearby \
@@ -51,10 +50,6 @@
 							less damage. In addition, anyone within three tiles will note an uncanny wrongness if examining you. \
 							You can attack any item or dead creature to consume it - creatures will fully restore your health. \
 							Finally, you can restore yourself to your original form while morphed by shift-clicking yourself.</b>"
-
-/mob/living/simple_animal/hostile/morph/Initialize()
-	. = ..()
-	src.AddElement(/datum/element/ventcrawling, given_tier = VENTCRAWLER_ALWAYS)
 
 /mob/living/simple_animal/hostile/morph/examine(mob/user)
 	if(morphed)

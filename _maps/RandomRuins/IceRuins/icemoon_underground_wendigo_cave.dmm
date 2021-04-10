@@ -31,10 +31,6 @@
 "N" = (
 /turf/open/indestructible/necropolis/ice,
 /area/icemoon/underground/explored)
-"S" = (
-/obj/item/tcg_card/special/wendigo,
-/turf/open/indestructible/necropolis/ice,
-/area/icemoon/underground/explored)
 "U" = (
 /obj/item/paper/crumpled/bloody{
 	info = "for your own sake, do not enter"
@@ -455,7 +451,7 @@ a
 N
 N
 N
-S
+N
 N
 N
 N

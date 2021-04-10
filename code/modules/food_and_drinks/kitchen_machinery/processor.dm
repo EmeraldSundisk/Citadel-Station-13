@@ -156,7 +156,11 @@
 /obj/machinery/processor/slime
 	name = "slime processor"
 	desc = "An industrial grinder with a sticker saying appropriated for science department. Keep hands clear of intake area while operating."
-	circuit = /obj/item/circuitboard/machine/processor/slime
+
+/obj/machinery/processor/slime/Initialize()
+	. = ..()
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/processor/slime(null)
+	B.apply_default_parts(src)
 
 /obj/machinery/processor/slime/adjust_item_drop_location(atom/movable/AM)
 	var/static/list/slimecores = subtypesof(/obj/item/slime_extract)

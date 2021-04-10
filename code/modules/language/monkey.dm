@@ -10,4 +10,3 @@
 	default_priority = 80
 
 	icon_state = "animal"
-	chooseable_roundstart = TRUE

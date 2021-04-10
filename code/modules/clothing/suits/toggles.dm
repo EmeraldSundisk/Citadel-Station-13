@@ -4,8 +4,6 @@
 	actions_types = list(/datum/action/item_action/toggle_hood)
 	var/obj/item/clothing/head/hooded/hood
 	var/hoodtype = /obj/item/clothing/head/hooded/winterhood //so the chaplain hoodie or other hoodies can override this
-	///Alternative mode for hiding the hood, instead of storing the hood in the suit it qdels it, useful for when you deal with hooded suit with storage.
-	var/alternative_mode = FALSE
 
 /obj/item/clothing/suit/hooded/Initialize()
 	. = ..()
@@ -45,8 +43,6 @@
 		H.transferItemToLoc(hood, src, TRUE)
 		H.update_inv_wear_suit()
 	else
-		if(alternative_mode)
-			QDEL_NULL(hood)
 		hood.forceMove(src)
 	update_icon()
 
@@ -62,12 +58,6 @@
 	RemoveHood()
 
 /obj/item/clothing/suit/hooded/proc/ToggleHood()
-	if(!hood)
-		to_chat(loc, "<span class='warning'>[src] seems to be missing its hood..</span>")
-		return
-	if(atom_colours)
-		hood.atom_colours = atom_colours.Copy()
-		hood.update_atom_colour()
 	if(!suittoggled)
 		if(ishuman(src.loc))
 			var/mob/living/carbon/human/H = src.loc
@@ -114,9 +104,6 @@
 	suit_toggle(user)
 	return TRUE
 
-/obj/item/clothing/suit/toggle/proc/on_toggle(mob/user) // override this, not suit_toggle, which does checks
-	to_chat(usr, "<span class='notice'>You toggle [src]'s [togglename].</span>")
-
 /obj/item/clothing/suit/toggle/ui_action_click()
 	suit_toggle()
 
@@ -126,7 +113,7 @@
 	if(!can_use(usr))
 		return 0
 
-	on_toggle(usr)
+	to_chat(usr, "<span class='notice'>You toggle [src]'s [togglename].</span>")
 	if(src.suittoggled)
 		src.icon_state = "[initial(icon_state)]"
 		src.suittoggled = FALSE
@@ -204,11 +191,7 @@
 	if(!helmettype)
 		return
 	if(!helmet)
-		to_chat(H, "<span class='warning'>[src] seems to be missing its helmet..</span>")
 		return
-	if(atom_colours)
-		helmet.atom_colours = atom_colours.Copy()
-		helmet.update_atom_colour()
 	if(!suittoggled)
 		if(ishuman(src.loc))
 			if(H.wear_suit != src)

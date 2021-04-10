@@ -63,7 +63,7 @@
 	name = "advanced fire extinguisher"
 	desc = "Used to stop thermonuclear fires from spreading inside your engine."
 	icon_state = "foam_extinguisher0"
-	item_state = "foam_extinguisher"
+	//item_state = "foam_extinguisher" needs sprite
 	dog_fashion = null
 	chem = /datum/reagent/firefighting_foam
 	tanktype = /obj/structure/reagent_dispensers/foamtank
@@ -235,23 +235,16 @@
 		return
 	EmptyExtinguisher(user)
 
-/obj/item/extinguisher/DoRevenantThrowEffects(atom/target)
-	EmptyExtinguisher()
-
-/obj/item/extinguisher/proc/EmptyExtinguisher(mob/user)
-	if(!reagents.total_volume)
-		return
-	if(loc == user || !user)
+/obj/item/extinguisher/proc/EmptyExtinguisher(var/mob/user)
+	if(loc == user && reagents.total_volume)
 		reagents.clear_reagents()
 
 		var/turf/T = get_turf(loc)
 		if(isopenturf(T))
 			var/turf/open/theturf = T
 			theturf.MakeSlippery(TURF_WET_WATER, min_wet_time = 10 SECONDS, wet_time_to_add = 5 SECONDS)
-		if(user)
-			user.visible_message("[user] empties out \the [src] onto the floor using the release valve.", "<span class='info'>You quietly empty out \the [src] by using its release valve.</span>")
-		else
-			user.visible_message("The release valve of \the [src] suddenly opens and sprays it's contents on the floor!")
+
+		user.visible_message("[user] empties out \the [src] onto the floor using the release valve.", "<span class='info'>You quietly empty out \the [src] by using its release valve.</span>")
 
 //firebot assembly
 /obj/item/extinguisher/attackby(obj/O, mob/user, params)

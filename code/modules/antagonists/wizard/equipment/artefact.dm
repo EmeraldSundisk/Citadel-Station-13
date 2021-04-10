@@ -385,10 +385,14 @@
 /obj/item/warpwhistle/attack_self(mob/living/carbon/user)
 	if(!istype(user) || on_cooldown)
 		return
+	var/turf/T = get_turf(user)
+	var/area/A = get_area(user)
+	if(!T || !A || A.noteleport)
+		to_chat(user, "<span class='warning'>You play \the [src], yet no sound comes out of it... Looks like it won't work here.</span>")
+		return
 	on_cooldown = TRUE
 	last_user = user
-	var/turf/T = get_turf(user)
-	playsound(T,'sound/magic/warpwhistle.ogg', 200, TRUE)
+	playsound(T,'sound/magic/warpwhistle.ogg', 200, 1)
 	ADD_TRAIT(user, TRAIT_MOBILITY_NOMOVE, src)
 	ADD_TRAIT(user, TRAIT_MOBILITY_NOUSE, src)
 	ADD_TRAIT(user, TRAIT_MOBILITY_NOPICKUP, src)
@@ -396,10 +400,6 @@
 	new /obj/effect/temp_visual/tornado(T)
 	sleep(20)
 	if(interrupted(user))
-		REMOVE_TRAIT(user, TRAIT_MOBILITY_NOMOVE, src)
-		REMOVE_TRAIT(user, TRAIT_MOBILITY_NOUSE, src)
-		REMOVE_TRAIT(user, TRAIT_MOBILITY_NOPICKUP, src)
-		user.update_mobility()
 		return
 	user.invisibility = INVISIBILITY_MAXIMUM
 	user.status_flags |= GODMODE
@@ -427,7 +427,8 @@
 	if(interrupted(user))
 		return
 	on_cooldown = 2
-	addtimer(VARSET_CALLBACK(src, on_cooldown, 0), 4 SECONDS)
+	sleep(40)
+	on_cooldown = 0
 
 /obj/item/warpwhistle/Destroy()
 	if(on_cooldown == 1 && last_user) //Flute got dunked somewhere in the teleport

@@ -78,21 +78,21 @@
 //Turns a direction into text
 /proc/dir2text(direction)
 	switch(direction)
-		if(NORTH)
+		if(1)
 			return "north"
-		if(SOUTH)
+		if(2)
 			return "south"
-		if(EAST)
+		if(4)
 			return "east"
-		if(WEST)
+		if(8)
 			return "west"
-		if(NORTHEAST)
+		if(5)
 			return "northeast"
-		if(SOUTHEAST)
+		if(6)
 			return "southeast"
-		if(NORTHWEST)
+		if(9)
 			return "northwest"
-		if(SOUTHWEST)
+		if(10)
 			return "southwest"
 		else
 	return
@@ -101,21 +101,21 @@
 /proc/text2dir(direction)
 	switch(uppertext(direction))
 		if("NORTH")
-			return NORTH
+			return 1
 		if("SOUTH")
-			return SOUTH
+			return 2
 		if("EAST")
-			return EAST
+			return 4
 		if("WEST")
-			return WEST
+			return 8
 		if("NORTHEAST")
-			return NORTHEAST
+			return 5
 		if("NORTHWEST")
-			return NORTHWEST
+			return 9
 		if("SOUTHEAST")
-			return SOUTHEAST
+			return 6
 		if("SOUTHWEST")
-			return SOUTHWEST
+			return 10
 		else
 	return
 
@@ -225,8 +225,6 @@
 		. += "[seperator]AUTOLOGIN"
 	if(rights & R_DBRANKS)
 		. += "[seperator]DBRANKS"
-	if(rights & R_SENSITIVE)
-		. += "[seperator]SENSITIVE"
 	if(!.)
 		. = "NONE"
 	return .

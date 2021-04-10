@@ -42,8 +42,7 @@
 	difficulty = 18
 	text_gain_indication = "<span class='notice'>You can see the heat rising off of your skin...</span>"
 	time_coeff = 2
-	instability = 40
-	locked = TRUE
+	instability = 25
 	var/visionflag = TRAIT_THERMAL_VISION
 
 /datum/mutation/human/thermal/on_acquiring(mob/living/carbon/human/owner)
@@ -64,7 +63,7 @@
 	name = "X Ray Vision"
 	desc = "A strange genome that allows the user to see between the spaces of walls." //actual x-ray would mean you'd constantly be blasting rads, wich might be fun for later //hmb
 	text_gain_indication = "<span class='notice'>The walls suddenly disappear!</span>"
-	instability = 50
+	instability = 35
 	locked = TRUE
 	visionflag = TRAIT_XRAY_VISION
 

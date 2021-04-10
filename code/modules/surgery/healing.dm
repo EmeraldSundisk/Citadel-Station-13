@@ -8,7 +8,7 @@
 
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
 	possible_locs = list(BODY_ZONE_CHEST)
-	requires_bodypart_type = NONE
+	requires_bodypart_type = BODYPART_ORGANIC
 	replaced_by = /datum/surgery
 	ignore_clothes = TRUE
 	var/healing_step_type
@@ -20,12 +20,6 @@
 		steps = list(/datum/surgery_step/incise/nobleed,
 					healing_step_type, //hehe cheeky
 					/datum/surgery_step/close)
-
-/datum/surgery/healing/can_start(mob/user, mob/living/carbon/target, obj/item/tool)
-	for(var/obj/item/bodypart/B in target.bodyparts)
-		if(B.is_organic_limb(TRUE))
-			return ..()
-
 
 /datum/surgery_step/heal
 	name = "repair body"
@@ -174,6 +168,7 @@
 
 /***************************COMBO***************************/
 /datum/surgery/healing/combo
+
 
 /datum/surgery/healing/combo
 	name = "Tend Wounds (Mixture, Basic)"

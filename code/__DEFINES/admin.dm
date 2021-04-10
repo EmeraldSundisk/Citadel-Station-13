@@ -35,9 +35,8 @@
 #define R_SPAWN			(1<<12)
 #define R_AUTOLOGIN		(1<<13)
 #define R_DBRANKS		(1<<14)
-#define R_SENSITIVE		(1<<15)
 
-#define R_DEFAULT R_AUTOLOGIN | R_SENSITIVE
+#define R_DEFAULT R_AUTOLOGIN
 
 #define R_EVERYTHING ALL //the sum of all other rank permissions, used for +EVERYTHING
 
@@ -91,6 +90,3 @@
 
 #define SPAM_TRIGGER_WARNING	5	//Number of identical messages required before the spam-prevention will warn you to stfu
 #define SPAM_TRIGGER_AUTOMUTE	10	//Number of identical messages required before the spam-prevention will automute you
-
-#define STICKYBAN_DB_CACHE_TIME 10 SECONDS
-#define STICKYBAN_ROGUE_CHECK_TIME 5

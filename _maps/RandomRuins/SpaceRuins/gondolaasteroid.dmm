@@ -91,10 +91,6 @@
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/space/has_grav)
-"Y" = (
-/obj/item/tcg_card/special/gondola,
-/turf/open/floor/plating/asteroid/airless,
-/area/ruin/space/has_grav)
 
 (1,1,1) = {"
 a
@@ -343,7 +339,7 @@ b
 c
 c
 c
-Y
+c
 o
 c
 r

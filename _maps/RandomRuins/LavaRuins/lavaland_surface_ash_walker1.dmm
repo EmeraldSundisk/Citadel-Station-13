@@ -326,8 +326,8 @@
 /area/ruin/unpowered/ash_walkers)
 "aO" = (
 /obj/structure/stone_tile/surrounding/cracked{
-	dir = 1;
-	icon_state = "cracked_surrounding1"
+	icon_state = "cracked_surrounding1";
+	dir = 1
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/ash_walkers)
@@ -510,7 +510,9 @@
 /obj/structure/stone_tile/cracked{
 	dir = 4
 	},
-/obj/item/construction/rcd/loaded/upgraded,
+/obj/item/construction/rcd/loaded/upgraded{
+	
+	},
 /turf/open/indestructible/boss,
 /area/ruin/unpowered/ash_walkers)
 "bn" = (
@@ -1017,8 +1019,8 @@
 /area/ruin/unpowered/ash_walkers)
 "cA" = (
 /obj/structure/stone_tile/slab/cracked{
-	dir = 4;
-	icon_state = "cracked_slab1"
+	icon_state = "cracked_slab1";
+	dir = 4
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/ash_walkers)

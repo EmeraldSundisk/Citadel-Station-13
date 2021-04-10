@@ -14,6 +14,7 @@
 	speak_chance = 1
 	turns_per_move = 5
 	see_in_dark = 6
+	ventcrawler = VENTCRAWLER_ALWAYS
 	pass_flags = PASSTABLE
 	mob_size = MOB_SIZE_SMALL
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
@@ -39,7 +40,6 @@
 /mob/living/simple_animal/pet/cat/Initialize()
 	. = ..()
 	add_verb(src, /mob/living/proc/lay_down)
-	AddElement(/datum/element/ventcrawling, given_tier = VENTCRAWLER_ALWAYS)
 
 /mob/living/simple_animal/pet/cat/ComponentInitialize()
 	. = ..()

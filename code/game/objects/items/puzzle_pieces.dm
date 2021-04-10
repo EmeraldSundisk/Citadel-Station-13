@@ -134,10 +134,11 @@
 /obj/item/pressure_plate/hologrid/Crossed(atom/movable/AM)
 	. = ..()
 	if(trigger_item && istype(AM, specific_item) && !claimed)
-		AM.set_anchored(TRUE)
+		AM.anchored = TRUE
 		flick("laserbox_burn", AM)
 		trigger()
-		QDEL_IN(src, 15)
+		sleep(15)
+		qdel(AM)
 
 // snowflake code until undertile elements
 /obj/item/pressure_plate/hologrid/hide()

@@ -15,5 +15,3 @@
 		audible_message("<i>*click*</i>")
 		playsound(src, 'sound/items/screwdriver2.ogg', 50, TRUE)
 		activate()
-
-	. = ..()

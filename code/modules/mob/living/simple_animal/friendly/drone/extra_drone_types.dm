@@ -114,6 +114,7 @@
 	harm_intent_damage = 5
 	density = TRUE
 	speed = 1
+	ventcrawler = VENTCRAWLER_NONE
 	faction = list("neutral", "ratvar")
 	speak_emote = list("clanks", "clinks", "clunks", "clangs")
 	verb_ask = "requests"
@@ -160,7 +161,7 @@
 	..()
 
 /mob/living/simple_animal/drone/attackby(obj/item/I, mob/user)
-	if(I.tool_behaviour == TOOL_SCREWDRIVER && stat == DEAD)
+	if(istype(I, /obj/item/screwdriver) && stat == DEAD)
 		try_reactivate(user)
 	else
 		..()

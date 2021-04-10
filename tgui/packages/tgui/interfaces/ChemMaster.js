@@ -205,7 +205,7 @@ const PackagingControlsItem = props => {
         stepPixelSize={15}
         value={amount}
         minValue={1}
-        maxValue={20}
+        maxValue={10}
         onChange={onChangeAmount} />
       <Button
         ml={1}
@@ -400,11 +400,11 @@ const AnalysisResults = (props, context) => {
         <LabeledList.Item label="Addiction Threshold">
           {analyzeVars.addicD}
         </LabeledList.Item>
-        <LabeledList.Item label="Purity">
-          {analyzeVars.purityF}
-        </LabeledList.Item>
-        {!! data.fermianalyze && ( // why did you do that before? it's bad.
+        {!!fermianalyze && ( // why did you do that before? it's fucking bad.
           <Fragment>
+            <LabeledList.Item label="Purity">
+              {analyzeVars.purityF}
+            </LabeledList.Item>
             <LabeledList.Item label="Inverse Ratio">
               {analyzeVars.inverseRatioF}
             </LabeledList.Item>

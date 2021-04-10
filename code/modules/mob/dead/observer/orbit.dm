@@ -1,6 +1,5 @@
 /datum/orbit_menu
 	var/mob/dead/observer/owner
-	var/auto_observe = FALSE
 
 /datum/orbit_menu/New(mob/dead/observer/new_owner)
 	if(!istype(new_owner))
@@ -11,7 +10,6 @@
 	return GLOB.observer_state
 
 /datum/orbit_menu/ui_interact(mob/user, datum/tgui/ui)
-	ui = SStgui.try_update_ui(user, src, ui)
 	if (!ui)
 		ui = new(user, src, "Orbit")
 		ui.open()
@@ -20,35 +18,15 @@
 	if (..())
 		return
 
-	switch(action)
-		if ("orbit")
-			var/ref = params["ref"]
-			var/atom/movable/poi = (locate(ref) in GLOB.mob_list) || (locate(ref) in GLOB.poi_list)
-			if (poi == null)
-				. = TRUE
-				return
+	if (action == "orbit")
+		var/ref = params["ref"]
+		var/atom/movable/poi = (locate(ref) in GLOB.mob_list) || (locate(ref) in GLOB.poi_list)
+		if (poi != null)
 			owner.ManualFollow(poi)
-			owner.reset_perspective(null)
-			if (auto_observe)
-				owner.do_observe(poi)
-			. = TRUE
-		if ("refresh")
-			update_static_data(owner, ui)
-			. = TRUE
-		if ("toggle_observe")
-			auto_observe = !auto_observe
-			if (auto_observe && owner.orbit_target)
-				owner.do_observe(owner.orbit_target)
-			else
-				owner.reset_perspective(null)
 
 /datum/orbit_menu/ui_data(mob/user)
 	var/list/data = list()
-	data["auto_observe"] = auto_observe
-	return data
 
-/datum/orbit_menu/ui_static_data(mob/user)
-	var/list/data = list()
 	var/list/alive = list()
 	var/list/antagonists = list()
 	var/list/dead = list()
@@ -56,7 +34,7 @@
 	var/list/misc = list()
 	var/list/npcs = list()
 
-	var/list/pois = getpois(skip_mindless = TRUE, specify_dead_role = FALSE)
+	var/list/pois = getpois(skip_mindless = 1)
 	for (var/name in pois)
 		var/list/serialized = list()
 		serialized["name"] = name
@@ -102,7 +80,7 @@
 	data["npcs"] = npcs
 
 	return data
-
+	
 /datum/orbit_menu/ui_assets()
 	. = ..() || list()
 	. += get_asset_datum(/datum/asset/simple/orbit)

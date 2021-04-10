@@ -1,7 +1,6 @@
-root: true
-parser: '@typescript-eslint/parser'
+parser: babel-eslint
 parserOptions:
-  ecmaVersion: 2020
+  ecmaVersion: 2019
   sourceType: module
   ecmaFeatures:
     jsx: true
@@ -280,8 +279,7 @@ rules:
   no-shadow-restricted-names: error
   ## Disallow the use of undeclared variables unless mentioned
   ## in /*global*/ comments
-  ## NOTE: Pointless when TypeScript can check for this
-  # no-undef: error
+  no-undef: error
   ## Disallow initializing variables to undefined
   no-undef-init: error
   ## Disallow the use of undefined as an identifier
@@ -585,7 +583,7 @@ rules:
   ## Rule enforces consistent usage of destructuring assignment in component
   # react/destructuring-assignment: [error, always, { ignoreClassFields: true }]
   ## Prevent missing displayName in a React component definition
-  # react/display-name: error
+  react/display-name: error
   ## Forbid certain props on Components
   # react/forbid-component-props: error
   ## Forbid certain props on DOM Nodes
@@ -686,11 +684,11 @@ rules:
   ## expressions.
   # react/jsx-child-element-spacing: error
   ## Validate closing bracket location in JSX (fixable)
-  # react/jsx-closing-bracket-location: [error, {
-  #   ## NOTE: Not really sure about enforcing this one
-  #   selfClosing: false,
-  #   nonEmpty: after-props,
-  # }]
+  react/jsx-closing-bracket-location: [error, {
+    ## NOTE: Not really sure about enforcing this one
+    selfClosing: false,
+    nonEmpty: after-props,
+  }]
   ## Validate closing tag location in JSX (fixable)
   react/jsx-closing-tag-location: error
   ## Enforce or disallow newlines inside of curly braces in JSX attributes and

@@ -11,4 +11,3 @@
 
 	default_priority = 90
 	icon_state = "dwarf"
-	chooseable_roundstart = TRUE

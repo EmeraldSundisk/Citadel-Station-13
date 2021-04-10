@@ -59,7 +59,7 @@
 	item_state = "captain_envirosuit"
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "rad" = 0, "fire" = 95, "acid" = 95, "wound" = 15)
 	sensor_mode = SENSOR_COORDS
-	sensor_flags = NONE
+	random_sensor = FALSE
 
 /obj/item/clothing/under/plasmaman/mime
 	name = "mime envirosuit"

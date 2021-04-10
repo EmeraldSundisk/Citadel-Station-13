@@ -261,7 +261,7 @@
 	desc = "The user's chemical balance is more robust."
 	quality = POSITIVE
 	text_gain_indication = "<span class='notice'>You feel stimmed.</span>"
-	difficulty = 18
+	difficulty = 16
 
 /datum/mutation/human/paranoia
 	name = "Paranoia"

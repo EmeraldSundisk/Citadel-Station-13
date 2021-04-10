@@ -83,14 +83,11 @@
 				surgery.complete()
 		surgery.step_in_progress = FALSE
 		return advance
-
-	if(target.stat == DEAD && user.client)
-		user.client.give_award(/datum/award/achievement/misc/sandman, user)
-
-	surgery.step_in_progress = FALSE
-	if(repeatable)
-		return FALSE //This is how the repeatable surgery detects it shouldn't cycle
-	return TRUE //Stop the attack chain! - Except on repeatable steps, because otherwise we land in an infinite loop.
+	else
+		surgery.step_in_progress = FALSE
+		if(repeatable)
+			return FALSE //This is how the repeatable surgery detects it shouldn't cycle
+		return TRUE //Stop the attack chain! - Except on repeatable steps, because otherwise we land in an infinite loop.
 
 
 /datum/surgery_step/proc/preop(mob/user, mob/living/target, target_zone, obj/item/tool, datum/surgery/surgery)

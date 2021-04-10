@@ -8,7 +8,6 @@
 	var/obj/item/ammo_box/magazine/magazine
 	var/casing_ejector = TRUE //whether the gun ejects the chambered casing
 	var/magazine_wording = "magazine"
-	var/sawn_item_state = "gun"
 
 /obj/item/gun/ballistic/Initialize()
 	. = ..()
@@ -199,16 +198,12 @@
 		name = "sawn-off [src.name]"
 		desc = sawn_desc
 		w_class = WEIGHT_CLASS_NORMAL
-		item_state = sawn_item_state
+		item_state = "gun"
 		slot_flags &= ~ITEM_SLOT_BACK	//you can't sling it on your back
 		slot_flags |= ITEM_SLOT_BELT		//but you can wear it on your belt (poorly concealed under a trenchcoat, ideally)
 		sawn_off = TRUE
 		update_icon()
 		return 1
-
-/// is something supposed to happen here?
-/obj/item/gun/ballistic/proc/on_sawoff(mob/user)
-	return
 
 // Sawing guns related proc
 /obj/item/gun/ballistic/proc/blow_up(mob/user)

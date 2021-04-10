@@ -12,14 +12,9 @@
 	layer = HUD_LAYER
 	plane = HUD_PLANE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
-	animate_movement = SLIDE_STEPS
-	speech_span = SPAN_ROBOT
-	vis_flags = VIS_INHERIT_PLANE
 	appearance_flags = APPEARANCE_UI
-	/// A reference to the object in the slot. Grabs or items, generally.
-	var/obj/master = null
-	/// A reference to the owner HUD, if any.
-	var/datum/hud/hud = null
+	var/obj/master = null	//A reference to the object in the slot. Grabs or items, generally.
+	var/datum/hud/hud = null // A reference to the owner HUD, if any.
 	/**
 	 * Map name assigned to this object.
 	 * Automatically set by /client/proc/add_obj_to_map.
@@ -65,17 +60,7 @@
 	name = "swap hand"
 
 /obj/screen/swap_hand/Click()
-	// At this point in client Click() code we have passed the 1/10 sec check and little else
-	// We don't even know if it's a middle click
-	// if(world.time <= usr.next_move)
-	// 	return 1
-
-	if(usr.incapacitated())
-		return 1
-
-	if(ismob(usr))
-		var/mob/M = usr
-		M.swap_hand()
+	usr.swap_hand()
 	return 1
 
 /obj/screen/craft
@@ -111,27 +96,17 @@
 	H.open_language_menu(usr)
 
 /obj/screen/inventory
-	/// The identifier for the slot. It has nothing to do with ID cards.
-	var/slot_id
-	/// Icon when empty. For now used only by humans.
-	var/icon_empty
-	/// Icon when contains an item. For now used only by humans.
-	var/icon_full
-	/// The overlay when hovering over with an item in your hand
+	var/slot_id	// The indentifier for the slot. It has nothing to do with ID cards.
+	var/icon_empty // Icon when empty. For now used only by humans.
+	var/icon_full  // Icon when contains an item. For now used only by humans.
 	var/list/object_overlays = list()
 	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /obj/screen/inventory/Click(location, control, params)
-	// At this point in client Click() code we have passed the 1/10 sec check and little else
-	// We don't even know if it's a middle click
-	// if(world.time <= usr.next_move)
-	// 	return TRUE
-
-	if(usr.incapacitated()) // ignore_stasis = TRUE
-		return TRUE
-	if(ismecha(usr.loc)) // stops inventory actions in a mech
-		return TRUE
+	if(hud?.mymob && (hud.mymob != usr))
+		return
+	// just redirect clicks
 
 	if(hud?.mymob && slot_id)
 		var/obj/item/inv_item = hud.mymob.get_item_by_slot(slot_id)
@@ -175,13 +150,12 @@
 	var/image/item_overlay = image(holding)
 	item_overlay.alpha = 92
 
-	if(!user.can_equip(holding, slot_id, TRUE))
+	if(!user.can_equip(holding, slot_id, TRUE, TRUE, TRUE))
 		item_overlay.color = "#FF0000"
 	else
 		item_overlay.color = "#00ff00"
 
-	cut_overlay(object_overlays)
-	// object_overlay = item_overlay
+	object_overlays += item_overlay
 	add_overlay(object_overlays)
 
 /obj/screen/inventory/hand
@@ -213,17 +187,10 @@
 
 
 /obj/screen/inventory/hand/Click(location, control, params)
-	// At this point in client Click() code we have passed the 1/10 sec check and little else
-	// We don't even know if it's a middle click
-	var/mob/user = hud?.mymob
-	if(usr != user)
-		return TRUE
-	// if(world.time <= user.next_move)
-	// 	return TRUE
-	if(user.incapacitated())
-		return TRUE
-	if (ismecha(user.loc)) // stops inventory actions in a mech
-		return TRUE
+	if(hud?.mymob && (hud.mymob != usr))
+		return
+	var/mob/user = hud.mymob
+	// just redirect clicks
 
 	if(user.active_hand_index == held_index)
 		var/obj/item/I = user.get_active_held_item()
@@ -351,19 +318,15 @@
 	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "running"
 
-/obj/screen/mov_intent/Initialize(mapload)
-	. = ..()
-	update_icon()
-
 /obj/screen/mov_intent/Click()
 	toggle(usr)
 
 /obj/screen/mov_intent/update_icon_state()
 	switch(hud?.mymob?.m_intent)
 		if(MOVE_INTENT_WALK)
-			icon_state = CONFIG_GET(flag/sprint_enabled)? "walking" : "walking_nosprint"
+			icon_state = "walking"
 		if(MOVE_INTENT_RUN)
-			icon_state = CONFIG_GET(flag/sprint_enabled)? "running" : "running_nosprint"
+			icon_state = "running"
 
 /obj/screen/mov_intent/proc/toggle(mob/user)
 	if(isobserver(user))

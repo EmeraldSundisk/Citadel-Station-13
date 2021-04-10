@@ -22,5 +22,3 @@
 #define POLICYCONFIG_ON_DEFIB_LATE "ON_DEFIB_LATE"
 /// Displayed to pyroclastic slimes on spawn
 #define POLICYCONFIG_ON_PYROCLASTIC_SENTIENT "PYROCLASTIC_SLIME"
-/// Displayed to pAIs on spawn
-#define POLICYCONFIG_PAI "PAI_SPAWN"

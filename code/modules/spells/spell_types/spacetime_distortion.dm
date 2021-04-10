@@ -1,6 +1,6 @@
 /obj/effect/proc_holder/spell/spacetime_dist
 	name = "Spacetime Distortion"
-	desc = "Entangle the strings of space-time in an area around you, randomizing the layout and making proper movement impossible. The strings vibrate..."
+	desc = "Entangle the strings of spacetime to deny easy movement around you. The strings vibrate..."
 	charge_max = 300
 	var/duration = 150
 	range = 7
@@ -10,9 +10,8 @@
 	sound = 'sound/effects/magic.ogg'
 	cooldown_min = 300
 	level_max = 0
-	// action_icon_state = "spacetime"
 
-/obj/effect/proc_holder/spell/spacetime_dist/can_cast(mob/user = usr)
+/obj/effect/proc_holder/spell/spacetime_dist/can_cast(mob/user = usr, skipcharge = FALSE, silent = FALSE)
 	if(ready)
 		return ..()
 	return FALSE
@@ -98,11 +97,10 @@
 	busy = TRUE
 	flick("purplesparkles", src)
 	AM.forceMove(get_turf(src))
-	playsound(get_turf(src),sound,70,FALSE)
+	playsound(get_turf(src),sound,70,0)
 	busy = FALSE
 
 /obj/effect/cross_action/spacetime_dist/Crossed(atom/movable/AM)
-	. = ..()
 	if(!busy)
 		walk_link(AM)
 
@@ -112,8 +110,7 @@
 	else
 		walk_link(user)
 
-//ATTACK HAND IGNORING PARENT RETURN VALUE
-/obj/effect/cross_action/spacetime_dist/on_attack_hand(mob/user)
+/obj/effect/cross_action/spacetime_dist/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	walk_link(user)
 
 /obj/effect/cross_action/spacetime_dist/attack_paw(mob/user)

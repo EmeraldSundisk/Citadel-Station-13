@@ -19,7 +19,7 @@
 	var/list/actions = list()
 	var/list/targeted_actions = list()
 	//what the role gets when it wins a game
-	var/winner_award = /datum/award/achievement/mafia/assistant
+	// var/winner_award = /datum/award/achievement/mafia/assistant
 
 	//so mafia have to also kill them to have a majority
 	var/solo_counts_as_town = FALSE //(don't set this for town)
@@ -124,7 +124,7 @@
 	desc = "You can investigate a single person each night to learn their team."
 	revealed_outfit = /datum/outfit/mafia/detective
 	role_type = TOWN_INVEST
-	winner_award = /datum/award/achievement/mafia/detective
+	// winner_award = /datum/award/achievement/mafia/detective
 
 	hud_icon = "huddetective"
 	revealed_icon = "detective"
@@ -151,8 +151,6 @@
 	current_investigation = target
 
 /datum/mafia_role/detective/proc/investigate(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	var/datum/mafia_role/target = current_investigation
 	if(target)
 		if(target.detect_immune)
@@ -180,7 +178,7 @@
 	desc = "You can visit someone ONCE PER GAME to reveal their true role in the morning!"
 	revealed_outfit = /datum/outfit/mafia/psychologist
 	role_type = TOWN_INVEST
-	winner_award = /datum/award/achievement/mafia/psychologist
+	// winner_award = /datum/award/achievement/mafia/psychologist
 
 	hud_icon = "hudpsychologist"
 	revealed_icon = "psychologist"
@@ -204,8 +202,6 @@
 	current_target = target
 
 /datum/mafia_role/psychologist/proc/therapy_reveal(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	if(SEND_SIGNAL(src,COMSIG_MAFIA_CAN_PERFORM_ACTION,game,"reveal",current_target) & MAFIA_PREVENT_ACTION || game_status != MAFIA_ALIVE) //Got lynched or roleblocked by a lawyer.
 		current_target = null
 	if(current_target)
@@ -222,7 +218,7 @@
 	role_type = TOWN_INVEST
 	hud_icon = "hudchaplain"
 	revealed_icon = "chaplain"
-	winner_award = /datum/award/achievement/mafia/chaplain
+	// winner_award = /datum/award/achievement/mafia/chaplain
 
 	targeted_actions = list("Pray")
 	var/current_target
@@ -242,8 +238,6 @@
 	current_target = target
 
 /datum/mafia_role/chaplain/proc/commune(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	var/datum/mafia_role/target = current_target
 	if(target)
 		to_chat(body,"<span class='warning'>You invoke spirit of [target.body.real_name] and learn their role was <b>[target.name]<b>.</span>")
@@ -257,7 +251,7 @@
 	role_type = TOWN_PROTECT
 	hud_icon = "hudmedicaldoctor"
 	revealed_icon = "medicaldoctor"
-	winner_award = /datum/award/achievement/mafia/md
+	// winner_award = /datum/award/achievement/mafia/md
 
 	targeted_actions = list("Protect")
 	var/datum/mafia_role/current_protected
@@ -283,22 +277,16 @@
 	current_protected = target
 
 /datum/mafia_role/md/proc/protect(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	if(current_protected)
 		RegisterSignal(current_protected,COMSIG_MAFIA_ON_KILL,.proc/prevent_kill)
 		add_note("N[game.turn] - Protected [current_protected.body.real_name]")
 
 /datum/mafia_role/md/proc/prevent_kill(datum/source)
-	SIGNAL_HANDLER
-
 	to_chat(body,"<span class='warning'>The person you protected tonight was attacked!</span>")
 	to_chat(current_protected.body,"<span class='userdanger'>You were attacked last night, but someone nursed you back to life!</span>")
 	return MAFIA_PREVENT_KILL
 
 /datum/mafia_role/md/proc/end_protection(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	if(current_protected)
 		UnregisterSignal(current_protected,COMSIG_MAFIA_ON_KILL)
 		current_protected = null
@@ -310,7 +298,7 @@
 	role_type = TOWN_PROTECT
 	hud_icon = "hudlawyer"
 	revealed_icon = "lawyer"
-	winner_award = /datum/award/achievement/mafia/lawyer
+	// winner_award = /datum/award/achievement/mafia/lawyer
 
 	targeted_actions = list("Advise")
 	var/datum/mafia_role/current_target
@@ -322,8 +310,6 @@
 	RegisterSignal(game,COMSIG_MAFIA_NIGHT_END,.proc/release)
 
 /datum/mafia_role/lawyer/proc/roleblock_text(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	if(SEND_SIGNAL(src,COMSIG_MAFIA_CAN_PERFORM_ACTION,game,"roleblock",current_target) & MAFIA_PREVENT_ACTION || game_status != MAFIA_ALIVE) //Got lynched or roleblocked by another lawyer.
 		current_target = null
 	if(current_target)
@@ -349,22 +335,16 @@
 		to_chat(body,"<span class='warning'>You will block [target.body.real_name] tonight.</span>")
 
 /datum/mafia_role/lawyer/proc/try_to_roleblock(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	if(current_target)
 		RegisterSignal(current_target,COMSIG_MAFIA_CAN_PERFORM_ACTION, .proc/prevent_action)
 
 /datum/mafia_role/lawyer/proc/release(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	. = ..()
 	if(current_target)
 		UnregisterSignal(current_target, COMSIG_MAFIA_CAN_PERFORM_ACTION)
 		current_target = null
 
 /datum/mafia_role/lawyer/proc/prevent_action(datum/source)
-	SIGNAL_HANDLER
-
 	if(game_status == MAFIA_ALIVE) //in case we got killed while imprisoning sk - bad luck edge
 		return MAFIA_PREVENT_ACTION
 
@@ -375,7 +355,7 @@
 	role_type = TOWN_MISC
 	hud_icon = "hudheadofpersonnel"
 	revealed_icon = "headofpersonnel"
-	winner_award = /datum/award/achievement/mafia/hop
+	// winner_award = /datum/award/achievement/mafia/hop
 
 	targeted_actions = list("Reveal")
 
@@ -398,7 +378,7 @@
 	role_type = MAFIA_REGULAR
 	hud_icon = "hudchangeling"
 	revealed_icon = "changeling"
-	winner_award = /datum/award/achievement/mafia/changeling
+	// winner_award = /datum/award/achievement/mafia/changeling
 
 	revealed_outfit = /datum/outfit/mafia/changeling
 	special_theme = "syndicate"
@@ -409,8 +389,6 @@
 	RegisterSignal(game,COMSIG_MAFIA_SUNDOWN,.proc/mafia_text)
 
 /datum/mafia_role/mafia/proc/mafia_text(datum/mafia_controller/source)
-	SIGNAL_HANDLER
-
 	to_chat(body,"<b>Vote for who to kill tonight. The killer will be chosen randomly from voters.</b>")
 
 //better detective for mafia
@@ -420,7 +398,7 @@
 	role_type = MAFIA_SPECIAL
 	hud_icon = "hudthoughtfeeder"
 	revealed_icon = "thoughtfeeder"
-	winner_award = /datum/award/achievement/mafia/thoughtfeeder
+	// winner_award = /datum/award/achievement/mafia/thoughtfeeder
 
 	targeted_actions = list("Learn Role")
 	var/datum/mafia_role/current_investigation
@@ -440,8 +418,6 @@
 	current_investigation = target
 
 /datum/mafia_role/mafia/thoughtfeeder/proc/investigate(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	var/datum/mafia_role/target = current_investigation
 	current_investigation = null
 	if(SEND_SIGNAL(src,COMSIG_MAFIA_CAN_PERFORM_ACTION,game,"thoughtfeed",target) & MAFIA_PREVENT_ACTION)
@@ -465,7 +441,7 @@
 	win_condition = "kill everyone."
 	team = MAFIA_TEAM_SOLO
 	role_type = NEUTRAL_KILL
-	winner_award = /datum/award/achievement/mafia/traitor
+	// winner_award = /datum/award/achievement/mafia/traitor
 
 	targeted_actions = list("Night Kill")
 	revealed_outfit = /datum/outfit/mafia/traitor
@@ -488,8 +464,6 @@
 	return TRUE //while alive, town AND mafia cannot win (though since mafia know who is who it's pretty easy to win from that point)
 
 /datum/mafia_role/traitor/proc/nightkill_immunity(datum/source,datum/mafia_controller/game,lynch)
-	SIGNAL_HANDLER
-
 	if(game.phase == MAFIA_PHASE_NIGHT && !lynch)
 		to_chat(body,"<span class='userdanger'>You were attacked, but they'll have to try harder than that to put you down.</span>")
 		return MAFIA_PREVENT_KILL
@@ -507,8 +481,6 @@
 	to_chat(body,"<span class='warning'>You will attempt to kill [target.body.real_name] tonight.</span>")
 
 /datum/mafia_role/traitor/proc/try_to_kill(datum/mafia_controller/source)
-	// SIGNAL_HANDLER
-
 	var/datum/mafia_role/target = current_victim
 	current_victim = null
 	if(SEND_SIGNAL(src,COMSIG_MAFIA_CAN_PERFORM_ACTION,source,"traitor kill",target) & MAFIA_PREVENT_ACTION)
@@ -528,7 +500,7 @@
 	special_theme = "neutral"
 	hud_icon = "hudnightmare"
 	revealed_icon = "nightmare"
-	winner_award = /datum/award/achievement/mafia/nightmare
+	// winner_award = /datum/award/achievement/mafia/nightmare
 
 	targeted_actions = list("Flicker", "Hunt")
 	var/list/flickering = list()
@@ -571,8 +543,6 @@
 		to_chat(body,"<span class='danger'>You will hunt everyone in a flickering room down tonight.</span>")
 
 /datum/mafia_role/nightmare/proc/flicker_or_hunt(datum/mafia_controller/source)
-	// SIGNAL_HANDLER
-
 	if(game_status != MAFIA_ALIVE || !flicker_target)
 		return
 	if(SEND_SIGNAL(src,COMSIG_MAFIA_CAN_PERFORM_ACTION,source,"nightmare actions",flicker_target) & MAFIA_PREVENT_ACTION)
@@ -606,7 +576,7 @@
 	special_theme = "neutral"
 	hud_icon = "hudfugitive"
 	revealed_icon = "fugitive"
-	winner_award = /datum/award/achievement/mafia/fugitive
+	// winner_award = /datum/award/achievement/mafia/fugitive
 
 	actions = list("Self Preservation")
 	var/charges = 2
@@ -634,15 +604,11 @@
 	protection_status = !protection_status
 
 /datum/mafia_role/fugitive/proc/night_start(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	if(protection_status == FUGITIVE_WILL_PRESERVE)
 		to_chat(body,"<span class='danger'>Your preparations are complete. Nothing could kill you tonight!</span>")
 		RegisterSignal(src,COMSIG_MAFIA_ON_KILL,.proc/prevent_death)
 
 /datum/mafia_role/fugitive/proc/night_end(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	if(protection_status == FUGITIVE_WILL_PRESERVE)
 		charges--
 		UnregisterSignal(src,COMSIG_MAFIA_ON_KILL)
@@ -650,16 +616,13 @@
 		protection_status = FUGITIVE_NOT_PRESERVING
 
 /datum/mafia_role/fugitive/proc/prevent_death(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	to_chat(body,"<span class='userdanger'>You were attacked! Luckily, you were ready for this!</span>")
 	return MAFIA_PREVENT_KILL
 
 /datum/mafia_role/fugitive/proc/survived(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	if(game_status == MAFIA_ALIVE)
-		game.award_role(winner_award, src)
+		// var/client/winner_client = GLOB.directory[player_key]
+		// winner_client?.give_award(winner_award, body)
 		game.send_message("<span class='big comradio'>!! FUGITIVE VICTORY !!</span>")
 
 #undef FUGITIVE_NOT_PRESERVING
@@ -677,7 +640,7 @@
 	hud_icon = "hudobsessed"
 	revealed_icon = "obsessed"
 
-	winner_award = /datum/award/achievement/mafia/obsessed
+	// winner_award = /datum/award/achievement/mafia/obsessed
 
 	revealed_outfit = /datum/outfit/mafia/obsessed // /mafia <- outfit must be readded (just make a new mafia outfits file for all of these)
 	solo_counts_as_town = TRUE //after winning or whatever, can side with whoever. they've already done their objective!
@@ -689,8 +652,6 @@
 	RegisterSignal(game,COMSIG_MAFIA_SUNDOWN,.proc/find_obsession)
 
 /datum/mafia_role/obsessed/proc/find_obsession(datum/mafia_controller/game)
-	SIGNAL_HANDLER
-
 	var/list/all_roles_shuffle = shuffle(game.all_roles)
 	for(var/role in all_roles_shuffle)
 		var/datum/mafia_role/possible = role
@@ -706,14 +667,13 @@
 	UnregisterSignal(game,COMSIG_MAFIA_SUNDOWN)
 
 /datum/mafia_role/obsessed/proc/check_victory(datum/source,datum/mafia_controller/game,lynch)
-	SIGNAL_HANDLER
-
 	UnregisterSignal(source,COMSIG_MAFIA_ON_KILL)
 	if(game_status == MAFIA_DEAD)
 		return
 	if(lynch)
 		game.send_message("<span class='big comradio'>!! OBSESSED VICTORY !!</span>")
-		game.award_role(winner_award, src)
+		// var/client/winner_client = GLOB.directory[player_key]
+		// winner_client?.give_award(winner_award, body)
 		reveal_role(game, FALSE)
 	else
 		to_chat(body, "<span class='userdanger'>You have failed your objective to lynch [obsession.body]!</span>")
@@ -729,18 +689,17 @@
 	special_theme = "neutral"
 	hud_icon = "hudclown"
 	revealed_icon = "clown"
-	winner_award = /datum/award/achievement/mafia/clown
+	// winner_award = /datum/award/achievement/mafia/clown
 
 /datum/mafia_role/clown/New(datum/mafia_controller/game)
 	. = ..()
 	RegisterSignal(src,COMSIG_MAFIA_ON_KILL,.proc/prank)
 
 /datum/mafia_role/clown/proc/prank(datum/source,datum/mafia_controller/game,lynch)
-	// SIGNAL_HANDLER
-
 	if(lynch)
 		var/datum/mafia_role/victim = pick(game.judgement_guilty_votes + game.judgement_abstain_votes)
 		game.send_message("<span class='big clown'>[body.real_name] WAS A CLOWN! HONK! They take down [victim.body.real_name] with their last prank.</span>")
 		game.send_message("<span class='big clown'>!! CLOWN VICTORY !!</span>")
-		game.award_role(winner_award, src)
+		// var/client/winner_client = GLOB.directory[player_key]
+		// winner_client?.give_award(winner_award, body)
 		victim.kill(game,FALSE)

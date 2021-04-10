@@ -12,4 +12,3 @@
 	)
 	icon_state = "volt"
 	default_priority = 90
-	chooseable_roundstart = TRUE

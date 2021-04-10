@@ -18,7 +18,7 @@ SUBSYSTEM_DEF(pathfinder)
 	var/free
 	var/list/flow
 
-/datum/flowcache/New(n)
+/datum/flowcache/New(var/n)
 	. = ..()
 	lcount = n
 	run = 0

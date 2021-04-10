@@ -73,16 +73,14 @@
 /obj/structure/disposalholder/proc/move()
 	set waitfor = FALSE
 	var/obj/structure/disposalpipe/last
-	var/ticks = 1
 	while(active)
 		var/obj/structure/disposalpipe/curr = loc
 		last = curr
-		set_glide_size(DELAY_TO_GLIDE_SIZE(ticks * world.tick_lag))
 		curr = curr.transfer(src)
 		if(!curr && active)
 			last.expel(src, loc, dir)
 
-		ticks = stoplag()
+		stoplag()
 		if(!(count--))
 			active = FALSE
 

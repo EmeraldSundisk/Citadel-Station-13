@@ -56,14 +56,12 @@
 	else
 		..()
 
-/obj/machinery/field/containment/Crossed(atom/movable/AM)
-	. = ..()
-	if(isliving(AM))
-		shock(AM)
+/obj/machinery/field/containment/Crossed(mob/mover)
+	if(isliving(mover))
+		shock(mover)
 
-	if(ismachinery(AM) || isstructure(AM) || ismecha(AM))
-		bump_field(AM)
-
+	if(ismachinery(mover) || isstructure(mover) || ismecha(mover))
+		bump_field(mover)
 
 /obj/machinery/field/containment/proc/set_master(master1,master2)
 	if(!master1 || !master2)

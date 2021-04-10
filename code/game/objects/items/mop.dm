@@ -24,17 +24,13 @@
 	create_reagents(mopcap, NONE, NO_REAGENTS_VALUE)
 
 
-/obj/item/mop/proc/clean(turf/A, mob/user)
+/obj/item/mop/proc/clean(turf/A)
 	if(reagents.has_reagent(/datum/reagent/water, 1) || reagents.has_reagent(/datum/reagent/water/holywater, 1) || reagents.has_reagent(/datum/reagent/consumable/ethanol/vodka, 1) || reagents.has_reagent(/datum/reagent/space_cleaner, 1))
 		SEND_SIGNAL(A, COMSIG_COMPONENT_CLEAN_ACT, CLEAN_MEDIUM)
 		A.clean_blood()
-		var/cleaned_something = FALSE
 		for(var/obj/effect/O in A)
 			if(is_cleanable(O))
-				cleaned_something = TRUE
 				qdel(O)
-		if(cleaned_something && user && user.client)
-			user.client.increment_progress("janitor", 1)
 	reagents.reaction(A, TOUCH, 10)	//Needed for proper floor wetting.
 	reagents.remove_any(1)			//reaction() doesn't use up the reagents
 
@@ -63,7 +59,7 @@
 		if(!L.UseStaminaBuffer(stamusage, warn = TRUE))
 			return
 		user.visible_message("[user] cleans \the [T] with [src].", "<span class='notice'>You clean \the [T] with [src].</span>")
-		clean(T, user)
+		clean(T)
 		user.DelayNextAction(CLICK_CD_MELEE)
 		user.do_attack_animation(T, used_item = src)
 		playsound(T, "slosh", 50, 1)

@@ -57,8 +57,8 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/gorilla/familiar{
-	dir = 4;
-	icon_state = "crawling"
+	icon_state = "crawling";
+	dir = 4
 	},
 /turf/open/floor/plating/beach/sand,
 /area/ruin/powered)

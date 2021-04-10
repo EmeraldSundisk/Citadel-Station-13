@@ -50,7 +50,7 @@
 	custom_materials = list(/datum/material/iron=12000)
 
 /obj/item/ingot/diamond
-	custom_materials = list(/datum/material/diamond=12000)
+	custom_materials = list(/datum/material/diamond=12000) //yeah ok
 
 /obj/item/ingot/uranium
 	custom_materials = list(/datum/material/uranium=12000)
@@ -394,7 +394,7 @@
 	name = "smithed katana blade"
 	finishingitem = /obj/item/swordhandle
 	finalitem = /obj/item/melee/smith/twohand/katana
-	icon_state = "katana-s"
+	icon_state = "katana"
 
 
 /obj/item/smithing/katanablade/startfinish()

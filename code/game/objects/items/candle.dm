@@ -82,8 +82,4 @@
 /obj/item/candle/infinite/hugbox
 	heats_space = FALSE
 
-/obj/item/candle/DoRevenantThrowEffects(atom/target)
-	if(!infinite)
-		put_out_candle()
-
 #undef CANDLE_LUMINOSITY

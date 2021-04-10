@@ -141,8 +141,7 @@
 /mob/living/proc/getBruteLoss()
 	return bruteloss
 
-//only_robotic and only_organic arg only relevant for carbons
-/mob/living/proc/adjustBruteLoss(amount, updating_health = TRUE, forced = FALSE, only_robotic = FALSE, only_organic = TRUE)
+/mob/living/proc/adjustBruteLoss(amount, updating_health = TRUE, forced = FALSE)
 	if(!forced && (status_flags & GODMODE))
 		return FALSE
 	bruteloss = clamp((bruteloss + (amount * CONFIG_GET(number/damage_multiplier))), 0, maxHealth * 2)
@@ -216,8 +215,7 @@
 /mob/living/proc/getFireLoss()
 	return fireloss
 
-//only_robotic and only_organic arg only relevant for carbons
-/mob/living/proc/adjustFireLoss(amount, updating_health = TRUE, forced = FALSE, only_robotic = FALSE, only_organic = TRUE)
+/mob/living/proc/adjustFireLoss(amount, updating_health = TRUE, forced = FALSE)
 	if(!forced && (status_flags & GODMODE))
 		return FALSE
 	fireloss = clamp((fireloss + (amount * CONFIG_GET(number/damage_multiplier))), 0, maxHealth * 2)

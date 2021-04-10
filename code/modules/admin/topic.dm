@@ -257,8 +257,9 @@
 
 		for(var/mob/M in GLOB.player_list)
 			if(M.ckey == banckey)
-				if(!playermob || M.client) // prioritise mobs with a client to stop the 'oops the dead body with no client got forwarded'
-					playermob = M
+				playermob = M
+				break
+
 
 		banreason = "(MANUAL BAN) "+banreason
 
@@ -935,12 +936,6 @@
 		else
 			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=[ROLE_MIND_TRANSFER];jobban4=[REF(M)]'>Mind Transfer Potion</a></td>"
 
-		//Respawns
-		if(jobban_isbanned(M, ROLE_RESPAWN))
-			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=[ROLE_RESPAWN];jobban4=[REF(M)]'><font color=red>Respawns</font></a></td>"
-		else
-			dat += "<td width='20%'><a href='?src=[REF(src)];[HrefToken()];jobban3=[ROLE_RESPAWN];jobban4=[REF(M)]'>Respawns</a></td>"
-
 		dat += "</tr></table>"
 		usr << browse(dat, "window=jobban2;size=800x450")
 		return
@@ -1269,10 +1264,8 @@
 	else if(href_list["messageedits"])
 		if(!check_rights(R_ADMIN))
 			return
-		var/datum/db_query/query_get_message_edits = SSdbcore.NewQuery(
-			"SELECT edits FROM [format_table_name("messages")] WHERE id = :message_id",
-			list("message_id" = href_list["messageedits"])
-		)
+		var/message_id = sanitizeSQL("[href_list["messageedits"]]")
+		var/datum/DBQuery/query_get_message_edits = SSdbcore.NewQuery("SELECT edits FROM [format_table_name("messages")] WHERE id = '[message_id]'")
 		if(!query_get_message_edits.warn_execute())
 			qdel(query_get_message_edits)
 			return
@@ -1806,15 +1799,12 @@
 		if(alert(usr, "Send [key_name(M)] back to Lobby?", "Message", "Yes", "No") != "Yes")
 			return
 
-		log_admin("[key_name(usr)] has sent [key_name(M)] back to the Lobby, removing their respawn restrictions if they existed.")
-		message_admins("[key_name(usr)] has sent [key_name(M)] back to the Lobby, removing their respawn restrictions if they existed.")
+		log_admin("[key_name(usr)] has sent [key_name(M)] back to the Lobby.")
+		message_admins("[key_name(usr)] has sent [key_name(M)] back to the Lobby.")
 
 		var/mob/dead/new_player/NP = new()
 		NP.ckey = M.ckey
 		qdel(M)
-		if(GLOB.preferences_datums[NP.ckey])
-			var/datum/preferences/P = GLOB.preferences_datums[NP.ckey]
-			P.respawn_restrictions_active = FALSE
 
 	else if(href_list["tdome1"])
 		if(!check_rights(R_FUN))
@@ -2501,6 +2491,9 @@
 					break
 		return
 
+	else if(href_list["secrets"])
+		Secrets_topic(href_list["secrets"],href_list)
+
 	else if(href_list["ac_view_wanted"])            //Admin newscaster Topic() stuff be here
 		if(!check_rights(R_ADMIN))
 			return
@@ -2969,19 +2962,16 @@
 			to_chat(usr, "<span class='danger'>The client chosen is an admin! Cannot mentorize.</span>")
 			return
 	if(SSdbcore.Connect())
-		var/datum/db_query/query_get_mentor = SSdbcore.NewQuery(
-			"SELECT id FROM [format_table_name("mentor")] WHERE ckey = :ckey",
-			list("ckey" = ckey)
-		)
+		var/datum/DBQuery/query_get_mentor = SSdbcore.NewQuery("SELECT id FROM [format_table_name("mentor")] WHERE ckey = '[ckey]'")
 		if(!query_get_mentor.warn_execute())
 			return
 		if(query_get_mentor.NextRow())
 			to_chat(usr, "<span class='danger'>[ckey] is already a mentor.</span>")
 			return
-		var/datum/db_query/query_add_mentor = SSdbcore.NewQuery("INSERT INTO `[format_table_name("mentor")]` (`id`, `ckey`) VALUES (null, '[ckey]')")
+		var/datum/DBQuery/query_add_mentor = SSdbcore.NewQuery("INSERT INTO `[format_table_name("mentor")]` (`id`, `ckey`) VALUES (null, '[ckey]')")
 		if(!query_add_mentor.warn_execute())
 			return
-		var/datum/db_query/query_add_admin_log = SSdbcore.NewQuery("INSERT INTO `[format_table_name("admin_log")]` (`id` ,`datetime` ,`adminckey` ,`adminip` ,`log` ) VALUES (NULL , NOW( ) , '[usr.ckey]', '[usr.client.address]', 'Added new mentor [ckey]');")
+		var/datum/DBQuery/query_add_admin_log = SSdbcore.NewQuery("INSERT INTO `[format_table_name("admin_log")]` (`id` ,`datetime` ,`adminckey` ,`adminip` ,`log` ) VALUES (NULL , NOW( ) , '[usr.ckey]', '[usr.client.address]', 'Added new mentor [ckey]');")
 		if(!query_add_admin_log.warn_execute())
 			return
 	else
@@ -3005,10 +2995,10 @@
 		C.mentor_datum = null
 		GLOB.mentors -= C
 	if(SSdbcore.Connect())
-		var/datum/db_query/query_remove_mentor = SSdbcore.NewQuery("DELETE FROM [format_table_name("mentor")] WHERE ckey = '[ckey]'")
+		var/datum/DBQuery/query_remove_mentor = SSdbcore.NewQuery("DELETE FROM [format_table_name("mentor")] WHERE ckey = '[ckey]'")
 		if(!query_remove_mentor.warn_execute())
 			return
-		var/datum/db_query/query_add_admin_log = SSdbcore.NewQuery("INSERT INTO `[format_table_name("admin_log")]` (`id` ,`datetime` ,`adminckey` ,`adminip` ,`log` ) VALUES (NULL , NOW( ) , '[usr.ckey]', '[usr.client.address]', 'Removed mentor [ckey]');")
+		var/datum/DBQuery/query_add_admin_log = SSdbcore.NewQuery("INSERT INTO `[format_table_name("admin_log")]` (`id` ,`datetime` ,`adminckey` ,`adminip` ,`log` ) VALUES (NULL , NOW( ) , '[usr.ckey]', '[usr.client.address]', 'Removed mentor [ckey]');")
 		if(!query_add_admin_log.warn_execute())
 			return
 	else

@@ -21,15 +21,12 @@ GLOBAL_LIST_EMPTY(GPS_list)
 	var/updating = TRUE //Automatic updating of GPS list. Can be set to manual by user.
 	var/global_mode = TRUE //If disabled, only GPS signals of the same Z level are shown
 
-/datum/component/gps/item/Initialize(_gpstag = "COM0", emp_proof = FALSE, starton = TRUE)
+/datum/component/gps/item/Initialize(_gpstag = "COM0", emp_proof = FALSE)
 	. = ..()
 	if(. == COMPONENT_INCOMPATIBLE || !isitem(parent))
 		return COMPONENT_INCOMPATIBLE
 	var/atom/A = parent
-	if(starton)
-		A.add_overlay("working")
-	else
-		tracking = FALSE
+	A.add_overlay("working")
 	A.name = "[initial(A.name)] ([gpstag])"
 	RegisterSignal(parent, COMSIG_ITEM_ATTACK_SELF, .proc/interact)
 	if(!emp_proof)

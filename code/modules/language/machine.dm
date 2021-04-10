@@ -12,7 +12,6 @@
 	default_priority = 90
 
 	icon_state = "eal"
-	chooseable_roundstart = TRUE
 
 /datum/language/machine/get_random_name()
 	if(prob(70))

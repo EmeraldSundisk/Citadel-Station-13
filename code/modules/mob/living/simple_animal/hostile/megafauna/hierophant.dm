@@ -61,9 +61,8 @@ Difficulty: Normal
 	loot = list(/obj/item/hierophant_club)
 	crusher_loot = list(/obj/item/hierophant_club)
 	wander = FALSE
-	achievement_type = /datum/award/achievement/boss/hierophant_kill
-	crusher_achievement_type = /datum/award/achievement/boss/hierophant_crusher
-	score_achievement_type = /datum/award/score/hierophant_score
+	medal_type = BOSS_MEDAL_HIEROPHANT
+	score_type = HIEROPHANT_SCORE
 	del_on_death = TRUE
 	death_sound = 'sound/magic/repulse.ogg'
 

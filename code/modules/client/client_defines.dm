@@ -31,7 +31,6 @@
 	var/datum/preferences/prefs = null
 	var/last_turn = 0
 	var/move_delay = 0
-	var/last_move = 0
 	var/area			= null
 
 	/// Last time we Click()ed. No clicking twice in one tick!

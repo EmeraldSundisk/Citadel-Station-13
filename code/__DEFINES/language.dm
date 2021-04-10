@@ -24,4 +24,3 @@
 #define LANGUAGE_STONER			"stoner"
 #define LANGUAGE_VASSAL			"vassal"
 #define LANGUAGE_VOICECHANGE	"voicechange"
-#define LANGUAGE_MULTILINGUAL	"multilingual"

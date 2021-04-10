@@ -9,7 +9,7 @@
 	build_type = IMPRINTER
 	materials = list(/datum/material/glass = 1000)
 	build_path = /obj/item/circuitboard/computer/cargo/express
-	category = list("Computer Boards")
+	category = list("Mining Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO
 
 /datum/design/bluespace_pod
@@ -19,7 +19,7 @@
 	build_type = PROTOLATHE
 	materials = list(/datum/material/glass = 1000)
 	build_path = /obj/item/disk/cargo/bluespace_pod
-	category = list("Electronics")
+	category = list("Mining Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO
 
 /datum/design/drill

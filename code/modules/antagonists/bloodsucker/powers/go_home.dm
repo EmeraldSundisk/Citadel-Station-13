@@ -16,7 +16,6 @@
 	can_use_in_torpor = TRUE
 	must_be_capacitated = TRUE
 	can_be_immobilized = TRUE
-	must_be_concious = FALSE
 
 /datum/action/bloodsucker/gohome/CheckCanUse(display_error)
 	. = ..()

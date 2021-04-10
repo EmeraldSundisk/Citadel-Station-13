@@ -243,10 +243,6 @@
 	icon_state = "none"
 	relevant_layers = null
 
-/datum/sprite_accessory/insect_fluff/brown
-	name = "Brown"
-	icon_state = "brown"
-
 /datum/sprite_accessory/insect_fluff/punished
 	name = "Burnt Off"
 	icon_state = "punished"
@@ -275,10 +271,6 @@
 	name = "Deathshead"
 	icon_state = "deathhead"
 
-/datum/sprite_accessory/insect_fluff/featherymoth
-	name = "Feathery Moth"
-	icon_state = "featherymoth"
-
 /datum/sprite_accessory/insect_fluff/firewatch
 	name = "Firewatch"
 	icon_state = "firewatch"
@@ -299,21 +291,17 @@
 	name = "Moon Fly"
 	icon_state = "moonfly"
 
+/datum/sprite_accessory/insect_fluff/oakworm
+	name = "Oak Worm"
+	icon_state = "oakworm"
+
 /datum/sprite_accessory/insect_fluff/plain
 	name = "Plain"
 	icon_state = "plain"
 
-/datum/sprite_accessory/insect_fluff/plasmafire
-	name = "Plasma Fire"
-	icon_state = "plasmafire"
-
 /datum/sprite_accessory/insect_fluff/poison
 	name = "Poison"
 	icon_state = "poison"
-
-/datum/sprite_accessory/insect_fluff/oakworm
-	name = "Oak Worm"
-	icon_state = "oakworm"
 
 /datum/sprite_accessory/insect_fluff/ragged
 	name = "Ragged"
@@ -322,10 +310,6 @@
 /datum/sprite_accessory/insect_fluff/reddish
 	name = "Reddish"
 	icon_state = "redish"
-
-/datum/sprite_accessory/insect_fluff/rosy
-	name = "Rosy"
-	icon_state = "rosy"
 
 /datum/sprite_accessory/insect_fluff/royal
 	name = "Royal"

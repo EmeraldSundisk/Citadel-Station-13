@@ -48,16 +48,9 @@ SUBSYSTEM_DEF(overlays)
 	for (var/thing in queue)
 		count++
 		if(thing)
-			var/atom/A = thing
-			if(A.overlays.len >= MAX_ATOM_OVERLAYS)
-				//Break it real GOOD
-				stack_trace("Too many overlays on [A.type] - [A.overlays.len], refusing to update and cutting")
-				A.overlays.Cut()
-				continue
 			STAT_START_STOPWATCH
+			var/atom/A = thing
 			COMPILE_OVERLAYS(A)
-			UNSETEMPTY(A.add_overlays)
-			UNSETEMPTY(A.remove_overlays)
 			STAT_STOP_STOPWATCH
 			STAT_LOG_ENTRY(stats, A.type)
 		if(mc_check)
@@ -124,8 +117,9 @@ SUBSYSTEM_DEF(overlays)
 #define QUEUE_FOR_COMPILE flags_1 |= OVERLAY_QUEUED_1; SSoverlays.queue += src;
 /atom/proc/cut_overlays()
 	LAZYINITLIST(remove_overlays)
+	LAZYINITLIST(add_overlays)
 	remove_overlays = overlays.Copy()
-	add_overlays = null
+	add_overlays.Cut()
 
 	//If not already queued for work and there are overlays to remove
 	if(NOT_QUEUED_ALREADY && remove_overlays.len)
@@ -135,7 +129,7 @@ SUBSYSTEM_DEF(overlays)
 	if(!overlays)
 		return
 	overlays = build_appearance_list(overlays)
-	LAZYINITLIST(add_overlays)
+	LAZYINITLIST(add_overlays) //always initialized after this point
 	LAZYINITLIST(remove_overlays)
 	var/a_len = add_overlays.len
 	var/r_len = remove_overlays.len
@@ -146,9 +140,8 @@ SUBSYSTEM_DEF(overlays)
 	var/fr_len = remove_overlays.len
 
 	//If not already queued and there is work to be done
-	if(NOT_QUEUED_ALREADY && (fa_len != a_len || fr_len != r_len ))
+	if(NOT_QUEUED_ALREADY && (fa_len != a_len || fr_len != r_len))
 		QUEUE_FOR_COMPILE
-	UNSETEMPTY(add_overlays)
 
 /atom/proc/add_overlay(list/overlays)
 	if(!overlays)

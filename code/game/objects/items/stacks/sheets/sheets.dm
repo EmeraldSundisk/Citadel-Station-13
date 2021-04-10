@@ -19,7 +19,7 @@
 	///What type of wall does this sheet spawn
 	var/walltype
 
-/obj/item/stack/sheet/Initialize(mapload, new_amount, merge = TRUE)
+/obj/item/stack/sheet/Initialize(mapload, new_amount, merge)
 	. = ..()
 	pixel_x = rand(-4, 4)
 	pixel_y = rand(-4, 4)

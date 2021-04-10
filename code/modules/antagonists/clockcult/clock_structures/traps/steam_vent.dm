@@ -21,5 +21,3 @@
 	if(isliving(AM) && opacity)
 		var/mob/living/L = AM
 		L.adjust_fire_stacks(-1) //It's wet!
-		return
-	. = ..()

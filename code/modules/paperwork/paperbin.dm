@@ -132,7 +132,6 @@
 		icon_state = "paper_bin0"
 	else
 		icon_state = "[initial(icon_state)]"
-	return ..()
 
 /obj/item/paper_bin/update_overlays()
 	. = ..()
@@ -155,7 +154,6 @@
 /obj/item/paper_bin/bundlenatural/on_attack_hand(mob/user)
 	if(total_paper < 1)
 		qdel(src)
-	return ..()
 
 /obj/item/paper_bin/bundlenatural/fire_act(exposed_temperature, exposed_volume)
 	qdel(src)

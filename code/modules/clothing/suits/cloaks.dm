@@ -102,18 +102,7 @@
 /obj/item/clothing/neck/cloak/polychromic/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/polychromic, poly_colors, 3)
-
-/obj/item/clothing/neck/cancloak/polychromic
-	name = "canvas cloak"
-	desc = "A rugged cloak made of canvas."
-	icon_state = "cancloak"
-	item_state = "cloak"
-	var/list/poly_colors = list("#585858", "#373737", "#BEBEBE")
-
-/obj/item/clothing/neck/cancloak/polychromic/ComponentInitialize()
-	. = ..()
-	AddElement(/datum/element/polychromic, poly_colors, 3)
-
+	
 /obj/item/clothing/neck/cloak/alt
 	name = "cloak"
 	desc = "A ragged up white cloak. It reminds you of a place not far from here."

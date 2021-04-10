@@ -150,8 +150,7 @@
 					H.DefaultCombatKnockdown(40)
 					playsound(src, 'sound/effects/woodhit.ogg', 60, TRUE, 1)
 		else if(filled)
-			if(iscarbon(victim))
-				victim.adjustStaminaLoss(1)
+			victim.adjustStaminaLoss(1)
 			playsound(src, "water_wade", 20, TRUE)
 	return ..()
 

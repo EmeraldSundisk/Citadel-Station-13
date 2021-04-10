@@ -1,6 +1,4 @@
 #define DEFAULT_METEOR_LIFETIME 1800
-#define MAP_EDGE_PAD 5
-
 GLOBAL_VAR_INIT(meteor_wave_delay, 625) //minimum wait between waves in tenths of seconds
 //set to at least 100 unless you want evarr ruining every round
 
@@ -32,7 +30,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	var/turf/pickedgoal
 	var/max_i = 10//number of tries to spawn meteor.
 	while(!isspaceturf(pickedstart))
-		var/startSide = (dir ? dir : pick(GLOB.cardinals))
+		var/startSide = dir || pick(GLOB.cardinals)
 		var/startZ = pick(SSmapping.levels_by_trait(ZTRAIT_STATION))
 		pickedstart = spaceDebrisStartLoc(startSide, startZ)
 		pickedgoal = spaceDebrisFinishLoc(startSide, startZ)
@@ -48,17 +46,17 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	var/startx
 	switch(startSide)
 		if(NORTH)
-			starty = world.maxy-(TRANSITIONEDGE + MAP_EDGE_PAD)
-			startx = rand((TRANSITIONEDGE + MAP_EDGE_PAD), world.maxx-(TRANSITIONEDGE + MAP_EDGE_PAD))
+			starty = world.maxy-(TRANSITIONEDGE+2)
+			startx = rand((TRANSITIONEDGE+2), world.maxx-(TRANSITIONEDGE+2))
 		if(EAST)
-			starty = rand((TRANSITIONEDGE + MAP_EDGE_PAD),world.maxy-(TRANSITIONEDGE + MAP_EDGE_PAD))
-			startx = world.maxx-(TRANSITIONEDGE + MAP_EDGE_PAD)
+			starty = rand((TRANSITIONEDGE+2),world.maxy-(TRANSITIONEDGE+2))
+			startx = world.maxx-(TRANSITIONEDGE+2)
 		if(SOUTH)
-			starty = (TRANSITIONEDGE + MAP_EDGE_PAD)
-			startx = rand((TRANSITIONEDGE + MAP_EDGE_PAD), world.maxx-(TRANSITIONEDGE + MAP_EDGE_PAD))
+			starty = (TRANSITIONEDGE+2)
+			startx = rand((TRANSITIONEDGE+2), world.maxx-(TRANSITIONEDGE+2))
 		if(WEST)
-			starty = rand((TRANSITIONEDGE + MAP_EDGE_PAD), world.maxy-(TRANSITIONEDGE + MAP_EDGE_PAD))
-			startx = (TRANSITIONEDGE + MAP_EDGE_PAD)
+			starty = rand((TRANSITIONEDGE+2), world.maxy-(TRANSITIONEDGE+2))
+			startx = (TRANSITIONEDGE+2)
 	. = locate(startx, starty, Z)
 
 /proc/spaceDebrisFinishLoc(startSide, Z)
@@ -66,17 +64,17 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	var/endx
 	switch(startSide)
 		if(NORTH)
-			endy = (TRANSITIONEDGE + MAP_EDGE_PAD)
-			endx = rand((TRANSITIONEDGE + MAP_EDGE_PAD), world.maxx-(TRANSITIONEDGE + MAP_EDGE_PAD))
+			endy = (TRANSITIONEDGE+1)
+			endx = rand((TRANSITIONEDGE+1), world.maxx-(TRANSITIONEDGE+1))
 		if(EAST)
-			endy = rand((TRANSITIONEDGE + MAP_EDGE_PAD), world.maxy-(TRANSITIONEDGE + MAP_EDGE_PAD))
-			endx = (TRANSITIONEDGE + MAP_EDGE_PAD)
+			endy = rand((TRANSITIONEDGE+1), world.maxy-(TRANSITIONEDGE+1))
+			endx = (TRANSITIONEDGE+1)
 		if(SOUTH)
-			endy = world.maxy-(TRANSITIONEDGE + MAP_EDGE_PAD)
-			endx = rand((TRANSITIONEDGE + MAP_EDGE_PAD), world.maxx-(TRANSITIONEDGE + MAP_EDGE_PAD))
+			endy = world.maxy-(TRANSITIONEDGE+1)
+			endx = rand((TRANSITIONEDGE+1), world.maxx-(TRANSITIONEDGE+1))
 		if(WEST)
-			endy = rand((TRANSITIONEDGE + MAP_EDGE_PAD),world.maxy-(TRANSITIONEDGE + MAP_EDGE_PAD))
-			endx = world.maxx-(TRANSITIONEDGE + MAP_EDGE_PAD)
+			endy = rand((TRANSITIONEDGE+1),world.maxy-(TRANSITIONEDGE+1))
+			endx = world.maxx-(TRANSITIONEDGE+1)
 	. = locate(endx, endy, Z)
 
 ///////////////////////
@@ -84,7 +82,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 //////////////////////
 
 /obj/effect/meteor
-	name = "\proper the concept of meteor"
+	name = "the concept of meteor"
 	desc = "You should probably run instead of gawking at this."
 	icon = 'icons/obj/meteor.dmi'
 	icon_state = "small"
@@ -94,7 +92,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	var/hitpwr = 2 //Level of ex_act to be called on hit.
 	var/dest
 	pass_flags = PASSTABLE
-	var/heavy = FALSE
+	var/heavy = 0
 	var/meteorsound = 'sound/effects/meteorimpact.ogg'
 	var/z_original
 	var/threat = 0 // used for determining which meteors are most interesting
@@ -110,12 +108,12 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 
 	. = ..() //process movement...
 
-	var/turf/T = get_turf(loc)
 	if(.)//.. if did move, ram the turf we get in
+		var/turf/T = get_turf(loc)
 		ram_turf(T)
 
-	if(prob(10) && !isspaceturf(T) && !istype(T, /turf/closed/mineral) && !istype(T, /turf/open/floor/plating/asteroid))//randomly takes a 'hit' from ramming, and ignore spare ruin aseroids
-		get_hit()
+		if(prob(10) && !isspaceturf(T) && !istype(T, /turf/closed/mineral) && !istype(T, /turf/open/floor/plating/asteroid))//randomly takes a 'hit' from ramming
+			get_hit()
 
 /obj/effect/meteor/Destroy()
 	if (timerid)
@@ -137,23 +135,22 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 /obj/effect/meteor/Bump(atom/A)
 	if(A)
 		ram_turf(get_turf(A))
-		playsound(src.loc, meteorsound, 40, TRUE)
-		if(!istype(A, /turf/closed/mineral) && !istype(A, /turf/open/floor/plating/asteroid)) // ignore localstation ruins
+		playsound(src.loc, meteorsound, 40, 1)
+		if(!istype(A, /turf/closed/mineral) && !istype(A, /turf/open/floor/plating/asteroid))
 			get_hit()
 
 /obj/effect/meteor/proc/ram_turf(turf/T)
 	//first bust whatever is in the turf
-	for(var/thing in T)
-		if(thing == src)
-			continue
-		if(isliving(thing))
-			var/mob/living/living_thing = thing
-			living_thing.visible_message("<span class='warning'>[src] slams into [living_thing].</span>", "<span class='userdanger'>[src] slams into you!.</span>")
-			living_thing.ex_act(hitpwr)
+	for(var/atom/A in T)
+		if(A != src)
+			if(isliving(A))
+				A.visible_message("<span class='warning'>[src] slams into [A].</span>", "<span class='userdanger'>[src] slams into you!.</span>")
+			A.ex_act(hitpwr)
 
 	//then, ram the turf if it still exists
 	if(T)
 		T.ex_act(hitpwr)
+
 
 
 //process getting 'hit' by colliding with a dense object
@@ -165,10 +162,13 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 		meteor_effect()
 		qdel(src)
 
+/obj/effect/meteor/ex_act()
+	return
+
 /obj/effect/meteor/examine(mob/user)
-	. = ..()
 	if(!(flags_1 & ADMIN_SPAWNED_1) && isliving(user))
-		user.client.give_award(/datum/award/achievement/misc/meteor_examine, user)
+		SSmedals.UnlockMedal(MEDAL_METEOR, user.client)
+	return ..()
 
 /obj/effect/meteor/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_MINING)
@@ -232,7 +232,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	name = "big meteor"
 	icon_state = "large"
 	hits = 6
-	heavy = TRUE
+	heavy = 1
 	dropamt = 4
 	threat = 10
 
@@ -245,7 +245,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	name = "flaming meteor"
 	icon_state = "flaming"
 	hits = 5
-	heavy = TRUE
+	heavy = 1
 	meteorsound = 'sound/effects/bamf.ogg'
 	meteordrop = list(/obj/item/stack/ore/plasma)
 	threat = 20
@@ -258,7 +258,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 /obj/effect/meteor/irradiated
 	name = "glowing meteor"
 	icon_state = "glowing"
-	heavy = TRUE
+	heavy = 1
 	meteordrop = list(/obj/item/stack/ore/uranium)
 	threat = 15
 
@@ -275,7 +275,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	icon_state = "meateor"
 	desc = "Just... don't think too hard about where this thing came from."
 	hits = 2
-	heavy = TRUE
+	heavy = 1
 	meteorsound = 'sound/effects/blobattack.ogg'
 	meteordrop = list(/obj/item/reagent_containers/food/snacks/meat/slab/human, /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant, /obj/item/organ/heart, /obj/item/organ/lungs, /obj/item/organ/tongue, /obj/item/organ/appendix/)
 	var/meteorgibs = /obj/effect/gibspawner/generic
@@ -327,7 +327,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	desc = "Your life briefly passes before your eyes the moment you lay them on this monstrosity."
 	hits = 30
 	hitpwr = 1
-	heavy = TRUE
+	heavy = 1
 	meteorsound = 'sound/effects/bamf.ogg'
 	meteordrop = list(/obj/item/stack/ore/plasma)
 	threat = 50
@@ -358,7 +358,7 @@ GLOBAL_LIST_INIT(meteorsSPOOKY, list(/obj/effect/meteor/pumpkin))
 	icon = 'icons/obj/meteor_spooky.dmi'
 	icon_state = "pumpkin"
 	hits = 10
-	heavy = TRUE
+	heavy = 1
 	dropamt = 1
 	meteordrop = list(/obj/item/clothing/head/hardhat/pumpkinhead, /obj/item/reagent_containers/food/snacks/grown/pumpkin)
 	threat = 100
@@ -368,4 +368,3 @@ GLOBAL_LIST_INIT(meteorsSPOOKY, list(/obj/effect/meteor/pumpkin))
 	meteorsound = pick('sound/hallucinations/im_here1.ogg','sound/hallucinations/im_here2.ogg')
 //////////////////////////
 #undef DEFAULT_METEOR_LIFETIME
-#undef MAP_EDGE_PAD

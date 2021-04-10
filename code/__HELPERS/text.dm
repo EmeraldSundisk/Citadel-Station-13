@@ -13,6 +13,10 @@
  * SQL sanitization
  */
 
+// Run all strings to be used in an SQL query through this proc first to properly escape out injection attempts.
+/proc/sanitizeSQL(t)
+	return SSdbcore.Quote("[t]")
+
 /proc/format_table_name(table as text)
 	return CONFIG_GET(string/feedback_tableprefix) + table
 
@@ -666,7 +670,7 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 	if(fexists(log))
 		oldjson = json_decode(file2text(log))
 		oldentries = oldjson["data"]
-	if(length(oldentries))
+	if(!isemptylist(oldentries))
 		for(var/string in accepted)
 			for(var/old in oldentries)
 				if(string == old)
@@ -676,7 +680,7 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 	var/list/finalized = list()
 	finalized = accepted.Copy() + oldentries.Copy() //we keep old and unreferenced phrases near the bottom for culling
 	listclearnulls(finalized)
-	if(length(finalized) > storemax)
+	if(!isemptylist(finalized) && length(finalized) > storemax)
 		finalized.Cut(storemax + 1)
 	fdel(log)
 

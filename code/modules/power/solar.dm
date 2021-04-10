@@ -1,4 +1,5 @@
 #define SOLAR_GEN_RATE 1500
+#define OCCLUSION_DISTANCE 20
 
 /obj/machinery/power/solar
 	name = "solar panel"
@@ -13,8 +14,8 @@
 	integrity_failure = 0.33
 
 	var/id
-	var/list/obscured = list()
-	var/total_flux = 0 // multipllier against power generation -- measured by obscuration of all suns
+	var/obscured = FALSE
+	var/sunfrac = 0 //[0-1] measure of obscuration -- multipllier against power generation
 	var/azimuth_current = 0 //[0-360) degrees, which direction are we facing?
 	var/azimuth_target = 0 //same but what way we're going to face next time we turn
 	var/obj/machinery/power/solar_control/control
@@ -132,28 +133,40 @@
 
 ///trace towards sun to see if we're in shadow
 /obj/machinery/power/solar/proc/occlusion_setup()
-	obscured = list()
-	for(var/S in SSsun.suns)
-		if(check_obscured(S))
-			obscured |= S
+	obscured = TRUE
+
+	var/distance = OCCLUSION_DISTANCE
+	var/target_x = round(sin(SSsun.azimuth), 0.01)
+	var/target_y = round(cos(SSsun.azimuth), 0.01)
+	var/x_hit = x
+	var/y_hit = y
+	var/turf/hit
+
+	for(var/run in 1 to distance)
+		x_hit += target_x
+		y_hit += target_y
+		hit = locate(round(x_hit, 1), round(y_hit, 1), z)
+		if(hit.opacity)
+			return
+		if(hit.x == 1 || hit.x == world.maxx || hit.y == 1 || hit.y == world.maxy) //edge of the map
+			break
+	obscured = FALSE
 
 ///calculates the fraction of the sunlight that the panel receives
 /obj/machinery/power/solar/proc/update_solar_exposure()
 	needs_to_update_solar_exposure = FALSE
-	total_flux = 0
-	for(var/S in SSsun.suns)
-		if(S in obscured)
-			continue
-		var/datum/sun/sun = S
-		var/sun_azimuth = sun.azimuth
-		var/cur_pow = 0
-		if(azimuth_current == sun_azimuth) //just a quick optimization for the most frequent case
-			cur_pow = sun.power_mod
-		else
-			//dot product of sun and panel -- Lambert's Cosine Law
-			cur_pow = cos(azimuth_current - sun_azimuth) * sun.power_mod
-			cur_pow = clamp(round(cur_pow, 0.01), 0, 1)
-		total_flux += cur_pow
+	sunfrac = 0
+	if(obscured)
+		return 0
+
+	var/sun_azimuth = SSsun.azimuth
+	if(azimuth_current == sun_azimuth) //just a quick optimization for the most frequent case
+		. = 1
+	else
+		//dot product of sun and panel -- Lambert's Cosine Law
+		. = cos(azimuth_current - sun_azimuth)
+		. = clamp(round(., 0.01), 0, 1)
+	sunfrac = .
 
 /obj/machinery/power/solar/process()
 	if(stat & BROKEN)
@@ -164,10 +177,10 @@
 		update_turn()
 	if(needs_to_update_solar_exposure)
 		update_solar_exposure()
-	if(total_flux <= 0)
+	if(sunfrac <= 0)
 		return
 
-	var/sgen = SOLAR_GEN_RATE * total_flux * efficiency
+	var/sgen = SOLAR_GEN_RATE * sunfrac * efficiency
 	add_avail(sgen)
 	if(control)
 		control.gen += sgen
@@ -214,7 +227,7 @@
 
 
 /obj/item/solar_assembly/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behaviour == TOOL_WRENCH && isturf(loc))
+	if(istype(W, /obj/item/wrench) && isturf(loc))
 		if(isinspace())
 			to_chat(user, "<span class='warning'>You can't secure [src] here.</span>")
 			return
@@ -232,10 +245,12 @@
 			to_chat(user, "<span class='warning'>You need to secure the assembly before you can add glass.</span>")
 			return
 		var/obj/item/stack/sheet/S = W
-		if(S.use(2))
-			glass_type = W.type
-			playsound(src.loc, 'sound/machines/click.ogg', 50, TRUE)
-			user.visible_message("<span class='notice'>[user] places the glass on the solar assembly.</span>", "<span class='notice'>You place the glass on the solar assembly.</span>")
+		var/obj/item/stack/sheet/G = S.change_stack(null, 2)
+		if(G)
+			glass_type = G
+			G.moveToNullspace()
+			playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
+			user.visible_message("[user] places the glass on the solar assembly.", "<span class='notice'>You place the glass on the solar assembly.</span>")
 			if(tracker)
 				new /obj/machinery/power/tracker(get_turf(src), src)
 			else
@@ -243,7 +258,7 @@
 		else
 			to_chat(user, "<span class='warning'>You need two sheets of glass to put them into a solar panel!</span>")
 			return
-		return TRUE
+		return 1
 
 	if(!tracker)
 		if(istype(W, /obj/item/electronics/tracker))
@@ -254,7 +269,7 @@
 			user.visible_message("[user] inserts the electronics into the solar assembly.", "<span class='notice'>You insert the electronics into the solar assembly.</span>")
 			return 1
 	else
-		if(W.tool_behaviour == TOOL_CROWBAR)
+		if(istype(W, /obj/item/crowbar))
 			new /obj/item/electronics/tracker(src.loc)
 			tracker = 0
 			user.visible_message("[user] takes out the electronics from the solar assembly.", "<span class='notice'>You take out the electronics from the solar assembly.</span>")
@@ -372,7 +387,7 @@
 		track = mode
 		if(mode == SOLAR_TRACK_AUTO)
 			if(connected_tracker)
-				connected_tracker.sun_update(SSsun, SSsun.primary_sun, SSsun.suns)
+				connected_tracker.sun_update(SSsun, SSsun.azimuth)
 			else
 				track = SOLAR_TRACK_OFF
 		return TRUE
@@ -470,3 +485,4 @@ Congratulations, you should have a working solar array. If you are having troubl
 "}
 
 #undef SOLAR_GEN_RATE
+#undef OCCLUSION_DISTANCE

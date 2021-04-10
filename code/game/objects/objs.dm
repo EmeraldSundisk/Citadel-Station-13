@@ -80,9 +80,9 @@
 	SStgui.close_uis(src)
 	. = ..()
 
-/// @depricated DO NOT USE
 /obj/proc/setAnchored(anchorvalue)
-	set_anchored(anchorvalue)
+	SEND_SIGNAL(src, COMSIG_OBJ_SETANCHORED, anchorvalue)
+	anchored = anchorvalue
 
 /obj/throw_at(atom/target, range, speed, mob/thrower, spin=1, diagonals_first = 0, datum/callback/callback, force, messy_throw = TRUE)
 	. = ..()
@@ -343,6 +343,11 @@
 		. += GLOB.acid_overlay
 	if(resistance_flags & ON_FIRE)
 		. += GLOB.fire_overlay
+
+//Called when the object is constructed by an autolathe
+//Has a reference to the autolathe so you can do !!FUN!! things with hacked lathes
+/obj/proc/autolathe_crafted(obj/machinery/autolathe/A)
+	return
 
 /obj/proc/rnd_crafted(obj/machinery/rnd/production/P)
 	return

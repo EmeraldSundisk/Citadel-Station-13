@@ -3,12 +3,11 @@
 	name = "captain's jumpsuit"
 	icon_state = "captain"
 	item_state = "b_suit"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 15)
 	sensor_mode = SENSOR_COORDS
-	sensor_flags = NONE
+	random_sensor = FALSE
 
 /obj/item/clothing/under/rank/captain/util
-	name = "command utility uniform"
+	name = "Command Utiltiy Uniform"
 	desc = "A utility uniform for command personnel."
 	icon_state = "utilcom"
 	item_state = "utilcom"
@@ -27,6 +26,7 @@
 /obj/item/clothing/under/rank/captain/suit
 	name = "captain's suit"
 	desc = "A green suit and yellow necktie. Exemplifies authority."
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 15)
 	icon_state = "green_suit"
 	item_state = "dg_suit"
 	can_adjust = FALSE

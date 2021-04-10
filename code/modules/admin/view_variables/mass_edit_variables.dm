@@ -5,13 +5,10 @@
 
 	var/method = 0	//0 means strict type detection while 1 means this type and all subtypes (IE: /obj/item with this set to 1 will set it to ALL items)
 
-	if(tgui_alert(src, "Are you sure you'd like to mass-modify every instance of the [var_name] variable? This can break everything if you do not know what you are doing.", "Slow down, chief!", list("Yes", "No")) != "Yes")
-		return
-
 	if(!check_rights(R_VAREDIT))
 		return
 
-	if(A?.type)
+	if(A && A.type)
 		method = vv_subtype_prompt(A.type)
 
 	src.massmodify_variables(A, var_name, method)
@@ -107,7 +104,7 @@
 				if (!thing)
 					continue
 				var/datum/D = thing
-				if (D.vv_edit_var(variable, initial(D.vars[variable]), TRUE) != FALSE)
+				if (D.vv_edit_var(variable, initial(D.vars[variable])) != FALSE)
 					accepted++
 				else
 					rejected++
@@ -117,7 +114,7 @@
 			var/list/varsvars = vv_parse_text(O, new_value)
 			var/pre_processing = new_value
 			var/unique
-			if (varsvars?.len)
+			if (varsvars && varsvars.len)
 				unique = alert(usr, "Process vars unique to each instance, or same for all?", "Variable Association", "Unique", "Same")
 				if(unique == "Unique")
 					unique = TRUE
@@ -138,7 +135,7 @@
 					for(var/V in varsvars)
 						new_value = replacetext(new_value,"\[[V]]","[D.vars[V]]")
 
-				if (D.vv_edit_var(variable, new_value, TRUE) != FALSE)
+				if (D.vv_edit_var(variable, new_value) != FALSE)
 					accepted++
 				else
 					rejected++
@@ -164,7 +161,7 @@
 				if(many && !new_value)
 					new_value = new type()
 
-				if (D.vv_edit_var(variable, new_value, TRUE) != FALSE)
+				if (D.vv_edit_var(variable, new_value) != FALSE)
 					accepted++
 				else
 					rejected++
@@ -179,7 +176,7 @@
 				if (!thing)
 					continue
 				var/datum/D = thing
-				if (D.vv_edit_var(variable, new_value, TRUE) != FALSE)
+				if (D.vv_edit_var(variable, new_value) != FALSE)
 					accepted++
 				else
 					rejected++

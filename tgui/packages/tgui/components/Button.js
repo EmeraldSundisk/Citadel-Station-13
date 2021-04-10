@@ -4,9 +4,9 @@
  * @license MIT
  */
 
-import { KEY_ENTER, KEY_ESCAPE, KEY_SPACE } from 'common/keycodes';
 import { classes, pureComponentHooks } from 'common/react';
 import { Component, createRef } from 'inferno';
+import { KEY_ENTER, KEY_ESCAPE, KEY_SPACE } from '../hotkeys';
 import { createLogger } from '../logging';
 import { Box } from './Box';
 import { Icon } from './Icon';
@@ -21,14 +21,11 @@ export const Button = props => {
     icon,
     iconRotation,
     iconSpin,
-    iconColor,
-    iconPosition,
     color,
     disabled,
     selected,
     tooltip,
     tooltipPosition,
-    tooltipOverrideLong,
     ellipsis,
     compact,
     circular,
@@ -60,7 +57,6 @@ export const Button = props => {
         ellipsis && 'Button--ellipsis',
         circular && 'Button--circular',
         compact && 'Button--compact',
-        iconPosition && 'Button--iconPosition--' + iconPosition,
         (color && typeof color === 'string')
           ? 'Button--color--' + color
           : 'Button--color--default',
@@ -90,26 +86,17 @@ export const Button = props => {
         }
       }}
       {...rest}>
-      {(icon && iconPosition !== 'right') && (
+      {icon && (
         <Icon
           name={icon}
-          color={iconColor}
           rotation={iconRotation}
           spin={iconSpin} />
       )}
       {content}
       {children}
-      {(icon && iconPosition === 'right') && (
-        <Icon
-          name={icon}
-          color={iconColor}
-          rotation={iconRotation}
-          spin={iconSpin} />
-      )}
       {tooltip && (
         <Tooltip
           content={tooltip}
-          overrideLong={tooltipOverrideLong}
           position={tooltipPosition} />
       )}
     </Box>
@@ -234,7 +221,6 @@ export class ButtonInput extends Component {
       iconSpin,
       tooltip,
       tooltipPosition,
-      tooltipOverrideLong,
       color = 'default',
       placeholder,
       maxLength,
@@ -284,7 +270,6 @@ export class ButtonInput extends Component {
         {tooltip && (
           <Tooltip
             content={tooltip}
-            overrideLong={tooltipOverrideLong}
             position={tooltipPosition}
           />
         )}

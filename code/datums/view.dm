@@ -83,6 +83,8 @@
 /datum/viewData/proc/apply()
 	chief.change_view(getView())
 	safeApplyFormat()
+	if(chief.prefs.auto_fit_viewport)
+		chief.fit_viewport()
 
 /datum/viewData/proc/supress()
 	is_suppressed = TRUE

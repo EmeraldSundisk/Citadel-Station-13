@@ -29,7 +29,7 @@
 			integrity = round((M.obj_integrity / M.max_integrity) * 100),
 			charge = M.cell ? round(M.cell.percent()) : null,
 			airtank = M.internal_tank ? M.return_pressure() : null,
-			pilot = list(M.occupant),
+			pilot = M.occupant,
 			location = get_area_name(M, TRUE),
 			active_equipment = M.selected,
 			emp_recharging = MT.recharging,
@@ -38,7 +38,7 @@
 		if(istype(M, /obj/mecha/working/ripley))
 			var/obj/mecha/working/ripley/RM = M
 			mech_data += list(
-				cargo_space = round((LAZYLEN(RM.cargo) / RM.cargo_capacity) * 100)
+				cargo_space = round((RM.cargo.len / RM.cargo_capacity) * 100)
 		)
 
 		data["mechs"] += list(mech_data)
@@ -46,8 +46,7 @@
 	return data
 
 /obj/machinery/computer/mecha/ui_act(action, params)
-	. = ..()
-	if(.)
+	if(..())
 		return
 
 	switch(action)
@@ -58,7 +57,7 @@
 			var/message = stripped_input(usr, "Input message", "Transmit message")
 			var/obj/mecha/M = MT.chassis
 			if(trim(message) && M)
-				to_chat(M.occupant, message)
+				M.occupant_message(message)
 				to_chat(usr, "<span class='notice'>Message sent.</span>")
 				. = TRUE
 		if("shock")
@@ -68,8 +67,8 @@
 			var/obj/mecha/M = MT.chassis
 			if(M)
 				MT.shock()
-				log_game("[key_name(usr)] has activated remote EMP on exosuit [M], located at [loc_name(M)], which [M.occupant ? "has the occupants [M.occupant]." : "without a pilot."] ")
-				message_admins("[key_name_admin(usr)][ADMIN_FLW(usr)] has activated remote EMP on exosuit [M][ADMIN_JMP(M)], which is currently [M.occupant ? "occupied by [M.occupant][ADMIN_FLW(M)]." : "without a pilot."] ")
+				log_game("[key_name(usr)] has activated remote EMP on exosuit [M], located at [loc_name(M)], which is currently [M.occupant? "being piloted by [key_name(M.occupant)]." : "without a pilot."] ")
+				message_admins("[key_name_admin(usr)][ADMIN_FLW(usr)] has activated remote EMP on exosuit [M][ADMIN_JMP(M)], which is currently [M.occupant ? "being piloted by [key_name_admin(M.occupant)][ADMIN_FLW(M.occupant)]." : "without a pilot."] ")
 				. = TRUE
 
 /obj/item/mecha_parts/mecha_tracking
@@ -86,8 +85,8 @@
 	var/obj/mecha/chassis
 
 /**
- * Returns a html formatted string describing attached mech status
- */
+  * Returns a html formatted string describing attached mech status
+  */
 /obj/item/mecha_parts/mecha_tracking/proc/get_mecha_info()
 	if(!chassis)
 		return FALSE
@@ -102,7 +101,7 @@
 				<b>Active Equipment:</b> [chassis.selected || "None"]"}
 	if(istype(chassis, /obj/mecha/working/ripley))
 		var/obj/mecha/working/ripley/RM = chassis
-		answer += "<br><b>Used Cargo Space:</b> [round((LAZYLEN(RM.cargo) / RM.cargo_capacity * 100), 0.01)]%"
+		answer += "<br><b>Used Cargo Space:</b> [round((RM.cargo.len / RM.cargo_capacity * 100), 0.01)]%"
 
 	return answer
 
@@ -126,8 +125,8 @@
 	chassis = M
 
 /**
- * Attempts to EMP mech that the tracker is attached to, if there is one and tracker is not on cooldown
- */
+  * Attempts to EMP mech that the tracker is attached to, if there is one and tracker is not on cooldown
+  */
 /obj/item/mecha_parts/mecha_tracking/proc/shock()
 	if(recharging)
 		return
@@ -137,8 +136,8 @@
 		recharging = TRUE
 
 /**
- * Resets recharge variable, allowing tracker to be EMP pulsed again
- */
+  * Resets recharge variable, allowing tracker to be EMP pulsed again
+  */
 /obj/item/mecha_parts/mecha_tracking/proc/recharge()
 	recharging = FALSE
 

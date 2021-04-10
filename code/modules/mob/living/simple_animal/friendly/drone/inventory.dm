@@ -6,7 +6,7 @@
 //Drone hands
 
 
-/mob/living/simple_animal/drone/doUnEquip(obj/item/I, force, silent = FALSE)
+/mob/living/simple_animal/drone/doUnEquip(obj/item/I, force)
 	if(..())
 		update_inv_hands()
 		if(I == head)

@@ -13,7 +13,7 @@
 		#include "map_files\BoxStation\BoxStation.dmm"
 		#include "map_files\LambdaStation\lambda.dmm"
 
-		#ifdef CIBUILDING
+		#ifdef TRAVISBUILDING
 			#include "templates.dm"
 		#endif
 	#endif

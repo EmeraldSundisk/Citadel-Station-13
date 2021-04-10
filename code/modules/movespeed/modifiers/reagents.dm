@@ -12,7 +12,3 @@
 
 /datum/movespeed_modifier/reagent/nitryl
 	multiplicative_slowdown = -1
-
-/datum/movespeed_modifier/reagent/meth
-	multiplicative_slowdown = -0.5
-	absolute_max_tiles_per_second = 11

@@ -269,10 +269,9 @@
 	if(!prev_locked_down)
 		R.SetLockdown(0)
 	R.setDir(SOUTH)
-	R.set_anchored(FALSE)
+	R.anchored = FALSE
 	R.mob_transforming = FALSE
-	R.updatehealth()
-	R.update_icons()
+	R.update_headlamp()
 	R.notify_ai(NEW_MODULE)
 	if(R.hud_used)
 		R.hud_used.update_robot_modules_display()
@@ -924,8 +923,7 @@
 		/obj/item/cyborg_clamp,
 		/obj/item/stack/marker_beacon,
 		/obj/item/destTagger,
-		/obj/item/stack/packageWrap,
-		/obj/item/card/id/miningborg)
+		/obj/item/stack/packageWrap)
 	emag_modules = list(/obj/item/borg/stun)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/miner,

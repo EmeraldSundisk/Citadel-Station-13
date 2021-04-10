@@ -862,7 +862,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/item/tcg_card/special/honk,
 /turf/open/floor/plating,
 /area/ruin/powered/clownplanet)
 "bF" = (

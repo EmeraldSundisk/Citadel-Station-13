@@ -21,12 +21,10 @@
 
 /obj/effect/proc_holder/spell/targeted/area_teleport/before_cast(list/targets)
 	var/area/U = get_area(usr)
-	if((U.area_flags & NOTELEPORT) && !istype(U, /area/wizard_station)) // Wizard den special check for those complaining about being unable to tele on station.
+	if(U.noteleport && !istype(U, /area/wizard_station)) // Wizard den special check for those complaining about being unable to tele on station.
 		to_chat(usr, "<span class='warning'>Unseen forces prevent you from casting this spell in this area</span>")
 		return
-
-	var/A = null
-
+	var/A
 	if(!randomise_selection)
 		A = input("Area to teleport to", "Teleport", A) as null|anything in GLOB.teleportlocs
 	else

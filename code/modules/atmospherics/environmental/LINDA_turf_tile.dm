@@ -49,7 +49,6 @@
 		SSair.add_to_active(T)
 	return ..()
 
-/// Function for Extools Atmos
 /turf/proc/update_air_ref()
 
 /////////////////GAS MIXTURE PROCS///////////////////

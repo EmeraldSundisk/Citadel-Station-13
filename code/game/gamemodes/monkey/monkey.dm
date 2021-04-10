@@ -11,7 +11,6 @@
 	required_players = 20
 	required_enemies = 1
 	recommended_enemies = 1
-	chaos = 9
 
 	restricted_jobs = list("Cyborg", "AI")
 

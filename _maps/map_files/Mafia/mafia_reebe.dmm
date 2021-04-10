@@ -62,8 +62,8 @@
 /area/mafia)
 "n" = (
 /obj/structure/chair/brass{
-	dir = 1;
-	icon_state = "brass_chair"
+	icon_state = "brass_chair";
+	dir = 1
 	},
 /turf/open/floor/clockwork/reebe,
 /area/mafia)

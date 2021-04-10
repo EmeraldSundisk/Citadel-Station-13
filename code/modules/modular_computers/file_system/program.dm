@@ -33,14 +33,6 @@
 	var/tgui_id
 	/// Example: "something.gif" - a header image that will be rendered in computer's UI when this program is running at background. Images are taken from /icons/program_icons. Be careful not to use too large images!
 	var/ui_header = null
-	/// Font Awesome icon to use as this program's icon in the modular computer main menu. Defaults to a basic program maximize window icon if not overridden.
-	var/program_icon = "window-maximize-o"
-	/// Whether this program can send alerts while minimized or closed. Used to show a mute button per program in the file manager
-	var/alert_able = FALSE
-	/// Whether the user has muted this program's ability to send alerts.
-	var/alert_silenced = FALSE
-	/// Whether to highlight our program in the main screen. Intended for alerts, but loosely available for any need to notify of changed conditions. Think Windows task bar highlighting. Available even if alerts are muted.
-	var/alert_pending = FALSE
 
 /datum/computer_file/program/New(obj/item/modular_computer/comp = null)
 	..()
@@ -76,8 +68,8 @@
 	if(!(hardware_flag & usage_flags))
 		if(loud && computer && user)
 			to_chat(user, "<span class='danger'>\The [computer] flashes a \"Hardware Error - Incompatible software\" warning.</span>")
-		return FALSE
-	return TRUE
+		return 0
+	return 1
 
 /datum/computer_file/program/proc/get_signal(specific_action = 0)
 	if(computer)
@@ -85,21 +77,21 @@
 	return 0
 
 // Called by Process() on device that runs us, once every tick.
-/datum/computer_file/program/proc/process_tick(delta_time)
-	return TRUE
+/datum/computer_file/program/proc/process_tick()
+	return 1
 
 /**
- *Check if the user can run program. Only humans can operate computer. Automatically called in run_program()
- *ID must be inserted into a card slot to be read. If the program is not currently installed (as is the case when
- *NT Software Hub is checking available software), a list can be given to be used instead.
- *Arguments:
- *user is a ref of the mob using the device.
- *loud is a bool deciding if this proc should use to_chats
- *access_to_check is an access level that will be checked against the ID
- *transfer, if TRUE and access_to_check is null, will tell this proc to use the program's transfer_access in place of access_to_check
- *access can contain a list of access numbers to check against. If access is not empty, it will be used istead of checking any inserted ID.
+  *Check if the user can run program. Only humans can operate computer. Automatically called in run_program()
+  *ID must be inserted into a card slot to be read. If the program is not currently installed (as is the case when
+  *NT Software Hub is checking available software), a list can be given to be used instead.
+  *Arguments:
+  *user is a ref of the mob using the device.
+  *loud is a bool deciding if this proc should use to_chats
+  *access_to_check is an access level that will be checked against the ID
+  *transfer, if TRUE and access_to_check is null, will tell this proc to use the program's transfer_access in place of access_to_check
+  *access can contain a list of access numbers to check against. If access is not empty, it will be used istead of checking any inserted ID.
 */
-/datum/computer_file/program/proc/can_run(mob/user, loud = FALSE, access_to_check, transfer = FALSE, list/access)
+/datum/computer_file/program/proc/can_run(mob/user, loud = FALSE, access_to_check, transfer = FALSE, var/list/access)
 	// Defaults to required_access
 	if(!access_to_check)
 		if(transfer && transfer_access)
@@ -155,19 +147,19 @@
 				ID = card_holder.GetID()
 			generate_network_log("Connection opened -- Program ID: [filename] User:[ID?"[ID.registered_name]":"None"]")
 		program_state = PROGRAM_STATE_ACTIVE
-		return TRUE
-	return FALSE
+		return 1
+	return 0
 
 /**
- *
- *Called by the device when it is emagged.
- *
- *Emagging the device allows certain programs to unlock new functions. However, the program will
- *need to be downloaded first, and then handle the unlock on their own in their run_emag() proc.
- *The device will allow an emag to be run multiple times, so the user can re-emag to run the
- *override again, should they download something new. The run_emag() proc should return TRUE if
- *the emagging affected anything, and FALSE if no change was made (already emagged, or has no
- *emag functions).
+  *
+  *Called by the device when it is emagged.
+  *
+  *Emagging the device allows certain programs to unlock new functions. However, the program will
+  *need to be downloaded first, and then handle the unlock on their own in their run_emag() proc.
+  *The device will allow an emag to be run multiple times, so the user can re-emag to run the
+  *override again, should they download something new. The run_emag() proc should return TRUE if
+  *the emagging affected anything, and FALSE if no change was made (already emagged, or has no
+  *emag functions).
 **/
 /datum/computer_file/program/proc/run_emag()
 	return FALSE
@@ -187,8 +179,8 @@
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui && tgui_id)
 		ui = new(user, src, tgui_id, filedesc)
-		if(ui.open())
-			ui.send_asset(get_asset_datum(/datum/asset/simple/headers))
+		ui.open()
+		ui.send_asset(get_asset_datum(/datum/asset/simple/headers))
 
 // CONVENTIONS, READ THIS WHEN CREATING NEW PROGRAM AND OVERRIDING THIS PROC:
 // Topic calls are automagically forwarded from NanoModule this program contains.
@@ -196,20 +188,18 @@
 // Calls beginning with "PC_" are reserved for computer handling (by whatever runs the program)
 // ALWAYS INCLUDE PARENT CALL ..() OR DIE IN FIRE.
 /datum/computer_file/program/ui_act(action,list/params,datum/tgui/ui)
-	. = ..()
-	if(.)
-		return
-
+	if(..())
+		return 1
 	if(computer)
 		switch(action)
 			if("PC_exit")
 				computer.kill_program()
 				ui.close()
-				return TRUE
+				return 1
 			if("PC_shutdown")
 				computer.shutdown_computer()
 				ui.close()
-				return TRUE
+				return 1
 			if("PC_minimize")
 				var/mob/user = usr
 				if(!computer.active_program || !computer.all_components[MC_CPU])
